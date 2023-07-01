@@ -37,17 +37,13 @@
       <_ContentIncludedByDefault Remove="wwwroot\icon-192.png" />
       <_ContentIncludedByDefault Remove="wwwroot\index.html" />
       <_ContentIncludedByDefault Remove="wwwroot\sample-data\weather.json" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <AdditionalFiles Include="Client\App.razor" />
-      <AdditionalFiles Include="Client\Pages\Counter.razor" />
-      <AdditionalFiles Include="Client\Pages\FetchData.razor" />
-      <AdditionalFiles Include="Client\Pages\Index.razor" />
-      <AdditionalFiles Include="Client\Shared\MainLayout.razor" />
-      <AdditionalFiles Include="Client\Shared\NavMenu.razor" />
-      <AdditionalFiles Include="Client\Shared\SurveyPrompt.razor" />
-      <AdditionalFiles Include="Client\_Imports.razor" />
+      <_ContentIncludedByDefault Remove="Client\Pages\Counter.razor" />
+      <_ContentIncludedByDefault Remove="Client\Pages\FetchData.razor" />
+      <_ContentIncludedByDefault Remove="Client\Pages\Index.razor" />
+      <_ContentIncludedByDefault Remove="Client\Shared\MainLayout.razor" />
+      <_ContentIncludedByDefault Remove="Client\Shared\NavMenu.razor" />
+      <_ContentIncludedByDefault Remove="Client\Shared\SurveyPrompt.razor" />
+      <_ContentIncludedByDefault Remove="Client\wwwroot\sample-data\weather.json" />
     </ItemGroup>
 
 </Project>

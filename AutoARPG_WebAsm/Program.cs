@@ -2,7 +2,6 @@ using AutoARPG_Web.Data;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using AutoARPG_WebAsm;
-using AutoARPG_WebAsm.Client;
 using Blazored.SessionStorage;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
