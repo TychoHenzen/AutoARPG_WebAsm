@@ -22,7 +22,9 @@ public class GameRenderer
             .Select((i, i1) => GetPixel(new Rgb24(0, 0, 0), i, 0)).ToArray();
     }
 
-    private readonly Rgb24[] pixels;
+    private readonly GameState _state;
+    private readonly IJSRuntime _jsRuntime;
+    private Rgb24[] pixels;
 
     public async Task GenImage()
     {

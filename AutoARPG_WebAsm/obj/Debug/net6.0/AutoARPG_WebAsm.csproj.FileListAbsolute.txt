@@ -819,8 +819,6 @@ C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\obj\Debug\net6.0\build-g
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\obj\Debug\net6.0\blazor.boot.json
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\obj\Debug\net6.0\staticwebassets.build.json
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\obj\Debug\net6.0\staticwebassets.development.json
-C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\obj\Debug\net6.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
-C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\obj\Debug\net6.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\obj\Debug\net6.0\scopedcss\bundle\AutoARPG_WebAsm.styles.css
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\obj\Debug\net6.0\scopedcss\projectbundle\AutoARPG_WebAsm.bundle.scp.css
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\obj\Debug\net6.0\AutoARPG_WebAsm.csproj.CopyComplete
@@ -828,3 +826,5 @@ C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\obj\Debug\net6.0\AutoARP
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\obj\Debug\net6.0\refint\AutoARPG_WebAsm.dll
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\obj\Debug\net6.0\AutoARPG_WebAsm.pdb
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\obj\Debug\net6.0\ref\AutoARPG_WebAsm.dll
+C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\obj\Debug\net6.0\scopedcss\Client\Shared\MainLayout.razor.rz.scp.css
+C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\obj\Debug\net6.0\scopedcss\Client\Shared\NavMenu.razor.rz.scp.css

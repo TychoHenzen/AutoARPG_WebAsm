@@ -1,19 +1,19 @@
-/* /Shared/MainLayout.razor.rz.scp.css */
-.page[b-hp9kz76h6q] {
+/* /Client/Shared/MainLayout.razor.rz.scp.css */
+.page[b-2ctnfxan1y] {
     position: relative;
     display: flex;
     flex-direction: column;
 }
 
-main[b-hp9kz76h6q] {
+main[b-2ctnfxan1y] {
     flex: 1;
 }
 
-.sidebar[b-hp9kz76h6q] {
+.sidebar[b-2ctnfxan1y] {
     background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
 }
 
-.top-row[b-hp9kz76h6q] {
+.top-row[b-2ctnfxan1y] {
     background-color: #f7f7f7;
     border-bottom: 1px solid #d6d5d5;
     justify-content: flex-end;
@@ -22,99 +22,99 @@ main[b-hp9kz76h6q] {
     align-items: center;
 }
 
-    .top-row[b-hp9kz76h6q]  a, .top-row[b-hp9kz76h6q]  .btn-link {
+    .top-row[b-2ctnfxan1y]  a, .top-row[b-2ctnfxan1y]  .btn-link {
         white-space: nowrap;
         margin-left: 1.5rem;
         text-decoration: none;
     }
 
-    .top-row[b-hp9kz76h6q]  a:hover, .top-row[b-hp9kz76h6q]  .btn-link:hover {
+    .top-row[b-2ctnfxan1y]  a:hover, .top-row[b-2ctnfxan1y]  .btn-link:hover {
         text-decoration: underline;
     }
 
-    .top-row[b-hp9kz76h6q]  a:first-child {
+    .top-row[b-2ctnfxan1y]  a:first-child {
         overflow: hidden;
         text-overflow: ellipsis;
     }
 
 @media (max-width: 640.98px) {
-    .top-row:not(.auth)[b-hp9kz76h6q] {
+    .top-row:not(.auth)[b-2ctnfxan1y] {
         display: none;
     }
 
-    .top-row.auth[b-hp9kz76h6q] {
+    .top-row.auth[b-2ctnfxan1y] {
         justify-content: space-between;
     }
 
-    .top-row[b-hp9kz76h6q]  a, .top-row[b-hp9kz76h6q]  .btn-link {
+    .top-row[b-2ctnfxan1y]  a, .top-row[b-2ctnfxan1y]  .btn-link {
         margin-left: 0;
     }
 }
 
 @media (min-width: 641px) {
-    .page[b-hp9kz76h6q] {
+    .page[b-2ctnfxan1y] {
         flex-direction: row;
     }
 
-    .sidebar[b-hp9kz76h6q] {
+    .sidebar[b-2ctnfxan1y] {
         width: 250px;
         height: 100vh;
         position: sticky;
         top: 0;
     }
 
-    .top-row[b-hp9kz76h6q] {
+    .top-row[b-2ctnfxan1y] {
         position: sticky;
         top: 0;
         z-index: 1;
     }
 
-    .top-row.auth[b-hp9kz76h6q]  a:first-child {
+    .top-row.auth[b-2ctnfxan1y]  a:first-child {
         flex: 1;
         text-align: right;
         width: 0;
     }
 
-    .top-row[b-hp9kz76h6q], article[b-hp9kz76h6q] {
+    .top-row[b-2ctnfxan1y], article[b-2ctnfxan1y] {
         padding-left: 2rem !important;
         padding-right: 1.5rem !important;
     }
 }
-/* /Shared/NavMenu.razor.rz.scp.css */
-.navbar-toggler[b-vjksxjadih] {
+/* /Client/Shared/NavMenu.razor.rz.scp.css */
+.navbar-toggler[b-99fsfclvit] {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.top-row[b-vjksxjadih] {
+.top-row[b-99fsfclvit] {
     height: 3.5rem;
     background-color: rgba(0,0,0,0.4);
 }
 
-.navbar-brand[b-vjksxjadih] {
+.navbar-brand[b-99fsfclvit] {
     font-size: 1.1rem;
 }
 
-.oi[b-vjksxjadih] {
+.oi[b-99fsfclvit] {
     width: 2rem;
     font-size: 1.1rem;
     vertical-align: text-top;
     top: -2px;
 }
 
-.nav-item[b-vjksxjadih] {
+.nav-item[b-99fsfclvit] {
     font-size: 0.9rem;
     padding-bottom: 0.5rem;
 }
 
-    .nav-item:first-of-type[b-vjksxjadih] {
+    .nav-item:first-of-type[b-99fsfclvit] {
         padding-top: 1rem;
     }
 
-    .nav-item:last-of-type[b-vjksxjadih] {
+    .nav-item:last-of-type[b-99fsfclvit] {
         padding-bottom: 1rem;
     }
 
-    .nav-item[b-vjksxjadih]  a {
+    .nav-item[b-99fsfclvit]  a {
         color: #d7d7d7;
         border-radius: 4px;
         height: 3rem;
@@ -123,22 +123,22 @@ main[b-hp9kz76h6q] {
         line-height: 3rem;
     }
 
-.nav-item[b-vjksxjadih]  a.active {
+.nav-item[b-99fsfclvit]  a.active {
     background-color: rgba(255,255,255,0.25);
     color: white;
 }
 
-.nav-item[b-vjksxjadih]  a:hover {
+.nav-item[b-99fsfclvit]  a:hover {
     background-color: rgba(255,255,255,0.1);
     color: white;
 }
 
 @media (min-width: 641px) {
-    .navbar-toggler[b-vjksxjadih] {
+    .navbar-toggler[b-99fsfclvit] {
         display: none;
     }
 
-    .collapse[b-vjksxjadih] {
+    .collapse[b-99fsfclvit] {
         /* Never collapse the sidebar for wide screens */
         display: block;
     }

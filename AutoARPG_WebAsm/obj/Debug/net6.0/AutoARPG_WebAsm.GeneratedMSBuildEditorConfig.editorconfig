@@ -18,34 +18,50 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Development/Projects/AutoARPG_WebAsm/AutoARPG_WebAsm/App.razor]
-build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+[C:/Development/Projects/AutoARPG_WebAsm/AutoARPG_WebAsm/Client/App.razor]
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.TargetPath = Q2xpZW50XEFwcC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Development/Projects/AutoARPG_WebAsm/AutoARPG_WebAsm/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+[C:/Development/Projects/AutoARPG_WebAsm/AutoARPG_WebAsm/Client/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.TargetPath = Q2xpZW50XFBhZ2VzXENvdW50ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Development/Projects/AutoARPG_WebAsm/AutoARPG_WebAsm/Pages/FetchData.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+[C:/Development/Projects/AutoARPG_WebAsm/AutoARPG_WebAsm/Client/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.TargetPath = Q2xpZW50XFBhZ2VzXEZldGNoRGF0YS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Development/Projects/AutoARPG_WebAsm/AutoARPG_WebAsm/Pages/Index.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+[C:/Development/Projects/AutoARPG_WebAsm/AutoARPG_WebAsm/Client/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.TargetPath = Q2xpZW50XFBhZ2VzXEluZGV4LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Development/Projects/AutoARPG_WebAsm/AutoARPG_WebAsm/Shared/SurveyPrompt.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+[C:/Development/Projects/AutoARPG_WebAsm/AutoARPG_WebAsm/Client/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.TargetPath = Q2xpZW50XFNoYXJlZFxNYWluTGF5b3V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+build_metadata.AdditionalFiles.CssScope = b-2ctnfxan1y
+
+[C:/Development/Projects/AutoARPG_WebAsm/AutoARPG_WebAsm/Client/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.TargetPath = Q2xpZW50XFNoYXJlZFxOYXZNZW51LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+build_metadata.AdditionalFiles.CssScope = b-99fsfclvit
+
+[C:/Development/Projects/AutoARPG_WebAsm/AutoARPG_WebAsm/Client/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.TargetPath = Q2xpZW50XFNoYXJlZFxTdXJ2ZXlQcm9tcHQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Development/Projects/AutoARPG_WebAsm/AutoARPG_WebAsm/_Imports.razor]
-build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+[C:/Development/Projects/AutoARPG_WebAsm/AutoARPG_WebAsm/Client/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.TargetPath = Q2xpZW50XF9JbXBvcnRzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Development/Projects/AutoARPG_WebAsm/AutoARPG_WebAsm/Shared/MainLayout.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-hp9kz76h6q
-
-[C:/Development/Projects/AutoARPG_WebAsm/AutoARPG_WebAsm/Shared/NavMenu.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-vjksxjadih
+build_metadata.AdditionalFiles.CssScope = 
