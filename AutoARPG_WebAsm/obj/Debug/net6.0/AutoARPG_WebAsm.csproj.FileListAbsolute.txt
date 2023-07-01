@@ -1,7 +1,8 @@
-C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\AutoARPG_WebAsm.dll
-C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\AutoARPG_WebAsm.pdb
-C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\blazor.boot.json
+/media/gamedisk/Development/Projects/AutoARPG_WebAsm/AutoARPG_WebAsm/obj/Debug/net6.0/AutoARPG_WebAsm.dll
+/media/gamedisk/Development/Projects/AutoARPG_WebAsm/AutoARPG_WebAsm/obj/Debug/net6.0/refint/AutoARPG_WebAsm.dll
+/media/gamedisk/Development/Projects/AutoARPG_WebAsm/AutoARPG_WebAsm/obj/Debug/net6.0/AutoARPG_WebAsm.pdb
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\blazor.webassembly.js
+C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\Blazored.SessionStorage.dll
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\dotnet.6.0.16.crjxsqyu2p.js
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\dotnet.timezones.blat
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\dotnet.wasm
@@ -38,6 +39,8 @@ C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Win32.Registry.dll
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\mscorlib.dll
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\netstandard.dll
+C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\Newtonsoft.Json.dll
+C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\SixLabors.ImageSharp.dll
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\System.AppContext.dll
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\System.Buffers.dll
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\System.Collections.Concurrent.dll
@@ -231,6 +234,7 @@ C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\System.Xml.XmlDocument.dll.gz
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\System.Diagnostics.TextWriterTraceListener.dll.gz
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\System.ServiceProcess.dll.gz
+C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\Newtonsoft.Json.dll.gz
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\System.Net.Mail.dll.gz
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\System.Text.RegularExpressions.dll.gz
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\System.Configuration.dll.gz
@@ -271,6 +275,7 @@ C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\System.Resources.ResourceManager.dll.gz
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\System.Reflection.Extensions.dll.gz
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\System.Security.Cryptography.Algorithms.dll.gz
+C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\Blazored.SessionStorage.dll.gz
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\System.Resources.Reader.dll.gz
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\System.ComponentModel.dll.gz
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\System.Net.Ping.dll.gz
@@ -279,6 +284,7 @@ C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\System.Memory.dll.gz
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Extensions.Configuration.Binder.dll.gz
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\System.ObjectModel.dll.gz
+C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\SixLabors.ImageSharp.dll.gz
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\System.Diagnostics.Tools.dll.gz
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\System.Net.HttpListener.dll.gz
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Extensions.FileProviders.Physical.dll.gz
@@ -331,7 +337,6 @@ C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\System.IO.IsolatedStorage.dll.gz
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\System.Transactions.Local.dll.gz
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\System.Net.WebClient.dll.gz
-C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\AutoARPG_WebAsm.pdb.gz
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Extensions.DependencyInjection.Abstractions.dll.gz
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\System.Linq.Queryable.dll.gz
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\System.Dynamic.Runtime.dll.gz
@@ -354,7 +359,6 @@ C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\System.Runtime.CompilerServices.VisualC.dll.gz
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\System.Security.AccessControl.dll.gz
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\System.Runtime.Handles.dll.gz
-C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\AutoARPG_WebAsm.dll.gz
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\System.Web.dll.gz
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\System.Diagnostics.Tracing.dll.gz
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\System.Security.Cryptography.Csp.dll.gz
@@ -397,9 +401,15 @@ C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Win32.Primitives.dll.gz
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\System.Security.Claims.dll.gz
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\System.Net.WebSockets.Client.dll.gz
+C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\AutoARPG_WebAsm.dll
+C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\AutoARPG_WebAsm.pdb
+C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\blazor.boot.json
+C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\AutoARPG_WebAsm.pdb.gz
+C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\AutoARPG_WebAsm.dll.gz
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\AutoARPG_WebAsm.staticwebassets.runtime.json
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\AutoARPG_WebAsm.dll
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\AutoARPG_WebAsm.pdb
+C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\Blazored.SessionStorage.dll
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\Microsoft.AspNetCore.Authorization.dll
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\Microsoft.AspNetCore.Components.dll
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Forms.dll
@@ -422,6 +432,8 @@ C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\Microso
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\Microsoft.JSInterop.dll
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\Microsoft.JSInterop.WebAssembly.dll
+C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\SixLabors.ImageSharp.dll
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\System.IO.Pipelines.dll
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\Microsoft.CSharp.dll
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\Microsoft.VisualBasic.Core.dll
@@ -602,6 +614,7 @@ C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\obj\Debug\net6.0\AutoARP
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\obj\Debug\net6.0\AutoARPG_WebAsm.AssemblyInfo.cs
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\obj\Debug\net6.0\AutoARPG_WebAsm.csproj.CoreCompileInputs.cache
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\obj\Debug\net6.0\AutoARPG_WebAsm.MvcApplicationPartsAssemblyInfo.cache
+C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\obj\Debug\net6.0\build-gz\FWDjc83r.gz
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\obj\Debug\net6.0\build-gz\4GUlArrB.gz
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\obj\Debug\net6.0\build-gz\+gBV+j61.gz
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\obj\Debug\net6.0\build-gz\XqvKLGeP.gz
@@ -624,6 +637,8 @@ C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\obj\Debug\net6.0\build-g
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\obj\Debug\net6.0\build-gz\FDKE7mVD.gz
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\obj\Debug\net6.0\build-gz\XXUslOhs.gz
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\obj\Debug\net6.0\build-gz\5rB+aszV.gz
+C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\obj\Debug\net6.0\build-gz\6RGiK7cy.gz
+C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\obj\Debug\net6.0\build-gz\HFieW0OS.gz
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\obj\Debug\net6.0\build-gz\DHrkY4PD.gz
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\obj\Debug\net6.0\build-gz\eCF1qGrz.gz
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\obj\Debug\net6.0\build-gz\XDlKae4t.gz
@@ -813,15 +828,3 @@ C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\obj\Debug\net6.0\AutoARP
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\obj\Debug\net6.0\refint\AutoARPG_WebAsm.dll
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\obj\Debug\net6.0\AutoARPG_WebAsm.pdb
 C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\obj\Debug\net6.0\ref\AutoARPG_WebAsm.dll
-C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\Blazored.SessionStorage.dll
-C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\SixLabors.ImageSharp.dll
-C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\Blazored.SessionStorage.dll.gz
-C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\SixLabors.ImageSharp.dll.gz
-C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\Blazored.SessionStorage.dll
-C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\SixLabors.ImageSharp.dll
-C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\obj\Debug\net6.0\build-gz\FWDjc83r.gz
-C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\obj\Debug\net6.0\build-gz\HFieW0OS.gz
-C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\Newtonsoft.Json.dll
-C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\wwwroot\_framework\Newtonsoft.Json.dll.gz
-C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\bin\Debug\net6.0\Newtonsoft.Json.dll
-C:\Development\Projects\AutoARPG_WebAsm\AutoARPG_WebAsm\obj\Debug\net6.0\build-gz\6RGiK7cy.gz

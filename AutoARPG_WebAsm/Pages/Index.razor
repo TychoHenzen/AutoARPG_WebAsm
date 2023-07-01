@@ -4,10 +4,12 @@
 @using Newtonsoft.Json
 @using JsonConverter = Newtonsoft.Json.JsonConverter
 @using System.Diagnostics
+@using AutoARPG_WebAsm.Scenes
 
 @inject GameStateService State
 @inject Blazored.SessionStorage.ISessionStorageService ProtectedLocalStore;
 @inject IJSRuntime jsRuntime;
+@inject NavigationManager uriHelper;
 
 <PageTitle>Index</PageTitle>
 
@@ -23,29 +25,30 @@ else
 {
     <div class="d-grid gap-2 col-8 mx-auto">
         <div class="btn-group" role="group" aria-label="Basic example">
-            <button class="btn btn-secondary" @onclick="() => SendInput(0)">Act</button>
-            <button class="btn btn-primary" @onclick="() => SendInput(1)">Look Up</button>
-            <button class="btn btn-secondary" @onclick="() => SendInput(2)">Inv</button>
+            <button class="btn btn-secondary" @onclick="() => SendInput(GameButton.Btn_Act)">Act</button>
+            <button class="btn btn-primary" @onclick="() => SendInput(GameButton.Look_Up)">Look Up</button>
+            <button class="btn btn-secondary" @onclick="() => SendInput(GameButton.Btn_Inventory)">Inv</button>
         </div>
     </div>
     <div class="d-grid gap-2 col-8 mx-auto">
         <div class="btn-group" role="group" aria-label="Basic example">
-            <button class="btn btn-primary" @onclick="() => SendInput(3)">look<br/>left</button>
-            <button class="btn btn-primary" @onclick="() => SendInput(4)">
+            <button class="btn btn-primary" @onclick="() => SendInput(GameButton.Look_Left)">look<br/>left</button>
+            <button class="btn btn-primary" @onclick="() => SendInput(GameButton.Move_Forward)">
                 <img src="@gs.ImageUrl" width="@_currentCount.TagWidth" height="@_currentCount.TagHeight"/>
             </button>
 
-            <button class="btn btn-primary" @onclick="() => SendInput(5)">look<br/>right</button>
+            <button class="btn btn-primary" @onclick="() => SendInput(GameButton.Look_Right)">look<br/>right</button>
         </div>
     </div>
     <div class="d-grid gap-2 col-8 mx-auto">
         <div class="btn-group" role="group" aria-label="Basic example">
-            <button class="btn btn-secondary" @onclick="() => SendInput(6)">Cancel</button>
-            <button class="btn btn-primary" @onclick="() => SendInput(7)">Look Down</button>
-            <button class="btn btn-secondary" @onclick="() => SendInput(8)">Options</button>
+            <button class="btn btn-secondary" @onclick="() => SendInput(GameButton.Btn_Cancel)">Cancel</button>
+            <button class="btn btn-primary" @onclick="() => SendInput(GameButton.Look_Down)">Look Down</button>
+            <button class="btn btn-secondary" @onclick="() => SendInput(GameButton.Btn_Options)">Options</button>
         </div>
     </div>
     <span class="alert-primary">Request took @duration.ToString()</span>
+    <span class="alert-primary">unlocked: @_currentCount.unlockedFeatures[0]/ @_currentCount.unlockedFeatures[1]/ @_currentCount.unlockedFeatures[2]</span>
 }
 
 @code {
@@ -61,43 +64,30 @@ else
         var newVal = await ProtectedLocalStore.GetItemAsStringAsync("game");
         _currentCount = JsonConvert.DeserializeObject<GameState>(newVal) ?? new GameState();
         await jsRuntime.InvokeVoidAsync("console.time", "getState");
-        gs = await State.GetStateAsync(_currentCount, jsRuntime);
+        gs = await State.GetStateAsync<GradientScene>(_currentCount);
         await jsRuntime.InvokeVoidAsync("console.timeEnd", "getState");
         await jsRuntime.InvokeVoidAsync("console.time", "genImg");
         await gs.GenImage();
         await jsRuntime.InvokeVoidAsync("console.timeEnd", "genImg");
     }
 
-    private async Task SendInput(int btn)
+    private async Task SendInput(GameButton btn)
     {
         Stopwatch sw = new Stopwatch();
         sw.Start();
         if (_currentCount != null)
         {
-            switch (btn)
+            _currentCount = gs?.ActiveScene?.Update(btn, _currentCount) ?? _currentCount;
+            if (_currentCount.ShouldRefresh)
             {
-                case 0:
-                case 2:
-                case 4:
-                case 6:
-                case 8:
-                    break; //nop
-                case 1:
-                    _currentCount.height /= 2;
-                    break;
-                case 3:
-                    _currentCount.width /= 2;
-                    break;
-                case 5:
-                    _currentCount.width *= 2;
-                    break;
-                case 7:
-                    _currentCount.height *= 2;
-                    break;
+                _currentCount.ShouldRefresh = false;
+                _currentCount = await UpdateSerialized("game", _currentCount);
+                uriHelper.NavigateTo(uriHelper.Uri, forceLoad: true);
+                return;
             }
-    // Console.WriteLine($"Received input: {btn}");
-            var temp = await UpdateSerialized("game", _currentCount);
-            gs = await State.GetStateAsync(temp, jsRuntime);
+            _currentCount = await UpdateSerialized("game", _currentCount);
+
+            gs = await State.GetStateAsync<GradientScene>(_currentCount);
             await gs.GenImage();
             duration = sw.Elapsed;
         }
