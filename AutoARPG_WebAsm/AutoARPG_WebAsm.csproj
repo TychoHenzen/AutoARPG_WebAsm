@@ -14,13 +14,4 @@
         <PackageReference Include="SixLabors.ImageSharp" Version="3.0.1"/>
     </ItemGroup>
 
-    <ItemGroup>
-        <Content Include="wwwroot\projects\projects.json" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <_ContentIncludedByDefault Remove="wwwroot\Projects\VReeSDK\info.json" />
-      <_ContentIncludedByDefault Remove="wwwroot\sample-data\weather.json" />
-    </ItemGroup>
-
 </Project>
