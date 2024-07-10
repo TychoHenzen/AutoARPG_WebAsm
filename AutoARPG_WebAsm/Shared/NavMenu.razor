@@ -1,13 +1,6 @@
-﻿@using AutoARPG_Web.Data
-@using AutoARPG_WebAsm.Scenes
-@using Newtonsoft.Json
-
-@inject GameStateService State
-@inject Blazored.SessionStorage.ISessionStorageService ProtectedLocalStore;
-
-<div class="top-row ps-3 navbar navbar-dark">
+﻿<div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="">AutoARPG_WebAsm</a>
+        <a class="navbar-brand" href="">Tycho Henzen</a>
         <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -15,55 +8,42 @@
 </div>
 
 <div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
-    
     <nav class="flex-column">
-@if (_currentCount?.unlockedFeatures[0] ?? false)
-{
-    <div class="nav-item px-3">
-        <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-            <span class="oi oi-home" aria-hidden="true"></span> Home
-        </NavLink>
-    </div>
-}
-
-@if (_currentCount?.unlockedFeatures[1] ?? false)
-{
-    <div class="nav-item px-3">
-        <NavLink class="nav-link" href="counter">
-            <span class="oi oi-plus" aria-hidden="true"></span> Counter
-        </NavLink>
-    </div>
-}
-@if (_currentCount?.unlockedFeatures[2] ?? false)
-{
-    <div class="nav-item px-3">
-        <NavLink class="nav-link" href="fetchdata">
-            <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch data
-        </NavLink>
-    </div>
-}
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                <span class="oi oi-home" aria-hidden="true"></span> Home
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="projects">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> Projects
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="skills">
+                <span class="oi oi-code" aria-hidden="true"></span> Skills
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="experience">
+                <span class="oi oi-briefcase" aria-hidden="true"></span> Experience
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="contact">
+                <span class="oi oi-envelope-closed" aria-hidden="true"></span> Contact
+            </NavLink>
+        </div>
     </nav>
 </div>
 
 @code {
-    private bool collapseNavMenu = true;
+private bool collapseNavMenu = true;
 
-    private GameState? _currentCount;
-    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
 
-    private void ToggleNavMenu()
-    {
-        collapseNavMenu = !collapseNavMenu;
-    }
-
-    protected override async Task OnInitializedAsync()
-    {
-        if (!await ProtectedLocalStore.ContainKeyAsync("game"))
-        {
-            await ProtectedLocalStore.SetItemAsStringAsync("game", JsonConvert.SerializeObject(new GameState()));
-        }
-        var newVal = await ProtectedLocalStore.GetItemAsStringAsync("game");
-        _currentCount = JsonConvert.DeserializeObject<GameState>(newVal) ?? new GameState();
-        
-    }
+private void ToggleNavMenu()
+{
+collapseNavMenu = !collapseNavMenu;
+}
 }

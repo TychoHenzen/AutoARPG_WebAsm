@@ -1,105 +1,59 @@
 ﻿@page "/"
-@using AutoARPG_Web.Data
-@using System.Text.Json.Serialization
-@using Newtonsoft.Json
-@using JsonConverter = Newtonsoft.Json.JsonConverter
-@using System.Diagnostics
-@using AutoARPG_WebAsm.Scenes
+@inject IJSRuntime JSRuntime
 
-@inject GameStateService State
-@inject Blazored.SessionStorage.ISessionStorageService ProtectedLocalStore;
-@inject IJSRuntime jsRuntime;
-@inject NavigationManager uriHelper;
+<PageTitle>Tycho Henzen - Software Engineer Portfolio</PageTitle>
 
-<PageTitle>Index</PageTitle>
-
-<h1>Hello, world!</h1>
-
-@if (gs == null)
-{
-    <p>
-        <em>Loading...</em>
-    </p>
-}
-else
-{
-    <div class="d-grid gap-2 col-8 mx-auto">
-        <div class="btn-group" role="group" aria-label="Basic example">
-            <button class="btn btn-secondary" @onclick="() => SendInput(GameButton.Btn_Act)">Act</button>
-            <button class="btn btn-primary" @onclick="() => SendInput(GameButton.Look_Up)">Look Up</button>
-            <button class="btn btn-secondary" @onclick="() => SendInput(GameButton.Btn_Inventory)">Inv</button>
+<div class="container mt-5">
+    <div class="jumbotron">
+        <h1 class="display-4">Tycho Henzen</h1>
+        <p class="lead">Versatile and innovative Software Engineer with 8+ years of experience in game development, industrial automation, and complex software systems.</p>
+        <hr class="my-4">
+        <p>Expertise in C#, C++, and game development, with a strong background in performance optimization, network programming, and algorithm development.</p>
+        <div class="mt-3">
+            <a class="btn btn-primary btn-lg mr-2" href="#" @onclick="ScrollToProjects" role="button">View Projects</a>
+            <a class="btn btn-outline-secondary btn-lg" href="mailto:TychoHenzen@gmail.com" role="button">Contact Me</a>
         </div>
     </div>
-    <div class="d-grid gap-2 col-8 mx-auto">
-        <div class="btn-group" role="group" aria-label="Basic example">
-            <button class="btn btn-primary" @onclick="() => SendInput(GameButton.Look_Left)">look<br/>left</button>
-            <button class="btn btn-primary" @onclick="() => SendInput(GameButton.Move_Forward)">
-                <img src="@gs.ImageUrl" width="@_currentCount.TagWidth" height="@_currentCount.TagHeight"/>
-            </button>
 
-            <button class="btn btn-primary" @onclick="() => SendInput(GameButton.Look_Right)">look<br/>right</button>
+    <div class="row mt-5">
+        <div class="col-md-4">
+            <h2>Skills</h2>
+            <ul>
+                <li>C#, C++, Java, Python</li>
+                <li>Unity, Godot, WPF, Blazor</li>
+                <li>Network Programming (UDP/TCP)</li>
+                <li>Performance Optimization</li>
+                <li>Algorithm Development</li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <h2>Experience</h2>
+            <h5 class="fs-6">Software Engineer - Ellips B.V.</h5>
+            <p class="fs-8">Sep 2023 - Present</p>
+            <h5 class="fs-6">Software Engineer - VRee B.V.</h5>
+            <p class="fs-8">Nov 2019 - Jun 2023</p>
+        </div>
+        <div class="col-md-4">
+            <h2>Education</h2>
+            <h5>ICT / Software Engineering</h5>
+            <p>Fontys Hogescholen, Eindhoven (2010 - 2015)</p>
+            <ul>
+                <li>Minor in Game design</li>
+                <li>OpenGL in C++</li>
+                <li>Linear algebra for 3D rendering</li>
+            </ul>
         </div>
     </div>
-    <div class="d-grid gap-2 col-8 mx-auto">
-        <div class="btn-group" role="group" aria-label="Basic example">
-            <button class="btn btn-secondary" @onclick="() => SendInput(GameButton.Btn_Cancel)">Cancel</button>
-            <button class="btn btn-primary" @onclick="() => SendInput(GameButton.Look_Down)">Look Down</button>
-            <button class="btn btn-secondary" @onclick="() => SendInput(GameButton.Btn_Options)">Options</button>
-        </div>
+
+    <div id="projects" class="mt-5">
+        <h2>Featured Projects</h2>
+        <!-- Add your projects here -->
     </div>
-    <span class="alert-primary">Request took @duration.ToString()</span>
-    <span class="alert-primary">unlocked: @_currentCount.unlockedFeatures[0]/ @_currentCount.unlockedFeatures[1]/ @_currentCount.unlockedFeatures[2]</span>
-}
+</div>
 
 @code {
-    private GameRenderer? gs;
-    private GameState? _currentCount;
-    private TimeSpan duration;
-    protected override async Task OnInitializedAsync()
-    {
-        if (!await ProtectedLocalStore.ContainKeyAsync("game"))
-        {
-            await ProtectedLocalStore.SetItemAsStringAsync("game", JsonConvert.SerializeObject(new GameState()));
-        }
-        var newVal = await ProtectedLocalStore.GetItemAsStringAsync("game");
-        _currentCount = JsonConvert.DeserializeObject<GameState>(newVal) ?? new GameState();
-        await jsRuntime.InvokeVoidAsync("console.time", "getState");
-        gs = await State.GetStateAsync<GradientScene>(_currentCount);
-        await jsRuntime.InvokeVoidAsync("console.timeEnd", "getState");
-        await jsRuntime.InvokeVoidAsync("console.time", "genImg");
-        await gs.GenImage();
-        await jsRuntime.InvokeVoidAsync("console.timeEnd", "genImg");
-    }
-
-    private async Task SendInput(GameButton btn)
-    {
-        Stopwatch sw = new Stopwatch();
-        sw.Start();
-        if (_currentCount != null)
-        {
-            _currentCount = gs?.ActiveScene?.Update(btn, _currentCount) ?? _currentCount;
-            if (_currentCount.ShouldRefresh)
-            {
-                _currentCount.ShouldRefresh = false;
-                _currentCount = await UpdateSerialized("game", _currentCount);
-                uriHelper.NavigateTo(uriHelper.Uri, forceLoad: true);
-                return;
-            }
-            _currentCount = await UpdateSerialized("game", _currentCount);
-
-            gs = await State.GetStateAsync<GradientScene>(_currentCount);
-            await gs.GenImage();
-            duration = sw.Elapsed;
-        }
-    }
-
-    private async Task<T?> UpdateSerialized<T>(string key, T? val)
-    {
-        var conv = JsonConvert.SerializeObject(val);
-        await ProtectedLocalStore.SetItemAsStringAsync(key, conv);
-        var newVal = await ProtectedLocalStore.GetItemAsStringAsync(key);
-        return JsonConvert.DeserializeObject<T>(newVal);
-    }
-
-
+private async Task ScrollToProjects()
+{
+await JSRuntime.InvokeVoidAsync("scrollToElement", "projects");
+}
 }

@@ -46,4 +46,8 @@
       <_ContentIncludedByDefault Remove="Client\wwwroot\sample-data\weather.json" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Data\" />
+    </ItemGroup>
+
 </Project>

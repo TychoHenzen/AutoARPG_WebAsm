@@ -62,3 +62,60 @@ a, .btn-link {
     .blazor-error-boundary::after {
         content: "An error has occurred."
     }
+.social-icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px; /* Adds space between icons */
+    margin-top: 15px;
+}
+
+/* Individual Icon Styles */
+.social-icons a {
+    color: #333;
+    transition: color 0.3s ease;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px; /* Fixed width for each icon container */
+    height: 60px; /* Fixed height for each icon container */
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+/* Twitter/X Icon Specific Styles */
+.twitter-icon {
+    position: relative;
+    display: inline-block;
+    width: 60px; /* Match the width of other icons */
+    height: 60px; /* Match the height of other icons */
+}
+
+.twitter-icon .x-icon,
+.twitter-icon .twitter-bird {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease;
+}
+
+.twitter-icon .twitter-bird {
+    opacity: 0;
+}
+
+.twitter-icon:hover .x-icon {
+    opacity: 0;
+}
+
+.twitter-icon:hover .twitter-bird {
+    opacity: 1;
+}
+
+/* Ensure all icons are the same size */
+.social-icons i.fab {
+    font-size: 2.5rem; /* Adjust size as needed */
+}

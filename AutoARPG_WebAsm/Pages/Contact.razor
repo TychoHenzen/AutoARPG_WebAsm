@@ -1,0 +1,117 @@
+﻿@page "/contact"
+@inject IJSRuntime JSRuntime
+
+<PageTitle>Tycho Henzen - Contact</PageTitle>
+
+<div class="container mt-5">
+    <h1>Contact Me</h1>
+
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <h2>Get in Touch</h2>
+            <p>I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
+
+            <ul class="list-unstyled">
+                <li>
+                    <i class="fas fa-envelope"></i> <a href="mailto:TychoHenzen@gmail.com">TychoHenzen@gmail.com</a>
+                </li>
+                <li><i class="fas fa-map-marker-alt"></i> Valkenswaard, Netherlands</li>
+            </ul>
+
+            <h3 class="mt-4">Connect with me</h3>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/tychohenzen" target="_blank">
+                    <i class="fab fa-linkedin fa-3x"></i>
+                </a>
+                <a href="https://github.com/sirius-black9999" target="_blank">
+                    <i class="fab fa-github fa-3x"></i>
+                </a>
+                <a href="https://twitter.com/siriusblack9999" target="_blank" class="twitter-icon">
+                    <i class="fab fa-x-twitter fa-3x x-icon"></i>
+                    <i class="fab fa-twitter fa-3x twitter-bird"></i>
+                </a>
+                <a href="https://steamcommunity.com/aerialmage" target="_blank">
+                    <i class="fab fa-steam fa-3x"></i>
+                </a>
+                <a href="https://www.quora.com/profile/Tycho-Henzen" target="_blank">
+                    <i class="fab fa-quora fa-3x"></i>
+                </a>
+            </div>
+
+        </div>
+        <div class="col-md-6">
+            <h2>Send a Message</h2>
+            <form @onsubmit="HandleSubmit">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" @bind="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" @bind="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="5" @bind="message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+@code {
+    private string name = "";
+    private string email = "";
+    private string message = "";
+
+    private async Task HandleSubmit()
+    {
+        var templateParams = new Dictionary<string, string>
+        {
+            { "from_name", name },
+            { "to_name", "Tycho" },
+            { "from_email", email },
+            { "message", message }
+        };
+
+        try
+        {
+            Console.WriteLine("Attempting to send email...");
+            var result = await JSRuntime.InvokeAsync<string>("sendEmailJS", "service_663enub", "template_9mtnq3h", templateParams);
+            Console.WriteLine($"Raw result: {result}");
+
+            var response = System.Text.Json.JsonSerializer.Deserialize<EmailJSResponse>(result);
+
+            if (response.success)
+            {
+                Console.WriteLine($"Email sent successfully. Status: {response.status}, Text: {response.text}");
+                await JSRuntime.InvokeVoidAsync("alert", "Thank you for your message! I'll get back to you soon.");
+                name = "";
+                email = "";
+                message = "";
+            }
+            else
+            {
+                Console.WriteLine($"EmailJS error: {response.error}");
+                throw new Exception(response.error);
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error sending email: {ex.GetType().FullName}");
+            Console.WriteLine($"Error message: {ex.Message}");
+            Console.WriteLine($"Stack trace: {ex.StackTrace}");
+
+            await JSRuntime.InvokeVoidAsync("alert", $"There was an error sending your message: {ex.Message}");
+        }
+    }
+
+    public class EmailJSResponse
+    {
+        public bool success { get; set; }
+        public int status { get; set; }
+        public string text { get; set; }
+        public string error { get; set; }
+    }
+}
