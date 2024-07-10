@@ -1,31 +1,263 @@
 ﻿@page "/projects"
+@inject HttpClient Http
+@inject IJSRuntime JSRuntime
 
 <PageTitle>Tycho Henzen - Projects</PageTitle>
 
 <div class="container mt-5">
     <h1>Projects</h1>
 
-    <div class="row mt-4">
-        <div class="col-md-6 mb-4">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">VR Multiplayer Platform</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">C++, C#, Unity</h6>
-                    <p class="card-text">Developed a multiplayer VR platform with network architecture using UDP/TCP protocols and whole-body motion tracking.</p>
-                    <a href="#" class="card-link">More Details</a>
+    @if (isLoading)
+    {
+        <p>Loading projects...</p>
+    }
+    else if (loadError)
+    {
+        <div class="alert alert-danger" role="alert">
+            An error occurred while loading projects. Please try again later.
+        </div>
+    }
+    else
+    {
+        <div class="mb-3">
+            <input type="text" class="form-control" @bind="searchTerm" @bind:event="oninput" placeholder="Search projects...">
+        </div>
+
+        <div class="mb-3">
+            @foreach (var tag in topTags)
+            {
+                <button class="btn btn-sm @(selectedTags.Contains(tag) ? "btn-primary" : "btn-outline-primary") me-2 mb-2" @onclick="() => ToggleTag(tag)">
+                    @tag
+                </button>
+            }
+            
+            <button class="btn btn-sm btn-secondary me-2 mb-2" @onclick="ToggleRemainingTags">
+                @(showAllTags ? "Hide Extra Tags" : $"Show {remainingTags.Count} More Tags")
+            </button>
+
+            @if (showAllTags)
+            {
+                foreach (var tag in remainingTags)
+                {
+                    <button class="btn btn-sm @(selectedTags.Contains(tag) ? "btn-primary" : "btn-outline-primary") me-2 mb-2" @onclick="() => ToggleTag(tag)">
+                        @tag
+                    </button>
+                }
+            }
+        </div>
+
+        @foreach (var category in projectCategories)
+        {
+            <h2 class="mt-4">@category.Key</h2>
+            <div class="row">
+                @foreach (var project in category.Value.Where(p => FilterProject(p)))
+                {
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-img-top project-image">
+                                @if (!string.IsNullOrEmpty(project.ImageUrl))
+                                {
+                                    <img src="@project.ImageUrl" 
+                                         alt="@project.Title" 
+                                         @onload="() => HandleImageLoad(project.Title)" 
+                                         @onerror="() => HandleImageError(project.Title)" 
+                                         class="img-fluid @(loadedImages.Contains(project.Title) ? "" : "d-none")" />
+                                }
+                                <div class="project-image-placeholder @(loadedImages.Contains(project.Title) ? "d-none" : "")">
+                                    <i class="fas fa-code fa-3x"></i>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">@project.Title</h5>
+                                <p class="card-text">@project.Description</p>
+                                <button class="btn btn-primary" @onclick="() => OpenProjectDetails(project)">Learn More</button>
+                            </div>
+                            <div class="card-footer">
+                                @foreach (var tag in project.Tags.Take(3))
+                                {
+                                    <span class="badge bg-secondary me-1">@tag</span>
+                                }
+                                @if (project.Tags.Count > 3)
+                                {
+                                    <span class="badge bg-secondary">+@(project.Tags.Count - 3)</span>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+    }
+</div>
+@if (selectedProject != null)
+{
+<div class="modal" tabindex="-1" style="display:block; background-color: rgba(0,0,0,0.5);">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title fw-bold">@selectedProject.Title</h5>
+                <button type="button" class="btn-close btn-close-white" @onclick="CloseProjectDetails"></button>
+            </div>
+            <div class="modal-body">
+                @if (!string.IsNullOrEmpty(selectedProject.VideoUrl))
+                {
+                <div class="ratio ratio-16x9 mb-4">
+                    <iframe src="@selectedProject.VideoUrl" allowfullscreen></iframe>
+                </div>
+                }
+                else if (!string.IsNullOrEmpty(selectedProject.ImageUrl))
+                {
+                <div class="mb-4 @(loadedImages.Contains(selectedProject.Title) ? "" : "d-none")">
+                    <img src="@selectedProject.ImageUrl"
+                         class="img-fluid w-100"
+                         alt="@selectedProject.Title"
+                         @onload="() => HandleImageLoad(selectedProject.Title)"
+                         @onerror="() => HandleImageError(selectedProject.Title)" />
+                </div>
+                }
+
+                <h6 class="text-muted mb-3">Project Description</h6>
+                <p>@selectedProject.FullDescription</p>
+
+                <div class="mb-2">
+                     @if (!string.IsNullOrEmpty(selectedProject.SourceUrl))
+                    {
+                    <a href="@selectedProject.SourceUrl" target="_blank" class="btn btn-outline-primary me-2 ">
+                        <i class="fas fa-code-branch me-2 mb-2"></i>View Source
+                    </a>
+                    }
+                    <button type="button" class="btn btn-primary" @onclick="CloseProjectDetails">Close</button>
                 </div>
             </div>
-        </div>
-        <div class="col-md-6 mb-4">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Fruit Grading System</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">C#, Blazor, WPF, C++</h6>
-                    <p class="card-text">Developed frontend and backend components for a fruit grading system, including web apps for system calibration.</p>
-                    <a href="#" class="card-link">More Details</a>
-                </div>
+            <div class="modal-footer mb-2">
+                <h6 class="text-muted mt-4 mb-3">Technologies Used</h6>
+                @foreach (var tag in selectedProject.Tags)
+                {
+                    <span class="badge bg-secondary me-2 mb-2">@tag</span>
+                }
             </div>
         </div>
-        <!-- Add more project cards as needed -->
     </div>
 </div>
+}
+@code {
+    private Dictionary<string, List<ProjectInfo>> projectCategories = new Dictionary<string, List<ProjectInfo>>();
+    private List<string> topTags = new List<string>();
+    private List<string> remainingTags = new List<string>();
+    private HashSet<string> selectedTags = new HashSet<string>();
+    private string searchTerm = "";
+    private ProjectInfo selectedProject = null;
+    private bool isLoading = true;
+    private bool loadError = false;
+    private bool showAllTags = false;
+    private HashSet<string> loadedImages = new HashSet<string>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadProjects();
+    }
+    
+    private void HandleImageLoad(string projectId)
+    {
+        loadedImages.Add(projectId);
+        StateHasChanged();
+    }
+
+    private void HandleImageError(string projectId)
+    {
+        // The image failed to load, so we don't add it to loadedImages
+        // This will keep the placeholder visible
+        StateHasChanged();
+    }
+
+
+    private async Task LoadProjects()
+    {
+        isLoading = true;
+        loadError = false;
+        try
+        {
+            var projects = await Http.GetFromJsonAsync<List<ProjectInfo>>("projects/projects.json");
+            
+            if (projects == null)
+            {
+                throw new Exception("Project data is null");
+            }
+
+            projectCategories = projects
+                .GroupBy(p => string.IsNullOrEmpty(p.Category) ? "Uncategorized" : p.Category)
+                .ToDictionary(g => g.Key, g => g.ToList());
+
+            var tagFrequency = projects
+                .SelectMany(p => p.Tags)
+                .GroupBy(t => t)
+                .Select(g => new { Tag = g.Key, Count = g.Count() })
+                .OrderByDescending(t => t.Count)
+                .ToList();
+
+            topTags = tagFrequency.Take(10).Select(t => t.Tag).ToList();
+            remainingTags = tagFrequency.Skip(10).Select(t => t.Tag).ToList();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error loading projects: {ex.Message}");
+            Console.WriteLine($"Stack trace: {ex.StackTrace}");
+            loadError = true;
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private bool FilterProject(ProjectInfo project)
+    {
+        return (string.IsNullOrEmpty(searchTerm) || 
+                project.Title.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) || 
+                project.Description.Contains(searchTerm, StringComparison.OrdinalIgnoreCase)) &&
+               (selectedTags.Count == 0 || selectedTags.All(t => project.Tags.Contains(t)));
+    }
+
+    private void ToggleTag(string tag)
+    {
+        if (selectedTags.Contains(tag))
+            selectedTags.Remove(tag);
+        else
+            selectedTags.Add(tag);
+    }
+
+    private void ToggleRemainingTags()
+    {
+        showAllTags = !showAllTags;
+    }
+
+    private void OpenProjectDetails(ProjectInfo project)
+    {
+        selectedProject = project;
+        // Reset the loadedImages state for the modal
+        loadedImages.Remove(project.Title);
+    }
+
+    private void CloseProjectDetails()
+    {
+        selectedProject = null;
+    }
+
+    private string GetImageUrl(string imageUrl)
+    {
+        return string.IsNullOrEmpty(imageUrl) ? "images/placeholder.png" : imageUrl;
+    }
+
+    public class ProjectInfo
+    {
+        public string Title { get; set; } = "";
+        public string Description { get; set; } = "";
+        public string FullDescription { get; set; } = "";
+        public string ImageUrl { get; set; } = "";
+        public string VideoUrl { get; set; } = "";
+        public string SourceUrl { get; set; } = "";
+        public List<string> Tags { get; set; } = new List<string>();
+        public string Category { get; set; } = "Uncategorized";
+    }
+}
+}

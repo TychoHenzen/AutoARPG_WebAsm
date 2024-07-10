@@ -9,10 +9,6 @@
         <p class="lead">Versatile and innovative Software Engineer with 8+ years of experience in game development, industrial automation, and complex software systems.</p>
         <hr class="my-4">
         <p>Expertise in C#, C++, and game development, with a strong background in performance optimization, network programming, and algorithm development.</p>
-        <div class="mt-3">
-            <a class="btn btn-primary btn-lg mr-2" href="#" @onclick="ScrollToProjects" role="button">View Projects</a>
-            <a class="btn btn-outline-secondary btn-lg" href="mailto:TychoHenzen@gmail.com" role="button">Contact Me</a>
-        </div>
     </div>
 
     <div class="row mt-5">
@@ -44,16 +40,4 @@
             </ul>
         </div>
     </div>
-
-    <div id="projects" class="mt-5">
-        <h2>Featured Projects</h2>
-        <!-- Add your projects here -->
-    </div>
 </div>
-
-@code {
-private async Task ScrollToProjects()
-{
-await JSRuntime.InvokeVoidAsync("scrollToElement", "projects");
-}
-}
