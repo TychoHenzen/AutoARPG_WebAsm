@@ -177,7 +177,7 @@
         loadError = false;
         try
         {
-            var projects = await Http.GetFromJsonAsync<List<ProjectInfo>>("projects/projects.json");
+            var projects = await Http.GetFromJsonAsync<List<ProjectInfo>>("Projects/projects.json");
             
             if (projects == null)
             {
