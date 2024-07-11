@@ -3,8 +3,8 @@
     "Title": "Code Viewer",
     "Description": "A tool for viewing and analyzing code structures.",
     "FullDescription": "The Code Viewer is a tool designed to help developers visualize and analyze complex code structures. It attempts to show dependencies between code of various categories and structure analysis, making it easier to understand and work with large codebases.",
-    "ImageUrl": "Projects/images/VRee-thumbnail.jpg",
-    "VideoUrl": "",
+    "ImageUrl": "Projects/images/Technical/Codegraph.png",
+    "MediaItems": [],
     "SourceUrl": "https://github.com/yourusername/code-viewer",
     "Tags": [
       "C#",
@@ -18,7 +18,7 @@
     "Description": "Simulations of evolutionary processes in biological systems.",
     "FullDescription": "This project involves creating detailed simulations that model evolutionary processes in biological systems. It includes genetic algorithms, population dynamics, and natural selection models, allowing users to observe and study evolutionary phenomena over time.",
     "ImageUrl": "Projects/images/evolution-sim.jpg",
-    "VideoUrl": "",
+    "MediaItems": [],
     "SourceUrl": "https://github.com/yourusername/evolution-simulations",
     "Tags": [
       "Python",
@@ -33,7 +33,7 @@
     "Description": "Implementation of various neural network architectures and AI algorithms.",
     "FullDescription": "This comprehensive project encompasses the implementation of various neural network architectures and AI algorithms. It includes deep learning models, reinforcement learning systems, and natural language processing applications, showcasing a broad range of artificial intelligence techniques.",
     "ImageUrl": "Projects/images/neural-networks.jpg",
-    "VideoUrl": "",
+    "VideoUrl": "https://www.youtube.com/embed/V6sHMYuL9H4",
     "SourceUrl": "https://github.com/yourusername/neural-networks-ai",
     "Tags": [
       "Python",
@@ -137,7 +137,7 @@
     "FullDescription": "This Minecraft mod adds new features and mechanics to the game, including custom blocks, items, and gameplay elements. It demonstrates proficiency in Java programming and game modding techniques. The mod featured a way to convert rotten flesh into redstone, a wireworld-based signalling system somewhat similar to redstone, which interacted with a magnet-like block that responded to a coil of this redstone-like cable, in order to provide functionality similar to ProjectE, but with values based on the blocks' frequency within the surrounding worldgen",
     "ImageUrl": "Projects/images/minecraft-mod.jpg",
     "VideoUrl": "https://www.youtube.com/watch?v=s8ZXQ9tntBY",
-    "SourceUrl": "https://github.com/yourusername/minecraft-mod",
+    "SourceUrl": "https://github.com/sirius-black9999/AMP-mc-magnet-chem",
     "Tags": [
       "Java",
       "Minecraft",
@@ -263,8 +263,8 @@
     "Title": "VRee Map Editor",
     "Description": "A custom map editor for VR environments.",
     "FullDescription": "The VRee Map Editor is a tool developed for creating and editing virtual reality environments. It provides an intuitive interface for designing immersive VR spaces, supporting the development of VR applications and games, this was mostly just an idea that never really got off the ground",
-    "ImageUrl": "Projects/images/vree-map-editor.jpg",
-    "VideoUrl": "",
+    "ImageUrl": "Projects/images/VRee_editor.png",
+    "VideoUrl": "https://www.youtube.com/embed/Rs4RFfgVtGs",
     "SourceUrl": "",
     "Tags": [
       "VR",
@@ -278,7 +278,7 @@
     "Title": "VRee Network Metrics",
     "Description": "A system for measuring and optimizing VR network performance.",
     "FullDescription": "VRee Network Metrics is a sophisticated system for measuring and optimizing network performance in virtual reality applications. It includes tools for monitoring latency, packet loss, and other critical metrics to ensure smooth VR experiences.",
-    "ImageUrl": "Projects/images/vree-network-metrics.jpg",
+    "ImageUrl": "Projects/images/VRee_logo.png",
     "VideoUrl": "",
     "SourceUrl": "",
     "Tags": [
@@ -292,7 +292,7 @@
     "Title": "VRee Dialogue System",
     "Description": "An advanced dialogue system for VR applications.",
     "FullDescription": "The VRee Dialogue System is a comprehensive solution for creating interactive dialogues in virtual reality applications. It supports branching conversations, character lip-syncing, and integration with VR gestures and interactions.",
-    "ImageUrl": "Projects/images/vree-dialogue-system.jpg",
+    "ImageUrl": "Projects/images/VRee_logo.png",
     "VideoUrl": "",
     "SourceUrl": "",
     "Tags": [
@@ -321,7 +321,7 @@
     "Title": "VRee SDK3",
     "Description": "The third iteration of the VRee Software Development Kit.",
     "FullDescription": "VRee SDK3 was the latest version of the VRee Software Development Kit, providing developers with powerful tools and APIs for creating immersive VR experiences. it was made as a complete re-write of the original, but unfortunately never made it to production.",
-    "ImageUrl": "Projects/images/vree-sdk3.jpg",
+    "ImageUrl": "Projects/images/VRee_logo.png",
     "VideoUrl": "",
     "SourceUrl": "",
     "Tags": [
@@ -329,7 +329,7 @@
       "SDK",
       "C++"
     ],
-    "Category": "VRee Experiences"
+    "Category": "Professional"
   },
   {
     "Title": "VRee Offline Licensing",
@@ -422,7 +422,7 @@
     "Title": "Virtual Oscilloscope",
     "Description": "A real-time audio visualization tool.",
     "FullDescription": "The Virtual Oscilloscope is a tool i built in order to try to render animations like the oscilloscope music shown in the video.",
-    "ImageUrl": "Projects/images/virtual-oscilloscope.jpg",
+    "ImageUrl": "Projects/images/Oscilloscope-thumbnail.png",
     "VideoUrl": "https://www.youtube.com/embed/FEzLCYlvV8w",
     "SourceUrl": "",
     "Tags": [
@@ -630,9 +630,9 @@
     "Title": "Auto-ARPG Editor",
     "Description": "A Blazor-based editor for JSON files in an Auto-ARPG game.",
     "FullDescription": "Developed a Blazor-based editor for managing JSON files in an Auto-ARPG (Automatically generated Action Role-Playing Game) project. This tool streamlines the process of creating and editing game content. The project was built using C# 10/.NET 6 and utilized NuGet packages such as GdkSharp and ImageSharp.",
-    "ImageUrl": "Projects/images/auto-arpg-editor.jpg",
+    "ImageUrl": "",
     "VideoUrl": "",
-    "SourceUrl": "",
+    "SourceUrl": "https://github.com/sirius-black9999/AutoARPG_Unity",
     "Tags": [
       "C#",
       "Blazor",
@@ -645,10 +645,10 @@
   {
     "Title": "Personal Website and Webshop Hosting",
     "Description": "Self-hosted website and partner's webshop using various web technologies.",
-    "FullDescription": "Maintained a long-term personal website project, working with HTML/CSS, Bootstrap, PHP, and JEE.\nCurrently hosting a personal website (this one) on microsoft azure\nPreviously hosted on a local laptop alongside a webshop (using PrestaShop) for a partner on a self-managed Apache HTTP server.\nThat setup included FTP, Git, and MySQL database servers.\nThe project also involved configuring DNS records, SSL certificates, and implementing email security protocols (DMARC, SPF, DKIM) for a custom email address.\n\n Current configuration uses github actions to deploy the C#/Blazor application to microsoft Azure as a static website",
+    "FullDescription": "Maintained a long-term personal website project, working with HTML/CSS, Bootstrap, PHP, and JEE.\nCurrently hosting a personal website (this one) on microsoft azure\nPreviously hosted on a local laptop alongside a webshop (using PrestaShop) for a partner on a self-managed Apache HTTP server.\nThat setup included FTP, Git, and MySQL database servers.\nThe project also involved configuring DNS records, SSL certificates, and implementing email security protocols (DMARC, SPF, DKIM) for a custom email address.\n\n Current configuration cannibalized the ARPG repo in order to reuse the github actions i had set up for it in order to deploy the C#/Blazor application to microsoft Azure as a static website",
     "ImageUrl": "Projects/images/personal-website-hosting.jpg",
     "VideoUrl": "",
-    "SourceUrl": "",
+    "SourceUrl": "https://github.com/sirius-black9999/AutoARPG_WebAsm",
     "Tags": [
       "Web Hosting",
       "Apache",
@@ -729,15 +729,142 @@
     "Title": "Manim Animations",
     "Description": "Educational animations created using the Manim library in Python.",
     "FullDescription": "A series of educational animations developed using the Manim library in Python. These animations are designed to explain complex concepts visually, making them ideal for educational content or presentations.",
-    "ImageUrl": "Projects/images/manim-animations.jpg",
-    "VideoUrl": "",
+    "ImageUrl": "Projects/images/Manim_logo.png",
+    "MediaItems": [
+      {
+        "Url": "Projects/videos/Manim/CalendarAnim.mp4",
+        "Name": "D&D Calendar",
+        "Type": 1
+      },
+      {
+        "Url": "Projects/images/Manim/CalendarWeather.png",
+        "Name": "D&D Calendar - weather types",
+        "Type": 0
+      },
+      {
+        "Url": "Projects/images/Manim/CalendarMoon1.png",
+        "Name": "D&D Calendar - moon tracking",
+        "Type": 0
+      },
+      {
+        "Url": "Projects/images/Manim/CalendarMoon2.png",
+        "Name": "D&D Calendar - moon rendering",
+        "Type": 0
+      },
+      {
+        "Url": "Projects/images/Manim/Moon2.png",
+        "Name": "D&D Calendar - Edge case: full/new moon",
+        "Type": 0
+      },
+      
+      {
+        "Url": "Projects/videos/Manim/Lesson1.mp4",
+        "Name": "Introduction to programming",
+        "Type": 1
+      },
+      {
+        "Url": "Projects/videos/Manim/MessageBounceBug.mp4",
+        "Name": "Bouncing message bug",
+        "Type": 1
+      },
+      {
+        "Url": "Projects/videos/Manim/MonadNetworking.mp4",
+        "Name": "Networking & Monads",
+        "Type": 1
+      },
+      {
+        "Url": "Projects/videos/Manim/NeuralNetwork.mp4",
+        "Name": "What a neural network does, visually",
+        "Type": 1
+      },
+      {
+        "Url": "Projects/videos/Manim/PointInTriangle.mp4",
+        "Name": "Graphics programming - is a point in a triangle?",
+        "Type": 1
+      },
+      {
+        "Url": "Projects/videos/Manim/RefactoringConcepts1.mp4",
+        "Name": "Refactoring: why is it useful",
+        "Type": 1
+      },
+      {
+        "Url": "Projects/videos/Manim/RefactoringConcepts2.mp4",
+        "Name": "Extreme refactoring: Biological code",
+        "Type": 1
+      },
+      {
+        "Url": "Projects/videos/Manim/WeakInterfaceFactory.mp4",
+        "Name": "Code concepts: Holders and freezing",
+        "Type": 1
+      }
+    ],
     "SourceUrl": "",
     "Tags": [
       "Python",
       "Manim",
       "Educational Content",
-      "Animation"
+      "Animation",
+      "Top"
     ],
     "Category": "Learning / Teaching / Hobby"
+  },
+  {
+    "Title": "HackMUD",
+    "Description": "A game about brute-forcing puzzles using javascript/typescript",
+    "FullDescription": "HackMud is a game about hacking and learning to program in javascript/typescript,\nwhile learning to play the game after a community i was part of discovered it\ni learned to reverse-engineer QR codes, as the early part of tier 2 content\nrequired scanning a partially corrupted QR code, which my phone wouldn't do\ni also just wanted to automate the process",
+    "ImageUrl": "Projects/images/Hackmud_logo.png",
+    "VideoUrl": "https://youtu.be/uFRodoJXqyo",
+    "SourceUrl": "",
+    "Tags": [
+      "Typescript",
+      "Javascript",
+      "Educational Content",
+      "QR"
+    ],
+    "Category": "Learning / Teaching / Hobby"
+  }
+,
+  {
+    "Title": "Curriculum Vitae",
+    "Description": "I write my CV in LaTeX",
+    "FullDescription": "",
+    "ImageUrl": "Projects/images/Logos/LaTeX.webp",
+    "MediaItems": [
+
+      {
+        "Url": "Projects/images/Logos/LaTeX.png",
+        "Type": 0,
+        "Name": "2014"
+      },
+      {
+        "Url": "Projects/pdfs/CV_2014.pdf",
+        "Type": 2,
+        "Name": "2014"
+      },
+      {
+        "Url": "Projects/pdfs/CV_2023.pdf",
+        "Type": 2,
+        "Name": "2023"
+      },
+      {
+        "Url": "Projects/pdfs/CV_2024_en.pdf",
+        "Type": 2,
+        "Name": "2024 - english"
+      },
+      {
+        "Url": "Projects/pdfs/CV_2024_nl.pdf",
+        "Type": 2,
+        "Name": "2024 - dutch"
+      }
+      ],
+    "SourceUrl": "",
+    "Tags": [
+      "Typescript",
+      "Javascript",
+      "Educational Content",
+      "QR"
+    ],
+    "Category": "Learning / Teaching / Hobby",
+    "ImageFit": 1
   }
 ]

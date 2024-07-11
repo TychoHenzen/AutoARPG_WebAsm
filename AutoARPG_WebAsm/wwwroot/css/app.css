@@ -237,3 +237,74 @@ a, .btn-link {
     height: 300px; /* Should match the placeholder height */
     object-fit: cover;
 }
+.custom-carousel {
+    position: relative;
+}
+
+.custom-carousel .carousel-content {
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.custom-carousel .carousel-content img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-height: 400px; /* Adjust this value as needed */
+}
+
+.custom-carousel .ratio {
+    max-height: 400px; /* Should match the image max-height */
+}
+
+.custom-carousel .carousel-controls {
+    margin-top: 10px;
+}
+
+.custom-carousel .btn-outline-primary {
+    border-color: #007bff;
+    color: #007bff;
+}
+
+.custom-carousel .btn-outline-primary:hover:not(:disabled) {
+    background-color: #007bff;
+    color: white;
+}
+
+.custom-carousel .btn-outline-primary:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+.pdf-thumbnail, .pdf-preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: #f8f9fa;
+    color: #495057;
+}
+
+.pdf-thumbnail i, .pdf-preview i {
+    margin-bottom: 10px;
+}
+
+.pdf-thumbnail span {
+    font-size: 0.9em;
+    text-align: center;
+    max-width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.pdf-preview {
+    height: 300px;
+}
+
+.pdf-preview h4 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}

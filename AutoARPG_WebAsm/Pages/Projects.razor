@@ -51,94 +51,138 @@
             <h2 class="mt-4">@category.Key</h2>
             <div class="row">
                 @foreach (var project in category.Value.Where(p => FilterProject(p)))
+{
+    <div class="col-md-4 mb-4">
+        <div class="card h-100">
+            <div class="card-img-top project-image @(project.ImageFit == ImageFitType.Contain ? "contain" : "cover")">
+                @if (project.MediaItems.Any())
                 {
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100">
-                            <div class="card-img-top project-image">
-                                @if (!string.IsNullOrEmpty(project.ImageUrl))
-                                {
-                                    <img src="@project.ImageUrl" 
-                                         alt="@project.Title" 
-                                         @onload="() => HandleImageLoad(project.Title)" 
-                                         @onerror="() => HandleImageError(project.Title)" 
-                                         class="img-fluid @(loadedImages.Contains(project.Title) ? "" : "d-none")" />
-                                }
-                                <div class="project-image-placeholder @(loadedImages.Contains(project.Title) ? "d-none" : "")">
-                                    <i class="fas fa-code fa-3x"></i>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">@project.Title</h5>
-                                <p class="card-text">@project.Description</p>
-                                <button class="btn btn-primary" @onclick="() => OpenProjectDetails(project)">Learn More</button>
-                            </div>
-                            <div class="card-footer">
-                                @foreach (var tag in project.Tags.Take(3))
-                                {
-                                    <span class="badge bg-secondary me-1">@tag</span>
-                                }
-                                @if (project.Tags.Count > 3)
-                                {
-                                    <span class="badge bg-secondary">+@(project.Tags.Count - 3)</span>
-                                }
-                            </div>
+                    var firstMediaItem = project.MediaItems.First();
+                    if (firstMediaItem.Type == MediaType.Image)
+                    {
+                        <img src="@firstMediaItem.Url" 
+                             alt="@firstMediaItem.Name"
+                             @onload="() => HandleImageLoad(project.Title)" 
+                             @onerror="() => HandleImageError(project.Title)" 
+                             class="img-fluid @(loadedImages.Contains(project.Title) ? "" : "d-none")" />
+                    }
+                    else if (firstMediaItem.Type == MediaType.Pdf)
+                    {
+                        <div class="pdf-thumbnail">
+                            <i class="fas fa-file-pdf fa-3x"></i>
+                            <span>@firstMediaItem.Name</span>
                         </div>
+                    }
+                }
+                else
+                {
+                    <div class="project-image-placeholder @(loadedImages.Contains(project.Title) ? "d-none" : "")">
+                        <i class="fas fa-code fa-3x"></i>
                     </div>
                 }
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">@project.Title</h5>
+                <p class="card-text">@project.Description</p>
+                <button class="btn btn-primary" @onclick="() => OpenProjectDetails(project)">Learn More</button>
+                @if (!string.IsNullOrEmpty(project.SourceUrl))
+                {
+                    <a href="@project.SourceUrl" target="_blank" class="btn btn-secondary">Source</a>
+                }
+            </div>
+            <div class="card-footer">
+                @foreach (var tag in project.Tags.Take(3))
+                {
+                    <span class="badge bg-secondary me-1">@tag</span>
+                }
+                @if (project.Tags.Count > 3)
+                {
+                    <span class="badge bg-secondary">+@(project.Tags.Count - 3)</span>
+                }
+            </div>
+        </div>
+    </div>
+}
             </div>
         }
     }
 </div>
 @if (selectedProject != null)
 {
-<div class="modal" tabindex="-1" style="display:block; background-color: rgba(0,0,0,0.5);">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header bg-primary text-white">
-                <h5 class="modal-title fw-bold">@selectedProject.Title</h5>
-                <button type="button" class="btn-close btn-close-white" @onclick="CloseProjectDetails"></button>
-            </div>
-            <div class="modal-body">
-                @if (!string.IsNullOrEmpty(selectedProject.VideoUrl))
-                {
-                <div class="ratio ratio-16x9 mb-4">
-                    <iframe src="@selectedProject.VideoUrl" allowfullscreen></iframe>
+    <div class="modal" tabindex="-1" style="display:block; background-color: rgba(0,0,0,0.5);">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title fw-bold">@selectedProject.Title</h5>
+                    <button type="button" class="btn-close btn-close-white" @onclick="CloseProjectDetails"></button>
                 </div>
-                }
-                else if (!string.IsNullOrEmpty(selectedProject.ImageUrl))
-                {
-                <div class="mb-4 @(loadedImages.Contains(selectedProject.Title) ? "" : "d-none")">
-                    <img src="@selectedProject.ImageUrl"
-                         class="img-fluid w-100"
-                         alt="@selectedProject.Title"
-                         @onload="() => HandleImageLoad(selectedProject.Title)"
-                         @onerror="() => HandleImageError(selectedProject.Title)" />
-                </div>
-                }
-
-                <h6 class="text-muted mb-3">Project Description</h6>
-                <p>@selectedProject.FullDescription</p>
-
-                <div class="mb-2">
-                     @if (!string.IsNullOrEmpty(selectedProject.SourceUrl))
+                <div class="modal-body">
+                    @if (selectedProject.MediaItems.Any())
                     {
-                    <a href="@selectedProject.SourceUrl" target="_blank" class="btn btn-outline-primary me-2 ">
-                        <i class="fas fa-code-branch me-2 mb-2"></i>View Source
-                    </a>
+                        <div id="projectCarousel" class="custom-carousel mb-4">
+                            <div class="carousel-content">
+                                @{
+                                    var currentItem = selectedProject.MediaItems[currentMediaIndex];
+                                }
+                                @if (currentItem.Type == MediaType.Image)
+                                {
+                                    <img src="@currentItem.Url" class="d-block w-100" alt="@currentItem.Name">
+                                }
+                                else if (currentItem.Type == MediaType.Video)
+                                {
+                                    <div class="ratio ratio-16x9">
+                                        <iframe src="@currentItem.Url" allowfullscreen></iframe>
+                                    </div>
+                                }
+                                else if (currentItem.Type == MediaType.Pdf)
+                                {
+                                    <div class="pdf-preview">
+                                        <i class="fas fa-file-pdf fa-5x"></i>
+                                        <h4>@currentItem.Name</h4>
+                                        <a href="@currentItem.Url" target="_blank" class="btn btn-primary mt-2">
+                                            <i class="fas fa-download"></i> Download PDF
+                                        </a>
+                                    </div>
+                                }
+                            </div>
+                            @if (selectedProject.MediaItems.Count > 1)
+                            {
+                                <div class="carousel-controls mt-2 d-flex justify-content-between">
+                                    <button class="btn btn-outline-primary" @onclick="PreviousMedia" disabled="@(currentMediaIndex == 0)">
+                                        <i class="fas fa-chevron-left"></i> Previous
+                                    </button>
+                                    <span class="align-self-center text-center">@currentItem.Name<br/>@(currentMediaIndex + 1) / @selectedProject.MediaItems.Count</span>
+                                    <button class="btn btn-outline-primary" @onclick="NextMedia" disabled="@(currentMediaIndex == selectedProject.MediaItems.Count - 1)">
+                                        Next <i class="fas fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                            }
+                        </div>
                     }
-                    <button type="button" class="btn btn-primary" @onclick="CloseProjectDetails">Close</button>
+
+                    <h6 class="text-muted mb-3">Project Description</h6>
+                    <p>@selectedProject.FullDescription</p>
+
+                    <h6 class="text-muted mt-4 mb-3">Technologies Used</h6>
+                    <div class="mb-3">
+                        @foreach (var tag in selectedProject.Tags)
+                        {
+                            <span class="badge bg-secondary me-2 mb-2">@tag</span>
+                        }
+                    </div>
                 </div>
-            </div>
-            <div class="modal-footer mb-2">
-                <h6 class="text-muted mt-4 mb-3">Technologies Used</h6>
-                @foreach (var tag in selectedProject.Tags)
-                {
-                    <span class="badge bg-secondary me-2 mb-2">@tag</span>
-                }
+                <div class="modal-footer">
+                    @if (!string.IsNullOrEmpty(selectedProject.SourceUrl))
+                    {
+                        <a href="@selectedProject.SourceUrl" target="_blank" class="btn btn-outline-primary">
+                            <i class="fas fa-code-branch me-2"></i>View Source
+                        </a>
+                    }
+                    <button type="button" class="btn btn-secondary" @onclick="CloseProjectDetails">Close</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
 }
 @code {
     private Dictionary<string, List<ProjectInfo>> projectCategories = new Dictionary<string, List<ProjectInfo>>();
@@ -151,6 +195,7 @@
     private bool loadError = false;
     private bool showAllTags = false;
     private HashSet<string> loadedImages = new HashSet<string>();
+    private int currentMediaIndex = 0;
 
     protected override async Task OnInitializedAsync()
     {
@@ -235,6 +280,7 @@
     {
         selectedProject = project;
         // Reset the loadedImages state for the modal
+        currentMediaIndex = 0;
         loadedImages.Remove(project.Title);
     }
 
@@ -242,22 +288,23 @@
     {
         selectedProject = null;
     }
+    
 
-    private string GetImageUrl(string imageUrl)
+    private void PreviousMedia()
     {
-        return string.IsNullOrEmpty(imageUrl) ? "Images/placeholder.png" : imageUrl;
+        if (currentMediaIndex > 0)
+        {
+            currentMediaIndex--;
+        }
     }
 
-    public class ProjectInfo
+    private void NextMedia()
     {
-        public string Title { get; set; } = "";
-        public string Description { get; set; } = "";
-        public string FullDescription { get; set; } = "";
-        public string ImageUrl { get; set; } = "";
-        public string VideoUrl { get; set; } = "";
-        public string SourceUrl { get; set; } = "";
-        public List<string> Tags { get; set; } = new List<string>();
-        public string Category { get; set; } = "Uncategorized";
+        if (currentMediaIndex < selectedProject.MediaItems.Count - 1)
+        {
+            currentMediaIndex++;
+        }
     }
+
 }
 }
