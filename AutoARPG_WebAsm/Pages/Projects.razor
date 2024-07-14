@@ -50,7 +50,7 @@
         {
             <h2 class="mt-4">@category.Key</h2>
             <div class="row">
-                @foreach (var project in category.Value.Where(p => FilterProject(p)))
+                @foreach (var project in category.Value.Where(FilterProject).Where(info => info.Finished))
 {
     <div class="col-md-4 mb-4">
         <div class="card h-100">
@@ -185,7 +185,7 @@
     </div>
 }
 @code {
-    private Dictionary<string, List<ProjectInfo>> projectCategories = new Dictionary<string, List<ProjectInfo>>();
+    private Dictionary<string, List<ProjectInfo>> projectCategories = new();
     private List<string> topTags = new List<string>();
     private List<string> remainingTags = new List<string>();
     private HashSet<string> selectedTags = new HashSet<string>();
@@ -229,11 +229,11 @@
                 throw new Exception("Project data is null");
             }
 
-            projectCategories = projects
+            projectCategories = projects.Where(info => info.Finished)
                 .GroupBy(p => string.IsNullOrEmpty(p.Category) ? "Uncategorized" : p.Category)
                 .ToDictionary(g => g.Key, g => g.ToList());
 
-            var tagFrequency = projects
+            var tagFrequency = projects.Where(info => info.Finished)
                 .SelectMany(p => p.Tags)
                 .GroupBy(t => t)
                 .Select(g => new { Tag = g.Key, Count = g.Count() })

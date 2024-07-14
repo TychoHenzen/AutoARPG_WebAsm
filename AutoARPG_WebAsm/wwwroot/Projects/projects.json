@@ -1,185 +1,50 @@
 ﻿[
   {
-    "Title": "Code Viewer",
-    "Description": "A tool for viewing and analyzing code structures.",
-    "FullDescription": "The Code Viewer is a tool designed to help developers visualize and analyze complex code structures. It attempts to show dependencies between code of various categories and structure analysis, making it easier to understand and work with large codebases.",
-    "ImageUrl": "Projects/images/Technical/Codegraph.png",
-    "MediaItems": [],
-    "SourceUrl": "https://github.com/yourusername/code-viewer",
-    "Tags": [
-      "C#",
-      "Code Analysis",
-      "Developer Tools"
-    ],
-    "Category": "Learning / Teaching / Hobby"
-  },
-  {
-    "Title": "Evolution Simulations",
-    "Description": "Simulations of evolutionary processes in biological systems.",
-    "FullDescription": "This project involves creating detailed simulations that model evolutionary processes in biological systems. It includes genetic algorithms, population dynamics, and natural selection models, allowing users to observe and study evolutionary phenomena over time.",
-    "ImageUrl": "Projects/images/evolution-sim.jpg",
-    "MediaItems": [],
-    "SourceUrl": "https://github.com/yourusername/evolution-simulations",
-    "Tags": [
-      "Python",
-      "Simulation",
-      "Evolutionary Algorithms",
-      "Biology"
-    ],
-    "Category": "Biology/Artificial Intelligence"
-  },
-  {
-    "Title": "Neural Networks/AI",
-    "Description": "Implementation of various neural network architectures and AI algorithms.",
-    "FullDescription": "This comprehensive project encompasses the implementation of various neural network architectures and AI algorithms. It includes deep learning models, reinforcement learning systems, and natural language processing applications, showcasing a broad range of artificial intelligence techniques.",
-    "ImageUrl": "Projects/images/neural-networks.jpg",
-    "VideoUrl": "https://www.youtube.com/embed/V6sHMYuL9H4",
-    "SourceUrl": "https://github.com/yourusername/neural-networks-ai",
-    "Tags": [
-      "Python",
-      "TensorFlow",
-      "Machine Learning",
-      "AI"
-    ],
-    "Category": "Biology/Artificial Intelligence"
-  },
-  {
-    "Title": "AutoRPG",
-    "Description": "An an attempt to make a game using blazor",
-    "FullDescription": "AutoRPG is an innovative project that generates role-playing game content automatically. It includes procedural generation of maps, characters, quests, and storylines, creating unique gaming experiences each time it's run.",
-    "ImageUrl": "Projects/images/ARPG-thumbnail.png",
-    "VideoUrl": "Projects/videos/ARPG-preview.mp4",
-    "SourceUrl": "https://github.com/yourusername/auto-rpg",
-    "Tags": [
-      "C#",
-      "Blazor",
-      "Game Development",
-      "Procedural Generation"
-    ],
-    "Category": "Game Development"
-  },
-  {
-    "Title": "SIC-1 in VCB",
-    "Description": "Implementation of SIC-1 architecture in Visual Circuit Builder.",
-    "FullDescription": "This project involves implementing the SIC-1 computer architecture using Visual Circuit Builder (VCB). It demonstrates low-level computer architecture principles and provides an interactive way to understand how computers work at a fundamental level.",
-    "ImageUrl": "Projects/images/sic-1-vcb.jpg",
-    "VideoUrl": "",
-    "SourceUrl": "https://github.com/yourusername/sic-1-vcb",
-    "Tags": [
-      "VCB",
-      "Computer Architecture",
-      "Educational"
-    ],
-    "Category": "Learning / Teaching / Hobby"
-  },
-  {
-    "Title": "Night Night",
-    "Description": "A bedtime horror game.",
-    "FullDescription": "Night Night is a horror game designed explore a child's fear of the monster under their bed. It features 5 short chapters, each exploring a different fear, the game has been slowly taking shape over the past several years",
-    "ImageUrl": "Projects/images/night-night.jpg",
-    "VideoUrl": "",
-    "SourceUrl": "",
-    "Tags": [
-      "Unity",
-      "C#",
-      "Game Design",
-      "Horror"
-    ],
-    "Category": "Game Development"
-  },
-  {
-    "Title": "WireWorld",
-    "Description": "Implementation of the WireWorld cellular automaton.",
-    "FullDescription": "This project is an implementation of the WireWorld cellular automaton, demonstrating complex behavior emerging from simple rules. It provides an interactive environment to explore and experiment with cellular automata concepts.",
-    "ImageUrl": "Projects/images/wireworld.jpg",
-    "VideoUrl": "",
-    "SourceUrl": "https://github.com/yourusername/wireworld",
-    "Tags": [
-      "Java",
-      "Cellular Automaton",
-      "Simulation"
-    ],
-    "Category": "Game Development"
-  },
-  {
-    "Title": "Octree Galaxy",
-    "Description": "A galaxy simulation using octree data structures.",
-    "FullDescription": "Octree Galaxy is an ambitious project that simulates a galaxy using octree data structures for efficient spatial partitioning and rendering. It allows users to explore a vast, procedurally generated galaxy with realistic celestial mechanics. unfortunately never went much further than seeding the galaxy, rendering nearby stars via a shader, and generating some alien races with procedurally determined traits",
-    "ImageUrl": "Projects/images/octree-galaxy.jpg",
-    "VideoUrl": "",
-    "SourceUrl": "https://github.com/yourusername/octree-galaxy",
-    "Tags": [
-      "C++",
-      "OpenGL",
-      "Simulation",
-      "Astronomy"
-    ],
-    "Category": "Game Development"
-  },
-  {
-    "Title": "YANA (You Are Not Alone)",
-    "Description": "A multiplayer survival game.",
-    "FullDescription": "YANA (You Are Not Alone) is my entry to the first game jam i competed in, it was a 2d platformer built in plain java using a double buffered canvas technique i learned watching Notch work on his entry for another game jam. The game featured wireworld-based mechanics for opening doors, unfortunately the game was not very fun or playable, and had many issues when others tried to play it.",
-    "ImageUrl": "Projects/images/yana.jpg",
-    "VideoUrl": "https://www.youtube.com/watch?v=BSzW4X7YbLk",
-    "SourceUrl": "",
-    "Tags": [
-      "Java",
-      "Canvas",
-      "Wireworld",
-      "GameJam"
-    ],
-    "Category": "Game Development"
-  },
-  {
-    "Title": "Minecraft Mod",
-    "Description": "A custom mod for Minecraft.",
-    "FullDescription": "This Minecraft mod adds new features and mechanics to the game, including custom blocks, items, and gameplay elements. It demonstrates proficiency in Java programming and game modding techniques. The mod featured a way to convert rotten flesh into redstone, a wireworld-based signalling system somewhat similar to redstone, which interacted with a magnet-like block that responded to a coil of this redstone-like cable, in order to provide functionality similar to ProjectE, but with values based on the blocks' frequency within the surrounding worldgen",
-    "ImageUrl": "Projects/images/minecraft-mod.jpg",
-    "VideoUrl": "https://www.youtube.com/watch?v=s8ZXQ9tntBY",
-    "SourceUrl": "https://github.com/sirius-black9999/AMP-mc-magnet-chem",
-    "Tags": [
-      "Java",
-      "Minecraft",
-      "Modding"
-    ],
-    "Category": "Game Development"
-  },
-  {
-    "Title": "ProD Name Generator",
-    "Description": "Procedural name generator for RPG characters.",
-    "FullDescription": "The ProD Name Generator is a sophisticated tool that generates unique and thematic names for RPG characters using advanced procedural generation techniques. It can create names for various fantasy races and cultures.",
-    "ImageUrl": "Projects/images/prod-name-generator.jpg",
-    "VideoUrl": "",
-    "SourceUrl": "",
-    "Tags": [
-      "C#",
-      "Procedural Generation",
-      "RPG Tools"
-    ],
-    "Category": "Professional"
-  },
-  {
-    "Title": "ProD Map Generators",
-    "Description": "Procedural map generation tools for RPGs.",
-    "FullDescription": "This project includes a suite of tools for generating procedural maps for role-playing games, including dungeons, cities, and wilderness areas. It uses advanced algorithms to create realistic and varied environments.",
-    "ImageUrl": "Projects/images/prod-map-generators.jpg",
-    "VideoUrl": "",
-    "SourceUrl": "",
-    "Tags": [
-      "C#",
-      "Unity",
-      "Procedural Generation",
-      "RPG Tools"
-    ],
-    "Category": "Professional"
-  },
-  {
     "Title": "ProDnD",
-    "Description": "A digital toolset for Dungeons & Dragons.",
-    "FullDescription": "ProDnD is a comprehensive digital toolset for Dungeons & Dragons, including character creation, campaign management, and virtual tabletop features. It aims to enhance the D&D experience for both players and dungeon masters.",
-    "ImageUrl": "Projects/images/prodnD.jpg",
-    "VideoUrl": "",
+    "Description": "A map generator for Dungeons & Dragons.",
+    "FullDescription": "ProDnD is a procedural map generator for Dungeons & Dragons, It aims to enhance the D&D experience for both players and dungeon masters.",
+    "MediaItems": [
+      {
+        "Url": "Projects/images/Logos/Graylake.png",
+        "Name": "Gray lake studios",
+        "Type": 0
+      },
+      {
+        "Url": "Projects/images/Work/ProDnD_Splash_1280x800.png",
+        "Name": "Gray lake studios",
+        "Type": 0
+      },
+      {
+        "Url": "Projects/images/Work/PNG_InAppStore_StoreItemScreenshots__2_RemoveBanners.png",
+        "Name": "Perlin noise generator",
+        "Type": 0
+      },
+      {
+        "Url": "Projects/images/Work/PNG_InAppStore_StoreItemScreenshots__7_TowerGenerator.png",
+        "Name": "Tower generator",
+        "Type": 0
+      },
+      {
+        "Url": "Projects/images/Work/PNG_InAppStore_StoreItemScreenshots__6_KeepGenerator.png",
+        "Name": "Keep generator",
+        "Type": 0
+      },
+      {
+        "Url": "Projects/images/Work/PNG_InAppStore_StoreItemScreenshots__8_MazeGardensGenerator.png",
+        "Name": "Maze generator",
+        "Type": 0
+      },
+      {
+        "Url": "Projects/images/Work/ProDnD_Map1.png",
+        "Name": "a user-made map, shared via a system for uploading to reddit",
+        "Type": 0
+      },
+      {
+        "Url": "Projects/images/Work/ProDnD_Map2.png",
+        "Name": "the QR code could be used to load these maps using any qr code reader",
+        "Type": 0
+      }
+    ],
     "SourceUrl": "",
     "Tags": [
       "C#",
@@ -187,550 +52,128 @@
       "D&D",
       "RPG Tools"
     ],
-    "Category": "Professional"
+    "Category": "Professional",
+    "Finished": true
   },
   {
-    "Title": "Gust",
-    "Description": "A mobile game about wind and flight.",
-    "FullDescription": "Gust is a visually stunning mobile game that explores the mechanics of wind and flight. It features intuitive touch controls and challenging gameplay, set in a beautifully rendered world affected by wind dynamics.",
-    "ImageUrl": "Projects/images/gust.jpg",
-    "VideoUrl": "",
-    "SourceUrl": "",
-    "Tags": [
-      "Unity",
-      "C#",
-      "Mobile Game",
-      "Physics Simulation"
+    "Title": "Code Viewer",
+    "Description": "A tool for viewing and analyzing code structures.",
+    "FullDescription": "The Code Viewer is a tool designed to help developers visualize and analyze complex code structures. It attempts to show dependencies between code of various categories and structure analysis, making it easier to understand and work with large codebases. so far, although i have managed to analyze C# projects and create a theoretical project graph, i have not yet managed to effectively draw this graph, though v2 was already a significant improvement",
+    "MediaItems": [
+      {
+        "Url": "Projects/images/Technical/CodeGraphConcept.png",
+        "Name": "the conceptual goal of this project",
+        "Type": 0
+      },
+      {
+        "Url": "Projects/images/Technical/Codegraph.png",
+        "Name": "Code graph v1 render",
+        "Type": 0
+      }
     ],
-    "Category": "School Projects"
-  },
-  {
-    "Title": "Splash Paint",
-    "Description": "An interactive painting application for swimming pools.",
-    "FullDescription": "Splash Paint is an innovative project that turns a swimming pool into an interactive canvas. Using advanced computer vision techniques, it detects swimmers' movements and translates them into colorful visual effects on the water surface.",
-    "ImageUrl": "Projects/images/splash-paint.jpg",
-    "VideoUrl": "",
-    "SourceUrl": "",
-    "Tags": [
-      "Computer Vision",
-      "Interactive Art",
-      "C++"
-    ],
-    "Category": "School Projects"
-  },
-  {
-    "Title": "Environment Survival",
-    "Description": "An educational game about environmental challenges.",
-    "FullDescription": "Environment Survival is an educational game that teaches players about environmental challenges and sustainability. Players must make decisions that affect the ecosystem, learning about the long-term consequences of their actions.",
-    "ImageUrl": "Projects/images/environment-survival.jpg",
-    "VideoUrl": "",
-    "SourceUrl": "",
-    "Tags": [
-      "Unity",
-      "Educational Game",
-      "Environmental Science"
-    ],
-    "Category": "School Projects"
-  },
-  {
-    "Title": "Evil Clutches",
-    "Description": "A game project developed during school.",
-    "FullDescription": "Evil Clutches is a game project developed as part of a school assignment. It showcases game design principles, storytelling, and basic game development skills.",
-    "ImageUrl": "Projects/images/evil-clutches.jpg",
-    "VideoUrl": "",
-    "SourceUrl": "",
-    "Tags": [
-      "Game Development",
-      "School Project"
-    ],
-    "Category": "School Projects"
-  },
-  {
-    "Title": "Disk Sorter",
-    "Description": "An automated system for sorting disks by color.",
-    "FullDescription": "The Disk Sorter is a project that uses robotics and computer vision to automatically sort disks by color. It involves programming in assembly and demonstrates skills in automation and low-level system control.",
-    "ImageUrl": "Projects/images/disk-sorter.jpg",
-    "VideoUrl": "",
-    "SourceUrl": "",
-    "Tags": [
-      "Robotics",
-      "Assembly",
-      "Computer Vision"
-    ],
-    "Category": "School projects"
-  },
-  {
-    "Title": "VRee Map Editor",
-    "Description": "A custom map editor for VR environments.",
-    "FullDescription": "The VRee Map Editor is a tool developed for creating and editing virtual reality environments. It provides an intuitive interface for designing immersive VR spaces, supporting the development of VR applications and games, this was mostly just an idea that never really got off the ground",
-    "ImageUrl": "Projects/images/VRee_editor.png",
-    "VideoUrl": "https://www.youtube.com/embed/Rs4RFfgVtGs",
-    "SourceUrl": "",
-    "Tags": [
-      "VR",
-      "Unity",
-      "Level Design",
-      "Concept"
-    ],
-    "Category": "Conceptual"
-  },
-  {
-    "Title": "VRee Network Metrics",
-    "Description": "A system for measuring and optimizing VR network performance.",
-    "FullDescription": "VRee Network Metrics is a sophisticated system for measuring and optimizing network performance in virtual reality applications. It includes tools for monitoring latency, packet loss, and other critical metrics to ensure smooth VR experiences.",
-    "ImageUrl": "Projects/images/VRee_logo.png",
-    "VideoUrl": "",
-    "SourceUrl": "",
-    "Tags": [
-      "Networking",
-      "VR",
-      "Performance Optimization"
-    ],
-    "Category": "Professional"
-  },
-  {
-    "Title": "VRee Dialogue System",
-    "Description": "An advanced dialogue system for VR applications.",
-    "FullDescription": "The VRee Dialogue System is a comprehensive solution for creating interactive dialogues in virtual reality applications. It supports branching conversations, character lip-syncing, and integration with VR gestures and interactions.",
-    "ImageUrl": "Projects/images/VRee_logo.png",
-    "VideoUrl": "",
-    "SourceUrl": "",
-    "Tags": [
-      "VR",
-      "Dialogue Systems",
-      "Unity"
-    ],
-    "Category": "Professional"
-  },
-  {
-    "title": "VRee SDK",
-    "description": "A VR multiplayer framework",
-    "fullDescription": "VReeSDK is a platform on unity we built in order to host multiplayer full-body VR experiences",
-    "imageUrl": "Projects/images/VRee-thumbnail.jpg",
-    "videoUrl": "https://www.youtube.com/embed/gloM2X74D1s",
-    "sourceUrl": "",
-    "tags": [
-      "C++",
-      "Unity",
-      "VR",
-      "C#"
-    ],
-    "Category": "Professional"
-  },
-  {
-    "Title": "VRee SDK3",
-    "Description": "The third iteration of the VRee Software Development Kit.",
-    "FullDescription": "VRee SDK3 was the latest version of the VRee Software Development Kit, providing developers with powerful tools and APIs for creating immersive VR experiences. it was made as a complete re-write of the original, but unfortunately never made it to production.",
-    "ImageUrl": "Projects/images/VRee_logo.png",
-    "VideoUrl": "",
-    "SourceUrl": "",
-    "Tags": [
-      "VR",
-      "SDK",
-      "C++"
-    ],
-    "Category": "Professional"
-  },
-  {
-    "Title": "VRee Offline Licensing",
-    "Description": "A system for managing software licenses in offline VR environments.",
-    "FullDescription": "VRee Offline Licensing is a robust system for managing software licenses in virtual reality applications, especially in offline environments. It ensures secure and flexible licensing options for VR software products.",
-    "ImageUrl": "Projects/images/vree-offline-licensing.jpg",
-    "VideoUrl": "",
-    "SourceUrl": "",
-    "Tags": [
-      "Licensing",
-      "Security",
-      "VR"
-    ],
-    "Category": "Professional"
-  },
-  {
-    "Title": "VRee License Server",
-    "Description": "A centralized server for managing VRee software licenses.",
-    "FullDescription": "The VRee License Server is a centralized system for managing and distributing software licenses for VRee products. It provides secure authentication, usage tracking, and flexible licensing models for VR applications.",
-    "ImageUrl": "Projects/images/vree-license-server.jpg",
-    "VideoUrl": "",
-    "SourceUrl": "",
-    "Tags": [
-      "Server Development",
-      "Licensing",
-      "Security"
-    ],
-    "Category": "Professional"
-  },
-  {
-    "Title": "VRee BodyModel",
-    "Description": "A sophisticated body tracking and modeling system for VR.",
-    "FullDescription": "VRee BodyModel is an advanced system for tracking and modeling human bodies in virtual reality. It provides high-fidelity skeletal tracking from multiple sources (adapters), enabling natural and immersive VR experiences with full-body presence.",
-    "ImageUrl": "Projects/images/vree-bodymodel.jpg",
-    "VideoUrl": "",
-    "SourceUrl": "",
-    "Tags": [
-      "VR",
-      "Motion Tracking",
-      "Computer Vision"
-    ],
-    "Category": "Professional"
-  },
-  {
-    "Title": "VRisB",
-    "Description": "A VR-based sports simulation game.",
-    "FullDescription": "VRisB is an innovative virtual reality sports simulation game. It focuses on replicating the dynamics of frisbee in a virtual environment, providing players with an immersive and physically engaging experience. The project showcases advanced physics simulations and VR interaction techniques.",
-    "ImageUrl": "Projects/images/vrisb.jpg",
-    "VideoUrl": "",
-    "SourceUrl": "",
-    "Tags": [
-      "VR",
-      "Sports Simulation",
-      "Unity",
-      "Physics"
-    ],
-    "Category": "Professional"
-  },
-  {
-    "Title": "VRee SDK2",
-    "Description": "The second iteration of the VRee Software Development Kit.",
-    "FullDescription": "VRee SDK2 was a significant upgrade to the original VRee SDK, introducing new features and improvements for VR development. It included enhanced motion tracking capabilities, realtime video streaming, a better licensing workflow with offline licensing support and improved tools for creating multiplayer VR experiences.",
-    "ImageUrl": "Projects/images/vree-sdk2.jpg",
-    "VideoUrl": "",
-    "SourceUrl": "",
-    "Tags": [
-      "VR",
-      "SDK",
-      "C++",
-      "Unity"
-    ],
-    "Category": "Professional"
-  },
-  {
-    "Title": "Micro Transform",
-    "Description": "A 64-bit transform system for precise VR positioning.",
-    "FullDescription": "Micro Transform is a way to represent a full transform in a single 64-bit number, designed for positioning of body data in virtual reality environments. It allows for accurate representation of position and rotation within 2 meters of a parent object, allowing for highly compressed transfer of motion capture data and rigged models in general, Made as a working prototype, but never actually implemented",
-    "ImageUrl": "Projects/images/micro-transform.jpg",
-    "VideoUrl": "../../../Images/Technical/ShortTransform.mp4",
-    "SourceUrl": "",
-    "Tags": [
-      "VR",
-      "3D Mathematics",
-      "Optimization",
-      "Concept"
-    ],
-    "Category": "Concept"
-  },
-  {
-    "Title": "Virtual Oscilloscope",
-    "Description": "A real-time audio visualization tool.",
-    "FullDescription": "The Virtual Oscilloscope is a tool i built in order to try to render animations like the oscilloscope music shown in the video.",
-    "ImageUrl": "Projects/images/Oscilloscope-thumbnail.png",
-    "VideoUrl": "https://www.youtube.com/embed/FEzLCYlvV8w",
-    "SourceUrl": "",
-    "Tags": [
-      "Audio Processing",
-      "Visualization",
-      "Real-time Systems"
-    ],
-    "Category": "Learning / Teaching / Hobby"
-  },
-  {
-    "Title": "Distant Worlds (Elite Dangerous)",
-    "Description": "An algorithm for optimizing travel routes in Elite Dangerous.",
-    "FullDescription": "This project tackles the Traveling Salesman problem in the context of the game Elite Dangerous. It develops an efficient algorithm to optimize travel routes between star systems, enhancing gameplay and exploration strategies for players.",
-    "ImageUrl": "Projects/images/distant-worlds.jpg",
-    "VideoUrl": "",
-    "SourceUrl": "",
-    "Tags": [
-      "Algorithms",
-      "Game Enhancement",
-      "Optimization"
-    ],
-    "Category": "Learning / Teaching / Hobby"
-  },
-  {
-    "Title": "Stellar Cartography",
-    "Description": "A tool for visualizing and analyzing stellar catalogues.",
-    "FullDescription": "The Stellar Cartography project is a tool for rendering and analyzing stellar catalogues. It provides stunning visualizations of galactic structures, unfortunately never went much further than that.",
-    "ImageUrl": "Projects/images/stellar-cartography.jpg",
-    "VideoUrl": "",
-    "SourceUrl": "",
-    "Tags": [
-      "Astronomy",
-      "Data Visualization",
-      "Scientific Computing"
-    ],
-    "Category": "Learning / Teaching / Hobby"
-  },
-  {
-    "Title": "COVAI",
-    "Description": "Connecting the logging system of Elite: Dangerous to ChatGPT",
-    "FullDescription": "i fed the captain's log of Elite: Dangerous as an input for ChatGPT playground to let it provide commentary on gameplay events,\nthen fed it's responses into google Text to speech to act as an AI-driven replacement for the game's cockpit voice assistent",
-    "ImageUrl": "Projects/images/stellar-cartography.jpg",
-    "VideoUrl": "",
-    "SourceUrl": "",
-    "Tags": [
-      "Astronomy",
-      "Data Visualization",
-      "Scientific Computing"
-    ],
-    "Category": "Learning / Teaching / Hobby"
-  },
-  {
-    "Title": "Binding of Isaac Modding",
-    "Description": "Reverse-engineering and modding tools for The Binding of Isaac.",
-    "FullDescription": "This project involved reverse-engineering The Binding of Isaac game to decipher its map file format. It led to the development of modding tools that allow players to create custom content for the game, significantly expanding its modding community.",
-    "ImageUrl": "Projects/images/isaac-modding.jpg",
-    "VideoUrl": "",
-    "SourceUrl": "",
-    "Tags": [
-      "Reverse Engineering",
-      "Game Modding",
-      "File Formats"
-    ],
-    "Category": "Learning / Teaching / Hobby"
-  },
-  {
-    "Title": "Mouse Tracking Analytics",
-    "Description": "A background process for analyzing mouse cursor movements.",
-    "FullDescription": "This project developed a sophisticated background process for tracking and analyzing mouse cursor movements. It provides insights into user behavior and interaction patterns, useful for UI/UX research and productivity analysis.",
-    "ImageUrl": "Projects/images/mouse-tracking.jpg",
-    "VideoUrl": "",
-    "SourceUrl": "",
-    "Tags": [
-      "User Analytics",
-      "Background Processing",
-      "UI/UX"
-    ],
-    "Category": "Learning / Teaching / Hobby"
-  },
-  {
-    "Title": "x86 Assembly Art",
-    "Description": "A drawing program that generates x86 assembly code.",
-    "FullDescription": "This unique project created a drawing program that saves ASCII art as x86 assembly code. It combines artistic expression with low-level programming, resulting in executable art pieces that blur the line between code and visual design.",
-    "ImageUrl": "Projects/images/x86-art.jpg",
-    "VideoUrl": "",
-    "SourceUrl": "",
-    "Tags": [
-      "Assembly",
-      "Creative Coding",
-      "ASCII Art"
-    ],
-    "Category": "Learning / Teaching / Hobby"
-  },
-  {
-    "Title": "Voxel Engine Prototype",
-    "Description": "A voxel-based rendering engine using raymarching techniques.",
-    "FullDescription": "This project developed a prototype voxel engine using signed-distance-field raymarching techniques. It explores efficient ways to render large, detailed voxel environments, pushing the boundaries of real-time voxel graphics.",
-    "ImageUrl": "Projects/images/voxel-engine.jpg",
-    "VideoUrl": "",
-    "SourceUrl": "",
-    "Tags": [
-      "Graphics Programming",
-      "Voxels",
-      "Raymarching"
-    ],
-    "Category": "Learning / Teaching / Hobby"
-  },
-  {
-    "Title": "8-Dimensional Bezier Curves",
-    "Description": "Exploration of high-dimensional curve interpolation.",
-    "FullDescription": "This ambitious project delves into the realm of 8-dimensional bezier curves, exploring advanced mathematical concepts in computer graphics. It includes implementations for interpolating across these high-dimensional surfaces and sampling from complex geometric structures.",
-    "ImageUrl": "Projects/images/8d-bezier.jpg",
-    "VideoUrl": "",
-    "SourceUrl": "",
-    "Tags": [
-      "Computer Graphics",
-      "Mathematics",
-      "High-Dimensional Geometry"
-    ],
-    "Category": "Game Development"
-  },
-  {
-    "Title": "8-bit CPU in Cellular Automaton",
-    "Description": "Implementation of an 8-bit CPU within a cellular automaton framework.",
-    "FullDescription": "This project aims to build a functional 8-bit CPU inside a cellular automaton environment. It explores the intersection of low-level computer architecture and emergent systems, demonstrating how complex computational structures can arise from simple rules.",
-    "ImageUrl": "Projects/images/8bit-cpu-automaton.jpg",
-    "VideoUrl": "",
-    "SourceUrl": "",
-    "Tags": [
-      "Cellular Automaton",
-      "Computer Architecture",
-      "Theoretical Computing"
-    ],
-    "Category": "Learning / Teaching / Hobby"
-  },
-  {
-    "Title": "Fruit Grading System",
-    "Description": "C#/Blazor/WPF frontend with C++ backend for fruit grading.",
-    "FullDescription": "Developed a comprehensive fruit grading system featuring a C#/Blazor/WPF frontend integrated with C++ backend components. This project involved implementing web apps for system calibration, addressing localization issues, and contributing to code modernization and improved testing methodologies.",
-    "ImageUrl": "Projects/images/fruit-grading-system.jpg",
-    "VideoUrl": "",
-    "SourceUrl": "",
     "Tags": [
       "C#",
-      "Blazor",
-      "WPF",
-      "C++",
-      "Web Development",
-      "Industrial Automation"
+      "Code Analysis",
+      "Developer Tools"
     ],
-    "Category": "Professional"
+    "Category": "Learning / Teaching / Hobby",
+    "Finished": true
   },
   {
-    "Title": "VRee Multiplayer VR Platform",
-    "Description": "A comprehensive multiplayer virtual reality platform.",
-    "FullDescription": "Developed and maintained C++ and C# code for a sophisticated multiplayer VR platform. Key achievements include designing and implementing network architecture using UDP/TCP protocols, creating an algorithm to package whole-body motion tracking into a single UDP fragment, and building a secure licensing system with online verification via REST API and RSA/AES encryption. The project also involved implementing tamper-proofing using blockchain hashing techniques.",
-    "ImageUrl": "Projects/images/vree-platform.jpg",
-    "VideoUrl": "",
+    "Title": "Evolution Simulations",
+    "Description": "Simulations of evolutionary processes as learning algorithms",
+    "FullDescription": "This project involves creating detailed simulations that model evolutionary processes in biological systems. It includes genetic algorithms, population dynamics, and natural selection models, allowing users to observe and study evolutionary phenomena over time. some versions as simple as a string of numbers with random mutations, others so complex as to emulate the process of protein transcription and splicing, although obviously that still ignores the subtleties of epigenetics, promotion/suppression and signalling",
+    "MediaItems": [
+      {
+        "Url": "Projects/images/Evolution/image000603.png",
+        "Name": "A project i did which performed transcription according to highly dumbed down mechanisms based on biology, translating proteins into features",
+        "Type": 0
+      },
+      {
+        "Url": "Projects/images/Evolution/ProteinLanguage2.png",
+        "Name": "For this project, i made a symbolic representation of the amino acids as a sort of 'language'",
+        "Type": 0
+      },
+      {
+        "Url": "Projects/images/Evolution/ProteinLanguage.png",
+        "Name": "how this 'alphabet' maps onto actual amino acids",
+        "Type": 0
+      },
+      {
+        "Url": "Projects/images/Evolution/Sim.png",
+        "Name": "The block on the right are the different modules a creature had available and the amino acids that formed them, the top-left block is it's brain",
+        "Type": 0
+      },
+      {
+        "Url": "Projects/images/Evolution/Screenshot 2016-03-12 15.15.24.png",
+        "Name": "These green blocks are food pellets the creatures were supposed to chase in order to stave off hunger that got worse with age",
+        "Type": 0
+      },
+      {
+        "Url": "Projects/images/Evolution/Reward.png",
+        "Name": "this strategy caused some small amount of learning, but ultimately this project didn't really go anywhere",
+        "Type": 0
+      },
+      {
+        "Url": "Projects/images/Evolution/Map.png",
+        "Name": "a very simplistic form of evolutionary algorithm, demonstrating that improvement could occur even under very bad conditions",
+        "Type": 0
+      },
+      {
+        "Url": "Projects/images/Evolution/Screenshot (98).png",
+        "Name": "another attempt to build an evolutionary algorithm, this time featuring custom rendering code",
+        "Type": 0
+      },
+      {
+        "Url": "Projects/images/Evolution/Screenshot (110).png",
+        "Name": "The left represents nodes/muscles representing the creature's body",
+        "Type": 0
+      },
+      {
+        "Url": "Projects/images/Evolution/Screenshot (106).png",
+        "Name": "The right side represents the creature's brain",
+        "Type": 0
+      },
+      {
+        "Url": "Projects/images/Evolution/Screenshot (128).png",
+        "Name": "I also experimented with a sort of 'axonal searching'",
+        "Type": 0
+      },
+      {
+        "Url": "Projects/images/Evolution/Screenshot (125).png",
+        "Name": "But ultimately this was another failed project",
+        "Type": 0
+      },
+      {
+        "Url": "Projects/videos/2018-07-27_12-53-36.mp4",
+        "Name": "Yet another attempt, this time in 2d and more visual work",
+        "Type": 1
+      },
+      {
+        "Url": "Projects/videos/DragNodeSim.mp4",
+        "Name": "i can't remember if the red trails acted as pheromone trails",
+        "Type": 1
+      }],
     "SourceUrl": "",
     "Tags": [
-      "C++",
-      "C#",
-      "VR",
-      "Networking",
-      "Encryption",
-      "Blockchain"
+      "Python",
+      "Simulation",
+      "Evolutionary Algorithms",
+      "Biology"
     ],
-    "Category": "Professional"
-  },
-  {
-    "Title": "ProDnD Mobile App",
-    "Description": "A mobile app for generating procedural battle maps for Dungeons & Dragons.",
-    "FullDescription": "Contributed to the development of ProDnD, a mobile application available on Google Play Store. The app is designed to generate random, thematic battlefields for Dungeons & Dragons. Key contributions included optimizing performance for map generation, developing a service for sharing maps using steganography and QR codes, porting the app to iOS, and building a system for procedurally generating random names. The project was primarily developed using C# in Unity.",
-    "ImageUrl": "Projects/images/prodnD-mobile.jpg",
-    "VideoUrl": "",
-    "SourceUrl": "",
-    "Tags": [
-      "C#",
-      "Unity",
-      "Mobile Development",
-      "Procedural Generation",
-      "iOS",
-      "Android"
-    ],
-    "Category": "Professional"
-  },
-  {
-    "Title": "Yumble - Snap the Family",
-    "Description": "An interactive AR experience using Kinect camera.",
-    "FullDescription": "Developed as part of a graduation project, Yumble - Snap the Family focused on creating an interactive experience where a virtual character could interact with a real player via a Kinect 3D camera. The project involved significant applied research, including aligning different camera feeds, rapid OpenGL camera feed processing, refining asset bundle workflows, and developing a pathfinding algorithm using Unity's Mecanim package in C#.",
-    "ImageUrl": "Projects/images/yumble-snap-family.jpg",
-    "VideoUrl": "",
-    "SourceUrl": "",
-    "Tags": [
-      "Unity",
-      "C#",
-      "Kinect",
-      "AR",
-      "OpenGL",
-      "Pathfinding"
-    ],
-    "Category": "School projects"
-  },
-  {
-    "Title": "Auto-ARPG Editor",
-    "Description": "A Blazor-based editor for JSON files in an Auto-ARPG game.",
-    "FullDescription": "Developed a Blazor-based editor for managing JSON files in an Auto-ARPG (Automatically generated Action Role-Playing Game) project. This tool streamlines the process of creating and editing game content. The project was built using C# 10/.NET 6 and utilized NuGet packages such as GdkSharp and ImageSharp.",
-    "ImageUrl": "",
-    "VideoUrl": "",
-    "SourceUrl": "https://github.com/sirius-black9999/AutoARPG_Unity",
-    "Tags": [
-      "C#",
-      "Blazor",
-      ".NET 6",
-      "JSON",
-      "Game Development Tools"
-    ],
-    "Category": "Game Development"
-  },
-  {
-    "Title": "Personal Website and Webshop Hosting",
-    "Description": "Self-hosted website and partner's webshop using various web technologies.",
-    "FullDescription": "Maintained a long-term personal website project, working with HTML/CSS, Bootstrap, PHP, and JEE.\nCurrently hosting a personal website (this one) on microsoft azure\nPreviously hosted on a local laptop alongside a webshop (using PrestaShop) for a partner on a self-managed Apache HTTP server.\nThat setup included FTP, Git, and MySQL database servers.\nThe project also involved configuring DNS records, SSL certificates, and implementing email security protocols (DMARC, SPF, DKIM) for a custom email address.\n\n Current configuration cannibalized the ARPG repo in order to reuse the github actions i had set up for it in order to deploy the C#/Blazor application to microsoft Azure as a static website",
-    "ImageUrl": "Projects/images/personal-website-hosting.jpg",
-    "VideoUrl": "",
-    "SourceUrl": "https://github.com/sirius-black9999/AutoARPG_WebAsm",
-    "Tags": [
-      "Web Hosting",
-      "Apache",
-      "MySQL",
-      "DNS",
-      "SSL",
-      "Email Security",
-      "Blazor"
-    ],
-    "Category": "Learning / Teaching / Hobby"
-  },
-  {
-    "Title": "AI and Genetic Algorithms",
-    "Description": "Various Projects exploring AI, gradient descent, and genetic algorithms.",
-    "FullDescription": "A collection of Projects focused on artificial intelligence, gradient descent techniques, and genetic algorithms. These Projects, implemented in both C# and C++, explore various aspects of machine learning and evolutionary computation.",
-    "ImageUrl": "Projects/images/ai-genetic-algorithms.jpg",
-    "VideoUrl": "",
-    "SourceUrl": "",
-    "Tags": [
-      "AI",
-      "Machine Learning",
-      "Genetic Algorithms",
-      "C#",
-      "C++"
-    ],
-    "Category": "Learning / Teaching / Hobby"
-  },
-  {
-    "Title": "Advanced Shader Projects",
-    "Description": "Diverse shader Projects using GLSL, HLSL, and CG.",
-    "FullDescription": "A series of shader Projects developed using GLSL, HLSL, and CG, working with both OpenGL and DirectX.\nThese Projects often explore unconventional applications of shaders, including compute shaders and ray marching techniques.",
-    "ImageUrl": "Projects/images/advanced-shaders.jpg",
-    "VideoUrl": "",
-    "SourceUrl": "",
-    "Tags": [
-      "GLSL",
-      "HLSL",
-      "CG",
-      "OpenGL",
-      "DirectX",
-      "Compute Shaders",
-      "Ray Marching"
-    ],
-    "Category": "Learning / Teaching / Hobby"
-  },
-  {
-    "Title": "Audio Processing Projects",
-    "Description": "Various audio-related Projects including an oscilloscope, dynamic music system and MIDI tracker.",
-    "FullDescription": "A collection of audio processing Projects primarily developed in C#. Notable Projects include a custom oscilloscope for audio visualization, a MIDI tracker for music composition, and systems for dynamic audio generation and manipulation.",
-    "ImageUrl": "Projects/images/audio-Projects.jpg",
-    "VideoUrl": "",
-    "SourceUrl": "",
-    "Tags": [
-      "C#",
-      "Audio Processing",
-      "MIDI",
-      "Digital Signal Processing"
-    ],
-    "Category": "Learning / Teaching / Hobby"
-  },
-  {
-    "Title": "WireWorld Cellular Automaton",
-    "Description": "Implementations of the WireWorld cellular automaton in various languages.",
-    "FullDescription": "Multiple Projects exploring the WireWorld cellular automaton,\nattempting to transform its rules into interesting game mechanics.\nImplementations have been done in Java, C#, and even as HLSL shaders,\nshowcasing the versatility of this concept across different programming paradigms.",
-    "ImageUrl": "Projects/images/wireworld-Projects.jpg",
-    "VideoUrl": "",
-    "SourceUrl": "",
-    "Tags": [
-      "Cellular Automaton",
-      "Java",
-      "C#",
-      "HLSL",
-      "Game Mechanics"
-    ],
-    "Category": "Game Development"
+    "Category": "Biology/Artificial Intelligence",
+    "Finished": true
   },
   {
     "Title": "Manim Animations",
     "Description": "Educational animations created using the Manim library in Python.",
     "FullDescription": "A series of educational animations developed using the Manim library in Python. These animations are designed to explain complex concepts visually, making them ideal for educational content or presentations.",
-    "ImageUrl": "Projects/images/Manim_logo.png",
     "MediaItems": [
+      {
+        "Url": "Projects/images/Logos/Manim.png",
+        "Name": "Manim logo",
+        "Type": 0
+      },
       {
         "Url": "Projects/videos/Manim/CalendarAnim.mp4",
         "Name": "D&D Calendar",
@@ -756,7 +199,7 @@
         "Name": "D&D Calendar - Edge case: full/new moon",
         "Type": 0
       },
-      
+
       {
         "Url": "Projects/videos/Manim/Lesson1.mp4",
         "Name": "Introduction to programming",
@@ -806,27 +249,12 @@
       "Animation",
       "Top"
     ],
-    "Category": "Learning / Teaching / Hobby"
+    "Category": "Learning / Teaching / Hobby",
+    "Finished": true
   },
   {
-    "Title": "HackMUD",
-    "Description": "A game about brute-forcing puzzles using javascript/typescript",
-    "FullDescription": "HackMud is a game about hacking and learning to program in javascript/typescript,\nwhile learning to play the game after a community i was part of discovered it\ni learned to reverse-engineer QR codes, as the early part of tier 2 content\nrequired scanning a partially corrupted QR code, which my phone wouldn't do\ni also just wanted to automate the process",
-    "ImageUrl": "Projects/images/Hackmud_logo.png",
-    "VideoUrl": "https://youtu.be/uFRodoJXqyo",
-    "SourceUrl": "",
-    "Tags": [
-      "Typescript",
-      "Javascript",
-      "Educational Content",
-      "QR"
-    ],
-    "Category": "Learning / Teaching / Hobby"
-  }
-,
-  {
     "Title": "Curriculum Vitae",
-    "Description": "I write my CV in LaTeX",
+    "Description": "I write my CV in LaTeX, the latest version generates that LaTeX from python",
     "FullDescription": "",
     "ImageUrl": "Projects/images/Logos/LaTeX.webp",
     "MediaItems": [
@@ -856,7 +284,7 @@
         "Type": 2,
         "Name": "2024 - dutch"
       }
-      ],
+    ],
     "SourceUrl": "",
     "Tags": [
       "Typescript",
@@ -865,6 +293,750 @@
       "QR"
     ],
     "Category": "Learning / Teaching / Hobby",
-    "ImageFit": 1
+    "ImageFit": 1,
+    "Finished": true
+  },
+  {
+  "Title": "SIC-1 in VCB",
+  "Description": "Implementation of SIC-1 architecture in Visual Circuit Builder.",
+  "FullDescription": "This project involves implementing the SIC-1 computer architecture using Visual Circuit Builder (VCB). It demonstrates low-level computer architecture principles and provides an interactive way to understand how computers work at a fundamental level.",
+  "MediaItems": [
+    {
+      "Url": "Projects/images/Technical/Fadder.png",
+      "Name": "A full-adder in VCB",
+      "Type": 0
+    },
+    {
+      "Url": "Projects/images/Technical/image (11).png",
+      "Name": "A 7-segment display being controlled manually",
+      "Type": 0
+    },
+    {
+      "Url": "Projects/videos/RamRW.webm",
+      "Name": "Showing the saving/loading capabilities for the 8-bit RAM chip i built",
+      "Type": 1
+    }
+  ],
+  "Tags": [
+    "Computer Architecture",
+    "Wireworld",
+    "Educational"
+  ],
+  "Category": "Learning / Teaching / Hobby",
+  "Finished": true
+},
+  {
+    "Title": "TODO:Neural Networks/AI",
+    "Description": "Implementation of various neural network architectures and AI algorithms.",
+    "FullDescription": "This comprehensive project encompasses the implementation of various neural network architectures and AI algorithms. It includes deep learning models, reinforcement learning systems, and natural language processing applications, showcasing a broad range of artificial intelligence techniques.",
+    "ImageUrl": "Projects/images/neural-networks.jpg",
+    "VideoUrl": "https://www.youtube.com/embed/V6sHMYuL9H4",
+    "SourceUrl": "https://github.com/yourusername/neural-networks-ai",
+    "Tags": [
+      "Python",
+      "TensorFlow",
+      "Machine Learning",
+      "AI"
+    ],
+    "Category": "Biology/Artificial Intelligence"
+  },
+  {
+    "Title": "TODO:AutoRPG",
+    "Description": "An an attempt to make a game using blazor",
+    "FullDescription": "AutoRPG is an innovative project that generates role-playing game content automatically. It includes procedural generation of maps, characters, quests, and storylines, creating unique gaming experiences each time it's run.",
+    "ImageUrl": "Projects/images/ARPG-thumbnail.png",
+    "VideoUrl": "Projects/videos/ARPG-preview.mp4",
+    "SourceUrl": "https://github.com/yourusername/auto-rpg",
+    "Tags": [
+      "C#",
+      "Blazor",
+      "Game Development",
+      "Procedural Generation"
+    ],
+    "Category": "Game Development"
+  },
+  {
+    "Title": "TODO:Night Night",
+    "Description": "A bedtime horror game.",
+    "FullDescription": "Night Night is a horror game designed explore a child's fear of the monster under their bed. It features 5 short chapters, each exploring a different fear, the game has been slowly taking shape over the past several years",
+    "ImageUrl": "Projects/images/night-night.jpg",
+    "VideoUrl": "",
+    "SourceUrl": "",
+    "Tags": [
+      "Unity",
+      "C#",
+      "Game Design",
+      "Horror"
+    ],
+    "Category": "Game Development"
+  },
+  {
+    "Title": "TODO:WireWorld",
+    "Description": "Implementation of the WireWorld cellular automaton.",
+    "FullDescription": "This project is an implementation of the WireWorld cellular automaton, demonstrating complex behavior emerging from simple rules. It provides an interactive environment to explore and experiment with cellular automata concepts.",
+    "ImageUrl": "Projects/images/wireworld.jpg",
+    "VideoUrl": "",
+    "SourceUrl": "https://github.com/yourusername/wireworld",
+    "Tags": [
+      "Java",
+      "Cellular Automaton",
+      "Simulation"
+    ],
+    "Category": "Game Development"
+  },
+  {
+    "Title": "TODO:Octree Galaxy",
+    "Description": "A galaxy simulation using octree data structures.",
+    "FullDescription": "Octree Galaxy is an ambitious project that simulates a galaxy using octree data structures for efficient spatial partitioning and rendering. It allows users to explore a vast, procedurally generated galaxy with realistic celestial mechanics. unfortunately never went much further than seeding the galaxy, rendering nearby stars via a shader, and generating some alien races with procedurally determined traits",
+    "ImageUrl": "Projects/images/octree-galaxy.jpg",
+    "VideoUrl": "",
+    "SourceUrl": "https://github.com/yourusername/octree-galaxy",
+    "Tags": [
+      "C++",
+      "OpenGL",
+      "Simulation",
+      "Astronomy"
+    ],
+    "Category": "Game Development"
+  },
+  {
+    "Title": "TODO:YANA (You Are Not Alone)",
+    "Description": "A multiplayer survival game.",
+    "FullDescription": "YANA (You Are Not Alone) is my entry to the first game jam i competed in, it was a 2d platformer built in plain java using a double buffered canvas technique i learned watching Notch work on his entry for another game jam. The game featured wireworld-based mechanics for opening doors, unfortunately the game was not very fun or playable, and had many issues when others tried to play it.",
+    "ImageUrl": "Projects/images/yana.jpg",
+    "VideoUrl": "https://www.youtube.com/watch?v=BSzW4X7YbLk",
+    "SourceUrl": "",
+    "Tags": [
+      "Java",
+      "Canvas",
+      "Wireworld",
+      "GameJam"
+    ],
+    "Category": "Game Development"
+  },
+  {
+    "Title": "TODO:Minecraft Mod",
+    "Description": "A custom mod for Minecraft.",
+    "FullDescription": "This Minecraft mod adds new features and mechanics to the game, including custom blocks, items, and gameplay elements. It demonstrates proficiency in Java programming and game modding techniques. The mod featured a way to convert rotten flesh into redstone, a wireworld-based signalling system somewhat similar to redstone, which interacted with a magnet-like block that responded to a coil of this redstone-like cable, in order to provide functionality similar to ProjectE, but with values based on the blocks' frequency within the surrounding worldgen",
+    "ImageUrl": "Projects/images/minecraft-mod.jpg",
+    "VideoUrl": "https://www.youtube.com/watch?v=s8ZXQ9tntBY",
+    "SourceUrl": "https://github.com/sirius-black9999/AMP-mc-magnet-chem",
+    "Tags": [
+      "Java",
+      "Minecraft",
+      "Modding"
+    ],
+    "Category": "Game Development"
+  },
+  {
+    "Title": "TODO:ProD Name Generator",
+    "Description": "Procedural name generator for RPG characters.",
+    "FullDescription": "The ProD Name Generator is a sophisticated tool that generates unique and thematic names for RPG characters using advanced procedural generation techniques. It can create names for various fantasy races and cultures.",
+    "ImageUrl": "Projects/images/prod-name-generator.jpg",
+    "VideoUrl": "",
+    "SourceUrl": "",
+    "Tags": [
+      "C#",
+      "Procedural Generation",
+      "RPG Tools"
+    ],
+    "Category": "Professional"
+  },
+  {
+    "Title": "TODO:ProD Map Generators",
+    "Description": "Procedural map generation tools for RPGs.",
+    "FullDescription": "This project includes a suite of tools for generating procedural maps for role-playing games, including dungeons, cities, and wilderness areas. It uses advanced algorithms to create realistic and varied environments.",
+    "ImageUrl": "Projects/images/prod-map-generators.jpg",
+    "VideoUrl": "",
+    "SourceUrl": "",
+    "Tags": [
+      "C#",
+      "Unity",
+      "Procedural Generation",
+      "RPG Tools"
+    ],
+    "Category": "Professional"
+  },
+  
+  {
+    "Title": "TODO:Gust",
+    "Description": "A mobile game about wind and flight.",
+    "FullDescription": "Gust is a visually stunning mobile game that explores the mechanics of wind and flight. It features intuitive touch controls and challenging gameplay, set in a beautifully rendered world affected by wind dynamics.",
+    "ImageUrl": "Projects/images/gust.jpg",
+    "VideoUrl": "",
+    "SourceUrl": "",
+    "Tags": [
+      "Unity",
+      "C#",
+      "Mobile Game",
+      "Physics Simulation"
+    ],
+    "Category": "School Projects"
+  },
+  {
+    "Title": "TODO:Splash Paint",
+    "Description": "An interactive painting application for swimming pools.",
+    "FullDescription": "Splash Paint is an innovative project that turns a swimming pool into an interactive canvas. Using advanced computer vision techniques, it detects swimmers' movements and translates them into colorful visual effects on the water surface.",
+    "ImageUrl": "Projects/images/splash-paint.jpg",
+    "VideoUrl": "",
+    "SourceUrl": "",
+    "Tags": [
+      "Computer Vision",
+      "Interactive Art",
+      "C++"
+    ],
+    "Category": "School Projects"
+  },
+  {
+    "Title": "TODO:Environment Survival",
+    "Description": "An educational game about environmental challenges.",
+    "FullDescription": "Environment Survival is an educational game that teaches players about environmental challenges and sustainability. Players must make decisions that affect the ecosystem, learning about the long-term consequences of their actions.",
+    "ImageUrl": "Projects/images/environment-survival.jpg",
+    "VideoUrl": "",
+    "SourceUrl": "",
+    "Tags": [
+      "Unity",
+      "Educational Game",
+      "Environmental Science"
+    ],
+    "Category": "School Projects"
+  },
+  {
+    "Title": "TODO:Evil Clutches",
+    "Description": "A game project developed during school.",
+    "FullDescription": "Evil Clutches is a game project developed as part of a school assignment. It showcases game design principles, storytelling, and basic game development skills.",
+    "ImageUrl": "Projects/images/evil-clutches.jpg",
+    "VideoUrl": "",
+    "SourceUrl": "",
+    "Tags": [
+      "Game Development",
+      "School Project"
+    ],
+    "Category": "School Projects"
+  },
+  {
+    "Title": "TODO:Disk Sorter",
+    "Description": "An automated system for sorting disks by color.",
+    "FullDescription": "The Disk Sorter is a project that uses robotics and computer vision to automatically sort disks by color. It involves programming in assembly and demonstrates skills in automation and low-level system control.",
+    "ImageUrl": "Projects/images/disk-sorter.jpg",
+    "VideoUrl": "",
+    "SourceUrl": "",
+    "Tags": [
+      "Robotics",
+      "Assembly",
+      "Computer Vision"
+    ],
+    "Category": "School projects"
+  },
+  {
+    "Title": "TODO:VRee Map Editor",
+    "Description": "A custom map editor for VR environments.",
+    "FullDescription": "The VRee Map Editor is a tool developed for creating and editing virtual reality environments. It provides an intuitive interface for designing immersive VR spaces, supporting the development of VR applications and games, this was mostly just an idea that never really got off the ground",
+    "ImageUrl": "Projects/images/VRee_editor.png",
+    "VideoUrl": "https://www.youtube.com/embed/Rs4RFfgVtGs",
+    "SourceUrl": "",
+    "Tags": [
+      "VR",
+      "Unity",
+      "Level Design",
+      "Concept"
+    ],
+    "Category": "Concept"
+  },
+  {
+    "Title": "TODO:VRee Network Metrics",
+    "Description": "A system for measuring and optimizing VR network performance.",
+    "FullDescription": "VRee Network Metrics is a sophisticated system for measuring and optimizing network performance in virtual reality applications. It includes tools for monitoring latency, packet loss, and other critical metrics to ensure smooth VR experiences.",
+    "ImageUrl": "Projects/images/VRee_logo.png",
+    "VideoUrl": "",
+    "SourceUrl": "",
+    "Tags": [
+      "Networking",
+      "VR",
+      "Performance Optimization"
+    ],
+    "Category": "Professional"
+  },
+  {
+    "Title": "TODO:VRee Dialogue System",
+    "Description": "An advanced dialogue system for VR applications.",
+    "FullDescription": "The VRee Dialogue System is a comprehensive solution for creating interactive dialogues in virtual reality applications. It supports branching conversations, character lip-syncing, and integration with VR gestures and interactions.",
+    "ImageUrl": "Projects/images/VRee_logo.png",
+    "VideoUrl": "",
+    "SourceUrl": "",
+    "Tags": [
+      "VR",
+      "Dialogue Systems",
+      "Unity"
+    ],
+    "Category": "Professional"
+  },
+  {
+    "Title": "TODO:VRee SDK",
+    "description": "A VR multiplayer framework",
+    "fullDescription": "VReeSDK is a platform on unity we built in order to host multiplayer full-body VR experiences",
+    "imageUrl": "Projects/images/VRee-thumbnail.jpg",
+    "videoUrl": "https://www.youtube.com/embed/gloM2X74D1s",
+    "sourceUrl": "",
+    "tags": [
+      "C++",
+      "Unity",
+      "VR",
+      "C#"
+    ],
+    "Category": "Professional"
+  },
+  {
+    "Title": "TODO:VRee SDK3",
+    "Description": "The third iteration of the VRee Software Development Kit.",
+    "FullDescription": "VRee SDK3 was the latest version of the VRee Software Development Kit, providing developers with powerful tools and APIs for creating immersive VR experiences. it was made as a complete re-write of the original, but unfortunately never made it to production.",
+    "ImageUrl": "Projects/images/VRee_logo.png",
+    "VideoUrl": "",
+    "SourceUrl": "",
+    "Tags": [
+      "VR",
+      "SDK",
+      "C++"
+    ],
+    "Category": "Professional"
+  },
+  {
+    "Title": "TODO:VRee Offline Licensing",
+    "Description": "A system for managing software licenses in offline VR environments.",
+    "FullDescription": "VRee Offline Licensing is a robust system for managing software licenses in virtual reality applications, especially in offline environments. It ensures secure and flexible licensing options for VR software products.",
+    "ImageUrl": "Projects/images/vree-offline-licensing.jpg",
+    "VideoUrl": "",
+    "SourceUrl": "",
+    "Tags": [
+      "Licensing",
+      "Security",
+      "VR"
+    ],
+    "Category": "Professional"
+  },
+  {
+    "Title": "TODO:VRee License Server",
+    "Description": "A centralized server for managing VRee software licenses.",
+    "FullDescription": "The VRee License Server is a centralized system for managing and distributing software licenses for VRee products. It provides secure authentication, usage tracking, and flexible licensing models for VR applications.",
+    "ImageUrl": "Projects/images/vree-license-server.jpg",
+    "VideoUrl": "",
+    "SourceUrl": "",
+    "Tags": [
+      "Server Development",
+      "Licensing",
+      "Security"
+    ],
+    "Category": "Professional"
+  },
+  {
+    "Title": "TODO:VRee BodyModel",
+    "Description": "A sophisticated body tracking and modeling system for VR.",
+    "FullDescription": "VRee BodyModel is an advanced system for tracking and modeling human bodies in virtual reality. It provides high-fidelity skeletal tracking from multiple sources (adapters), enabling natural and immersive VR experiences with full-body presence.",
+    "ImageUrl": "Projects/images/vree-bodymodel.jpg",
+    "VideoUrl": "",
+    "SourceUrl": "",
+    "Tags": [
+      "VR",
+      "Motion Tracking",
+      "Computer Vision"
+    ],
+    "Category": "Professional"
+  },
+  {
+    "Title": "TODO:VRisB",
+    "Description": "A VR-based sports simulation game.",
+    "FullDescription": "VRisB is an innovative virtual reality sports simulation game. It focuses on replicating the dynamics of frisbee in a virtual environment, providing players with an immersive and physically engaging experience. The project showcases advanced physics simulations and VR interaction techniques.",
+    "ImageUrl": "Projects/images/vrisb.jpg",
+    "VideoUrl": "",
+    "SourceUrl": "",
+    "Tags": [
+      "VR",
+      "Sports Simulation",
+      "Unity",
+      "Physics"
+    ],
+    "Category": "Professional"
+  },
+  {
+    "Title": "TODO:VRee SDK2",
+    "Description": "The second iteration of the VRee Software Development Kit.",
+    "FullDescription": "VRee SDK2 was a significant upgrade to the original VRee SDK, introducing new features and improvements for VR development. It included enhanced motion tracking capabilities, realtime video streaming, a better licensing workflow with offline licensing support and improved tools for creating multiplayer VR experiences.",
+    "ImageUrl": "Projects/images/vree-sdk2.jpg",
+    "VideoUrl": "",
+    "SourceUrl": "",
+    "Tags": [
+      "VR",
+      "SDK",
+      "C++",
+      "Unity"
+    ],
+    "Category": "Professional"
+  },
+  {
+    "Title": "TODO:Micro Transform",
+    "Description": "A 64-bit transform system for precise VR positioning.",
+    "FullDescription": "Micro Transform is a way to represent a full transform in a single 64-bit number, designed for positioning of body data in virtual reality environments. It allows for accurate representation of position and rotation within 2 meters of a parent object, allowing for highly compressed transfer of motion capture data and rigged models in general, Made as a working prototype, but never actually implemented",
+    "ImageUrl": "Projects/images/micro-transform.jpg",
+    "VideoUrl": "../../../Images/Technical/ShortTransform.mp4",
+    "SourceUrl": "",
+    "Tags": [
+      "VR",
+      "3D Mathematics",
+      "Optimization",
+      "Concept"
+    ],
+    "Category": "Concept"
+  },
+  {
+    "Title": "TODO:Virtual Oscilloscope",
+    "Description": "A real-time audio visualization tool.",
+    "FullDescription": "The Virtual Oscilloscope is a tool i built in order to try to render animations like the oscilloscope music shown in the video.",
+    "ImageUrl": "Projects/images/Oscilloscope-thumbnail.png",
+    "VideoUrl": "https://www.youtube.com/embed/FEzLCYlvV8w",
+    "SourceUrl": "",
+    "Tags": [
+      "Audio Processing",
+      "Visualization",
+      "Real-time Systems"
+    ],
+    "Category": "Learning / Teaching / Hobby"
+  },
+  {
+    "Title": "TODO:Distant Worlds (Elite Dangerous)",
+    "Description": "An algorithm for optimizing travel routes in Elite Dangerous.",
+    "FullDescription": "This project tackles the Traveling Salesman problem in the context of the game Elite Dangerous. It develops an efficient algorithm to optimize travel routes between star systems, enhancing gameplay and exploration strategies for players.",
+    "ImageUrl": "Projects/images/distant-worlds.jpg",
+    "VideoUrl": "",
+    "SourceUrl": "",
+    "Tags": [
+      "Algorithms",
+      "Game Enhancement",
+      "Optimization"
+    ],
+    "Category": "Learning / Teaching / Hobby"
+  },
+  {
+    "Title": "TODO:Stellar Cartography",
+    "Description": "A tool for visualizing and analyzing stellar catalogues.",
+    "FullDescription": "The Stellar Cartography project is a tool for rendering and analyzing stellar catalogues. It provides stunning visualizations of galactic structures, unfortunately never went much further than that.",
+    "ImageUrl": "Projects/images/stellar-cartography.jpg",
+    "VideoUrl": "",
+    "SourceUrl": "",
+    "Tags": [
+      "Astronomy",
+      "Data Visualization",
+      "Scientific Computing"
+    ],
+    "Category": "Learning / Teaching / Hobby"
+  },
+  {
+    "Title": "TODO:COVAI",
+    "Description": "Connecting the logging system of Elite: Dangerous to ChatGPT",
+    "FullDescription": "i fed the captain's log of Elite: Dangerous as an input for ChatGPT playground to let it provide commentary on gameplay events,\nthen fed it's responses into google Text to speech to act as an AI-driven replacement for the game's cockpit voice assistent",
+    "ImageUrl": "Projects/images/stellar-cartography.jpg",
+    "VideoUrl": "",
+    "SourceUrl": "",
+    "Tags": [
+      "Astronomy",
+      "Data Visualization",
+      "Scientific Computing"
+    ],
+    "Category": "Learning / Teaching / Hobby"
+  },
+  {
+    "Title": "TODO:Binding of Isaac Modding",
+    "Description": "Reverse-engineering and modding tools for The Binding of Isaac.",
+    "FullDescription": "This project involved reverse-engineering The Binding of Isaac game to decipher its map file format. It led to the development of modding tools that allow players to create custom content for the game, significantly expanding its modding community.",
+    "ImageUrl": "Projects/images/isaac-modding.jpg",
+    "VideoUrl": "",
+    "SourceUrl": "",
+    "Tags": [
+      "Reverse Engineering",
+      "Game Modding",
+      "File Formats"
+    ],
+    "Category": "Learning / Teaching / Hobby"
+  },
+  {
+    "Title": "TODO:Mouse Tracking Analytics",
+    "Description": "A background process for analyzing mouse cursor movements.",
+    "FullDescription": "This project developed a sophisticated background process for tracking and analyzing mouse cursor movements. It provides insights into user behavior and interaction patterns, useful for UI/UX research and productivity analysis.",
+    "ImageUrl": "Projects/images/mouse-tracking.jpg",
+    "VideoUrl": "",
+    "SourceUrl": "",
+    "Tags": [
+      "User Analytics",
+      "Background Processing",
+      "UI/UX"
+    ],
+    "Category": "Learning / Teaching / Hobby"
+  },
+  {
+    "Title": "TODO:x86 Assembly Art",
+    "Description": "A drawing program that generates x86 assembly code.",
+    "FullDescription": "This unique project created a drawing program that saves ASCII art as x86 assembly code. It combines artistic expression with low-level programming, resulting in executable art pieces that blur the line between code and visual design.",
+    "ImageUrl": "Projects/images/x86-art.jpg",
+    "VideoUrl": "",
+    "SourceUrl": "",
+    "Tags": [
+      "Assembly",
+      "Creative Coding",
+      "ASCII Art"
+    ],
+    "Category": "Learning / Teaching / Hobby"
+  },
+  {
+    "Title": "TODO:Voxel Engine Prototype",
+    "Description": "A voxel-based rendering engine using raymarching techniques.",
+    "FullDescription": "This project developed a prototype voxel engine using signed-distance-field raymarching techniques. It explores efficient ways to render large, detailed voxel environments, pushing the boundaries of real-time voxel graphics.",
+    "ImageUrl": "Projects/images/voxel-engine.jpg",
+    "VideoUrl": "",
+    "SourceUrl": "",
+    "Tags": [
+      "Graphics Programming",
+      "Voxels",
+      "Raymarching"
+    ],
+    "Category": "Learning / Teaching / Hobby"
+  },
+  {
+    "Title": "TODO:8-Dimensional Bezier Curves",
+    "Description": "Exploration of high-dimensional curve interpolation.",
+    "FullDescription": "This ambitious project delves into the realm of 8-dimensional bezier curves, exploring advanced mathematical concepts in computer graphics. It includes implementations for interpolating across these high-dimensional surfaces and sampling from complex geometric structures.",
+    "ImageUrl": "Projects/images/8d-bezier.jpg",
+    "VideoUrl": "",
+    "SourceUrl": "",
+    "Tags": [
+      "Computer Graphics",
+      "Mathematics",
+      "High-Dimensional Geometry"
+    ],
+    "Category": "Game Development"
+  },
+  {
+    "Title": "TODO:8-bit CPU in Cellular Automaton",
+    "Description": "Implementation of an 8-bit CPU within a cellular automaton framework.",
+    "FullDescription": "This project aims to build a functional 8-bit CPU inside a cellular automaton environment. It explores the intersection of low-level computer architecture and emergent systems, demonstrating how complex computational structures can arise from simple rules.",
+    "ImageUrl": "Projects/images/8bit-cpu-automaton.jpg",
+    "VideoUrl": "",
+    "SourceUrl": "",
+    "Tags": [
+      "Cellular Automaton",
+      "Computer Architecture",
+      "Theoretical Computing"
+    ],
+    "Category": "Learning / Teaching / Hobby"
+  },
+  {
+    "Title": "TODO:Fruit Grading System",
+    "Description": "C#/Blazor/WPF frontend with C++ backend for fruit grading.",
+    "FullDescription": "Developed a comprehensive fruit grading system featuring a C#/Blazor/WPF frontend integrated with C++ backend components. This project involved implementing web apps for system calibration, addressing localization issues, and contributing to code modernization and improved testing methodologies.",
+    "ImageUrl": "Projects/images/fruit-grading-system.jpg",
+    "VideoUrl": "",
+    "SourceUrl": "",
+    "Tags": [
+      "C#",
+      "Blazor",
+      "WPF",
+      "C++",
+      "Web Development",
+      "Industrial Automation"
+    ],
+    "Category": "Professional"
+  },
+  {
+    "Title": "TODO:VRee Multiplayer VR Platform",
+    "Description": "A comprehensive multiplayer virtual reality platform.",
+    "FullDescription": "Developed and maintained C++ and C# code for a sophisticated multiplayer VR platform. Key achievements include designing and implementing network architecture using UDP/TCP protocols, creating an algorithm to package whole-body motion tracking into a single UDP fragment, and building a secure licensing system with online verification via REST API and RSA/AES encryption. The project also involved implementing tamper-proofing using blockchain hashing techniques.",
+    "ImageUrl": "Projects/images/vree-platform.jpg",
+    "VideoUrl": "",
+    "SourceUrl": "",
+    "Tags": [
+      "C++",
+      "C#",
+      "VR",
+      "Networking",
+      "Encryption",
+      "Blockchain"
+    ],
+    "Category": "Professional"
+  },
+  {
+    "Title": "TODO:ProDnD Mobile App",
+    "Description": "A mobile app for generating procedural battle maps for Dungeons & Dragons.",
+    "FullDescription": "Contributed to the development of ProDnD, a mobile application available on Google Play Store. The app is designed to generate random, thematic battlefields for Dungeons & Dragons. Key contributions included optimizing performance for map generation, developing a service for sharing maps using steganography and QR codes, porting the app to iOS, and building a system for procedurally generating random names. The project was primarily developed using C# in Unity.",
+    "ImageUrl": "Projects/images/prodnD-mobile.jpg",
+    "VideoUrl": "",
+    "SourceUrl": "",
+    "Tags": [
+      "C#",
+      "Unity",
+      "Mobile Development",
+      "Procedural Generation",
+      "iOS",
+      "Android"
+    ],
+    "Category": "Professional"
+  },
+  {
+    "Title": "TODO:Yumble - Snap the Family",
+    "Description": "An interactive AR experience using Kinect camera.",
+    "FullDescription": "Developed as part of a graduation project, Yumble - Snap the Family focused on creating an interactive experience where a virtual character could interact with a real player via a Kinect 3D camera. The project involved significant applied research, including aligning different camera feeds, rapid OpenGL camera feed processing, refining asset bundle workflows, and developing a pathfinding algorithm using Unity's Mecanim package in C#.",
+    "ImageUrl": "Projects/images/yumble-snap-family.jpg",
+    "VideoUrl": "",
+    "SourceUrl": "",
+    "Tags": [
+      "Unity",
+      "C#",
+      "Kinect",
+      "AR",
+      "OpenGL",
+      "Pathfinding"
+    ],
+    "Category": "School projects"
+  },
+  {
+    "Title": "TODO:Auto-ARPG Editor",
+    "Description": "A Blazor-based editor for JSON files in an Auto-ARPG game.",
+    "FullDescription": "Developed a Blazor-based editor for managing JSON files in an Auto-ARPG (Automatically generated Action Role-Playing Game) project. This tool streamlines the process of creating and editing game content. The project was built using C# 10/.NET 6 and utilized NuGet packages such as GdkSharp and ImageSharp.",
+    "ImageUrl": "",
+    "VideoUrl": "",
+    "SourceUrl": "https://github.com/sirius-black9999/AutoARPG_Unity",
+    "Tags": [
+      "C#",
+      "Blazor",
+      ".NET 6",
+      "JSON",
+      "Game Development Tools"
+    ],
+    "Category": "Game Development"
+  },
+  {
+    "Title": "TODO:Personal Website and Webshop Hosting",
+    "Description": "Self-hosted website and partner's webshop using various web technologies.",
+    "FullDescription": "Maintained a long-term personal website project, working with HTML/CSS, Bootstrap, PHP, and JEE.\nCurrently hosting a personal website (this one) on microsoft azure\nPreviously hosted on a local laptop alongside a webshop (using PrestaShop) for a partner on a self-managed Apache HTTP server.\nThat setup included FTP, Git, and MySQL database servers.\nThe project also involved configuring DNS records, SSL certificates, and implementing email security protocols (DMARC, SPF, DKIM) for a custom email address.\n\n Current configuration cannibalized the ARPG repo in order to reuse the github actions i had set up for it in order to deploy the C#/Blazor application to microsoft Azure as a static website",
+    "ImageUrl": "Projects/images/personal-website-hosting.jpg",
+    "VideoUrl": "",
+    "SourceUrl": "https://github.com/sirius-black9999/AutoARPG_WebAsm",
+    "Tags": [
+      "Web Hosting",
+      "Apache",
+      "MySQL",
+      "DNS",
+      "SSL",
+      "Email Security",
+      "Blazor"
+    ],
+    "Category": "Learning / Teaching / Hobby"
+  },
+  {
+    "Title": "TODO:AI and Genetic Algorithms",
+    "Description": "Various Projects exploring AI, gradient descent, and genetic algorithms.",
+    "FullDescription": "A collection of Projects focused on artificial intelligence, gradient descent techniques, and genetic algorithms. These Projects, implemented in both C# and C++, explore various aspects of machine learning and evolutionary computation.",
+    "ImageUrl": "Projects/images/ai-genetic-algorithms.jpg",
+    "VideoUrl": "",
+    "SourceUrl": "",
+    "Tags": [
+      "AI",
+      "Machine Learning",
+      "Genetic Algorithms",
+      "C#",
+      "C++"
+    ],
+    "Category": "Learning / Teaching / Hobby"
+  },
+  {
+    "Title": "TODO:Advanced Shader Projects",
+    "Description": "Diverse shader Projects using GLSL, HLSL, and CG.",
+    "FullDescription": "A series of shader Projects developed using GLSL, HLSL, and CG, working with both OpenGL and DirectX.\nThese Projects often explore unconventional applications of shaders, including compute shaders and ray marching techniques.",
+    "ImageUrl": "Projects/images/advanced-shaders.jpg",
+    "VideoUrl": "",
+    "SourceUrl": "",
+    "Tags": [
+      "GLSL",
+      "HLSL",
+      "CG",
+      "OpenGL",
+      "DirectX",
+      "Compute Shaders",
+      "Ray Marching"
+    ],
+    "Category": "Learning / Teaching / Hobby"
+  },
+  {
+    "Title": "TODO:Audio Processing Projects",
+    "Description": "Various audio-related Projects including an oscilloscope, dynamic music system and MIDI tracker.",
+    "FullDescription": "A collection of audio processing Projects primarily developed in C#. Notable Projects include a custom oscilloscope for audio visualization, a MIDI tracker for music composition, and systems for dynamic audio generation and manipulation.",
+    "ImageUrl": "Projects/images/audio-Projects.jpg",
+    "VideoUrl": "",
+    "SourceUrl": "",
+    "Tags": [
+      "C#",
+      "Audio Processing",
+      "MIDI",
+      "Digital Signal Processing"
+    ],
+    "Category": "Learning / Teaching / Hobby"
+  },
+  {
+    "Title": "TODO:WireWorld Cellular Automaton",
+    "Description": "Implementations of the WireWorld cellular automaton in various languages.",
+    "FullDescription": "Multiple Projects exploring the WireWorld cellular automaton,\nattempting to transform its rules into interesting game mechanics.\nImplementations have been done in Java, C#, and even as HLSL shaders,\nshowcasing the versatility of this concept across different programming paradigms.",
+    "ImageUrl": "Projects/images/wireworld-Projects.jpg",
+    "VideoUrl": "",
+    "SourceUrl": "",
+    "Tags": [
+      "Cellular Automaton",
+      "Java",
+      "C#",
+      "HLSL",
+      "Game Mechanics"
+    ],
+    "Category": "Game Development"
+  },
+  {
+    "Title": "TODO:HackMUD",
+    "Description": "A game about brute-forcing puzzles using javascript/typescript",
+    "FullDescription": "HackMud is a game about hacking and learning to program in javascript/typescript,\nwhile learning to play the game after a community i was part of discovered it\ni learned to reverse-engineer QR codes, as the early part of tier 2 content\nrequired scanning a partially corrupted QR code, which my phone wouldn't do\ni also just wanted to automate the process",
+    "ImageUrl": "Projects/images/Hackmud_logo.png",
+    "VideoUrl": "https://youtu.be/uFRodoJXqyo",
+    "SourceUrl": "",
+    "Tags": [
+      "Typescript",
+      "Javascript",
+      "Educational Content",
+      "QR"
+    ],
+    "Category": "Learning / Teaching / Hobby"
+  },
+  {
+    "Title": "TODO:Unreal",
+    "Description": "A game about brute-forcing puzzles using javascript/typescript",
+    "FullDescription": "HackMud is a game about hacking and learning to program in javascript/typescript,\nwhile learning to play the game after a community i was part of discovered it\ni learned to reverse-engineer QR codes, as the early part of tier 2 content\nrequired scanning a partially corrupted QR code, which my phone wouldn't do\ni also just wanted to automate the process",
+    "ImageUrl": "Projects/images/Hackmud_logo.png",
+    "VideoUrl": "https://youtu.be/uFRodoJXqyo",
+    "SourceUrl": "",
+    "Tags": [
+      "Typescript",
+      "Javascript",
+      "Educational Content",
+      "QR"
+    ],
+    "Category": "Learning / Teaching / Hobby"
+  },
+  {
+    "Title": "TODO:TI-84",
+    "Description": "A game about brute-forcing puzzles using javascript/typescript",
+    "FullDescription": "HackMud is a game about hacking and learning to program in javascript/typescript,\nwhile learning to play the game after a community i was part of discovered it\ni learned to reverse-engineer QR codes, as the early part of tier 2 content\nrequired scanning a partially corrupted QR code, which my phone wouldn't do\ni also just wanted to automate the process",
+    "ImageUrl": "Projects/images/Hackmud_logo.png",
+    "VideoUrl": "https://youtu.be/uFRodoJXqyo",
+    "SourceUrl": "",
+    "Tags": [
+      "Typescript",
+      "Javascript",
+      "Educational Content",
+      "QR"
+    ],
+    "Category": "Learning / Teaching / Hobby"
   }
 ]

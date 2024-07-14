@@ -25,6 +25,7 @@ public class ProjectService
 }
 public class ProjectInfo
 {
+    public bool Finished { get; set; } = false;
     public string Title { get; set; } = "";
     public string Description { get; set; } = "";
     public string FullDescription { get; set; } = "";
