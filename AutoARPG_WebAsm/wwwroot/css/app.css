@@ -308,3 +308,143 @@ a, .btn-link {
     margin-bottom: 20px;
     text-align: center;
 }
+
+.card {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    background-color: #f8f9fa;
+}
+
+.project-image {
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9ecef;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-image.contain img {
+    object-fit: contain;
+}
+
+.project-image-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6c757d;
+}
+.terminal-section {
+    background-color: #1e1e1e;
+    border-radius: 6px;
+    overflow: hidden;
+    font-family: 'Consolas', 'Courier New', monospace;
+}
+
+.terminal-header {
+    background-color: #323233;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.terminal-buttons {
+    display: flex;
+}
+
+.terminal-button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-left: 6px;
+}
+
+.terminal-button:nth-child(1) { background-color: #ff5f56; }
+.terminal-button:nth-child(2) { background-color: #ffbd2e; }
+.terminal-button:nth-child(3) { background-color: #27c93f; }
+
+.terminal-title {
+    color: #abb2bf;
+    font-size: 14px;
+}
+
+.terminal-body {
+    padding: 20px;
+    color: #abb2bf;
+}
+.comment-line {
+    color: #5c6370;
+    margin-bottom: 20px;
+}
+
+.comment-todo {
+    color: #66C3CC;
+    font-weight: bold;
+}
+
+.terminal-card {
+    background-color: #282c34;
+    border: 1px solid #3e4451;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.terminal-line {
+    display: flex;
+    align-items: flex-start;
+}
+
+.terminal-prompt {
+    color: #61afef;
+    margin-right: 5px;
+    flex-shrink: 0;
+}
+
+.terminal-command {
+    color: #98c379;
+    font-size: 0.9em;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+.terminal-output {
+    color: #abb2bf;
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-size: 0.8em;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+.row.g-2 {
+    margin-right: -5px;
+    margin-left: -5px;
+}
+
+.row.g-2 > [class^="col-"] {
+    padding-right: 5px;
+    padding-left: 5px;
+}
