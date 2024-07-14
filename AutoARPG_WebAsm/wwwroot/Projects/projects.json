@@ -555,7 +555,7 @@
       "Level Design",
       "Concept"
     ],
-    "Category": "Concept"
+    "Category": "Professional"
   },
   {
     "Title": "TODO:VRee: Network Metrics",
@@ -626,7 +626,7 @@
       "Level Design",
       "Concept"
     ],
-    "Category": "Concept"
+    "Category": "Professional"
   },
   {
     "Title": "TODO:VRee: Micro Transform",
@@ -641,7 +641,7 @@
       "Optimization",
       "Concept"
     ],
-    "Category": "Concept"
+    "Category": "Professional"
   },
   {
     "Title": "TODO:VRee: Offline Licensing",
@@ -762,7 +762,7 @@
       "OpenGL",
       "Pathfinding"
     ],
-    "Category": "School projects"
+    "Category": "School Projects"
   },
   {
     "Title": "TODO:GLS: ProDnD Name Generator",
@@ -841,7 +841,7 @@
   },
   {
     "Title": "TODO:Fhict: Environment Survival",
-    "Description": "An educational game about environmental challenges.",
+    "Description": "An educational game made in school about environmental challenges.",
     "FullDescription": "Environment Survival is an educational game that teaches players about environmental challenges and sustainability. Players must make decisions that affect the ecosystem, learning about the long-term consequences of their actions.",
     "ImageUrl": "Projects/images/environment-survival.jpg",
     "VideoUrl": "",
@@ -868,7 +868,7 @@
   },
   {
     "Title": "TODO:TU/e: Disk Sorter",
-    "Description": "An automated system for sorting disks by color.",
+    "Description": "An automated system for sorting disks by color in raw assembly.",
     "FullDescription": "The Disk Sorter is a project that uses robotics and computer vision to automatically sort disks by color. It involves programming in assembly and demonstrates skills in automation and low-level system control.",
     "ImageUrl": "Projects/images/disk-sorter.jpg",
     "VideoUrl": "",
@@ -878,11 +878,11 @@
       "Assembly",
       "Computer Vision"
     ],
-    "Category": "School projects"
+    "Category": "School Projects"
   },
   {
     "Title": "TODO:AutoRPG",
-    "Description": "An an attempt to make a game using blazor",
+    "Description": "An an attempt to make a combination between ARPG and an idle game game using blazor",
     "FullDescription": "AutoRPG is an innovative project that generates role-playing game content automatically. It includes procedural generation of maps, characters, quests, and storylines, creating unique gaming experiences each time it's run.",
     "ImageUrl": "Projects/images/ARPG-thumbnail.png",
     "VideoUrl": "Projects/videos/ARPG-preview.mp4",
@@ -897,7 +897,7 @@
   },
   {
     "Title": "TODO:Auto-ARPG Editor",
-    "Description": "A Blazor-based editor for JSON files in an Auto-ARPG game.",
+    "Description": "A Blazor-based editor for JSON files in AutoRPG.",
     "FullDescription": "Developed a Blazor-based editor for managing JSON files in an Auto-ARPG (Automatically generated Action Role-Playing Game) project. This tool streamlines the process of creating and editing game content. The project was built using C# 10/.NET 6 and utilized NuGet packages such as GdkSharp and ImageSharp.",
     "ImageUrl": "",
     "VideoUrl": "",
@@ -928,7 +928,7 @@
   },
   {
     "Title": "TODO:WireWorld",
-    "Description": "Implementation of the WireWorld cellular automaton.",
+    "Description": "Implementation of variations on the WireWorld cellular automaton, including 3d and color theory",
     "FullDescription": "This project is an implementation of the WireWorld cellular automaton, demonstrating complex behavior emerging from simple rules. It provides an interactive environment to explore and experiment with cellular automata concepts.",
     "ImageUrl": "Projects/images/wireworld.jpg",
     "VideoUrl": "",
@@ -960,7 +960,7 @@
   },
   {
     "Title": "TODO:Octree Galaxy",
-    "Description": "A galaxy simulation using octree data structures.",
+    "Description": "A galaxy simulation using octrees, theoretically capable of sub-millimeter precision at a galactic scale",
     "FullDescription": "Octree Galaxy is an ambitious project that simulates a galaxy using octree data structures for efficient spatial partitioning and rendering. It allows users to explore a vast, procedurally generated galaxy with realistic celestial mechanics. unfortunately never went much further than seeding the galaxy, rendering nearby stars via a shader, and generating some alien races with procedurally determined traits",
     "ImageUrl": "Projects/images/octree-galaxy.jpg",
     "VideoUrl": "",
@@ -974,8 +974,8 @@
     "Category": "Game Development"
   },
   {
-    "Title": "TODO:Voxel Engine Prototype",
-    "Description": "A voxel-based rendering engine using raymarching and signed distance fields",
+    "Title": "TODO:Voxel Engine",
+    "Description": "various voxel-based rendering engines, including raymarching and signed distance fields",
     "FullDescription": "This project developed a prototype voxel engine using signed-distance-field raymarching techniques. It explores efficient ways to render large, detailed voxel environments, pushing the boundaries of real-time voxel graphics.",
     "ImageUrl": "Projects/images/voxel-engine.jpg",
     "VideoUrl": "",
@@ -989,7 +989,7 @@
   },
   {
     "Title": "TODO:Virtual Oscilloscope",
-    "Description": "A real-time audio visualization tool.",
+    "Description": "A real-time audio visualization tool, made to play Jerobeam Fenderson's oscilloscope music",
     "FullDescription": "The Virtual Oscilloscope is a tool i built in order to try to render animations like the oscilloscope music shown in the video.",
     "ImageUrl": "Projects/images/Oscilloscope-thumbnail.png",
     "VideoUrl": "https://www.youtube.com/embed/FEzLCYlvV8w",
@@ -1018,7 +1018,7 @@
   },
   {
     "Title": "TODO:COVAI",
-    "Description": "Connecting the logging system of Elite: Dangerous to ChatGPT",
+    "Description": "Connecting the captain's log of Elite: Dangerous to ChatGPT to replace the stock Covas",
     "FullDescription": "i fed the captain's log of Elite: Dangerous as an input for ChatGPT playground to let it provide commentary on gameplay events,\nthen fed it's responses into google Text to speech to act as an AI-driven replacement for the game's cockpit voice assistent",
     "ImageUrl": "Projects/images/stellar-cartography.jpg",
     "VideoUrl": "",
@@ -1046,7 +1046,7 @@
   },
   {
     "Title": "TODO:Distant Worlds (Elite Dangerous)",
-    "Description": "An algorithm for optimizing travel routes in Elite Dangerous.",
+    "Description": "Travelling salesman algorithm for optimizing travel routes in Elite Dangerous.",
     "FullDescription": "This project tackles the Traveling Salesman problem in the context of the game Elite Dangerous. It develops an efficient algorithm to optimize travel routes between star systems, enhancing gameplay and exploration strategies for players.",
     "ImageUrl": "Projects/images/distant-worlds.jpg",
     "VideoUrl": "",
@@ -1116,7 +1116,7 @@
   },
   {
     "Title": "TODO:YANA (You Are Not Alone)",
-    "Description": "A multiplayer survival game.",
+    "Description": "My first game jam submission",
     "FullDescription": "YANA (You Are Not Alone) is my entry to the first game jam i competed in, it was a 2d platformer built in plain java using a double buffered canvas technique i learned watching Notch work on his entry for another game jam. The game featured wireworld-based mechanics for opening doors, unfortunately the game was not very fun or playable, and had many issues when others tried to play it.",
     "ImageUrl": "Projects/images/yana.jpg",
     "VideoUrl": "https://www.youtube.com/watch?v=BSzW4X7YbLk",
@@ -1131,7 +1131,7 @@
   },
   {
     "Title": "TODO:Unreal",
-    "Description": "A game about brute-forcing puzzles using javascript/typescript",
+    "Description": "My first introduction to game development",
     "FullDescription": "HackMud is a game about hacking and learning to program in javascript/typescript,\nwhile learning to play the game after a community i was part of discovered it\ni learned to reverse-engineer QR codes, as the early part of tier 2 content\nrequired scanning a partially corrupted QR code, which my phone wouldn't do\ni also just wanted to automate the process",
     "ImageUrl": "Projects/images/Hackmud_logo.png",
     "VideoUrl": "https://youtu.be/uFRodoJXqyo",

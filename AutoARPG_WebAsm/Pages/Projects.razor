@@ -46,29 +46,27 @@
             }
         </div>
 
-        @foreach (var category in projectCategories)
+        @foreach (var category in projectCategories.Where(category => category.Value.Any(info => info.Finished)))
         {
-            if (category.Value.Any(info => info.Finished))
-            {
-                <h2 class="mt-4">@category.Key</h2>
-                <div class="row">
-                    @foreach (var project in category.Value.Where(FilterProject).Where(info => info.Finished))
-                    {
-                        <div class="col-md-4 mb-4">
-                            <div class="card h-100">
-                                <div class="card-img-top project-image @(project.ImageFit == ImageFitType.Contain ? "contain" : "cover")">
-                                    @if (project.MediaItems.Any())
+            <h2 class="mt-4">@category.Key</h2>
+            <div class="row">
+                @foreach (var project in category.Value.Where(FilterProject).Where(info => info.Finished))
+                {
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-img-top project-image @(project.ImageFit == ImageFitType.Contain ? "contain" : "cover")">
+                                @if (project.MediaItems.Any())
+                                {
+                                    var firstMediaItem = project.MediaItems.First();
+                                    if (firstMediaItem.Type == MediaType.Image)
                                     {
-                                        var firstMediaItem = project.MediaItems.First();
-                                        if (firstMediaItem.Type == MediaType.Image)
-                                        {
-                                            <img src="@firstMediaItem.Url"
-                                                 alt="@firstMediaItem.Name"
-                                                 @onload="() => HandleImageLoad(project.Title)"
-                                                 @onerror="() => HandleImageError(project.Title)"
-                                                 class="img-fluid @(loadedImages.Contains(project.Title) ? "" : "d-none")"/>
-                                        }
-                                        else if (firstMediaItem.Type == MediaType.Pdf)
+                                        <img src="@firstMediaItem.Url"
+                                             alt="@firstMediaItem.Name"
+                                             @onload="() => HandleImageLoad(project.Title)"
+                                             @onerror="() => HandleImageError(project.Title)"
+                                             class="img-fluid @(loadedImages.Contains(project.Title) ? "" : "d-none")"/>
+                                    }
+                                    else {if (firstMediaItem.Type == MediaType.Pdf)
                                         {
                                             <div class="pdf-thumbnail">
                                                 <i class="fas fa-file-pdf fa-3x"></i>
@@ -76,40 +74,41 @@
                                             </div>
                                         }
                                     }
-                                    else
-                                    {
-                                        <div class="project-image-placeholder @(loadedImages.Contains(project.Title) ? "d-none" : "")">
-                                            <i class="fas fa-code fa-3x"></i>
-                                        </div>
-                                    }
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">@project.Title</h5>
-                                    <p class="card-text">@project.Description</p>
-                                    <button class="btn btn-primary" @onclick="() => OpenProjectDetails(project)">Learn More</button>
-                                    @if (!string.IsNullOrEmpty(project.SourceUrl))
-                                    {
-                                        <a href="@project.SourceUrl" target="_blank" class="btn btn-secondary">Source</a>
-                                    }
-                                </div>
-                                <div class="card-footer">
-                                    @foreach (var tag in project.Tags.Take(3))
-                                    {
-                                        <span class="badge bg-secondary me-1">@tag</span>
-                                    }
-                                    @if (project.Tags.Count > 3)
-                                    {
-                                        <span class="badge bg-secondary">+@(project.Tags.Count - 3)</span>
-                                    }
-                                </div>
+                                }
+                                else
+                                {
+                                    <div class="project-image-placeholder @(loadedImages.Contains(project.Title) ? "d-none" : "")">
+                                        <i class="fas fa-code fa-3x"></i>
+                                    </div>
+                                }
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">@project.Title</h5>
+                                <p class="card-text">@project.Description</p>
+                                <button class="btn btn-primary" @onclick="() => OpenProjectDetails(project)">Learn More</button>
+                                @if (!string.IsNullOrEmpty(project.SourceUrl))
+                                {
+                                    <a href="@project.SourceUrl" target="_blank" class="btn btn-secondary">Source</a>
+                                }
+                            </div>
+                            <div class="card-footer">
+                                @foreach (var tag in project.Tags.Take(3))
+                                {
+                                    <span class="badge bg-secondary me-1">@tag</span>
+                                }
+                                @if (project.Tags.Count > 3)
+                                {
+                                    <span class="badge bg-secondary">+@(project.Tags.Count - 3)</span>
+                                }
                             </div>
                         </div>
+                    </div>
 
-                    }
-                </div>
-            }
+                }
+            </div>
         }
-    <div class="terminal-section mt-5">
+
+        <div class="terminal-section mt-5">
         <div class="terminal-header">
             <span class="terminal-title">Debug Console</span>
             <div class="terminal-buttons ms-auto">
