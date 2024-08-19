@@ -741,19 +741,29 @@
     "Category": "Professional"
   },
   {
-    "Title": "TODO:VRee: Map Editor",
+    "Title": "VRee: Map Editor",
     "Description": "A custom map editor for VR environments.",
     "FullDescription": "The VRee Map Editor is a tool developed for creating and editing virtual reality environments. It provides an intuitive interface for designing immersive VR spaces, supporting the development of VR applications and games, this was mostly just an idea that never really got off the ground",
-    "ImageUrl": "Projects/images/VRee_editor.png",
-    "VideoUrl": "https://www.youtube.com/embed/Rs4RFfgVtGs",
-    "SourceUrl": "",
+    "MediaItems": [
+      {
+        "Url": "Projects/images/VRee_editor.png",
+        "Name": "",
+        "Type": 0
+      },
+      {
+        "Url": "https://www.youtube.com/embed/Rs4RFfgVtGs",
+        "Name": "",
+        "Type": 1
+      }
+    ],
     "Tags": [
       "VR",
       "Unity",
       "Level Design",
       "Concept"
     ],
-    "Category": "Professional"
+    "Category": "Professional",
+    "Finished": true
   },
   {
     "Title": "TODO:VRee: Network Metrics",
@@ -830,16 +840,26 @@
     "Title": "TODO:VRee: Micro Transform",
     "Description": "A 64-bit transform system for high-level compression",
     "FullDescription": "Micro Transform is a way to represent a full transform in a single 64-bit number, designed for positioning of body data in virtual reality environments. It allows for accurate representation of position and rotation within 2 meters of a parent object, allowing for highly compressed transfer of motion capture data and rigged models in general, Made as a working prototype, but never actually implemented",
-    "ImageUrl": "Projects/images/micro-transform.jpg",
-    "VideoUrl": "../../../Images/Technical/ShortTransform.mp4",
-    "SourceUrl": "",
+    "MediaItems": [
+      {
+        "Url": "Projects/images/micro-transform.jpg",
+        "Name": "",
+        "Type": 0
+      },
+      {
+        "Url": "../../../Images/Technical/ShortTransform.mp4",
+        "Name": "",
+        "Type": 1
+      }
+    ],
     "Tags": [
       "VR",
       "3D Mathematics",
       "Optimization",
       "Concept"
     ],
-    "Category": "Professional"
+    "Category": "Professional",
+    "Finished": true
   },
   {
     "Title": "TODO:VRee: SDK2",
@@ -857,19 +877,29 @@
     "Category": "Professional"
   },
   {
-    "Title": "TODO:VRee: VRisB",
+    "Title": "VRee: VRisB",
     "Description": "Competitive disc golf in VR.",
     "FullDescription": "VRisB is an innovative virtual reality sports simulation game. It focuses on replicating the dynamics of frisbee in a virtual environment, providing players with an immersive and physically engaging experience. The project showcases advanced physics simulations and VR interaction techniques.",
-    "ImageUrl": "Projects/images/vrisb.jpg",
-    "VideoUrl": "",
-    "SourceUrl": "",
+    "MediaItems": [
+      {
+        "Url": "Projects/images/vrisb.jpg",
+        "Name": "",
+        "Type": 0
+      },
+      {
+        "Url": "https://www.youtube.com/embed/xoGgtPd2QN0",
+        "Name": "",
+        "Type": 1
+      }
+    ],
     "Tags": [
       "VR",
       "Sports Simulation",
       "Unity",
       "Physics"
     ],
-    "Category": "Professional"
+    "Category": "Professional",
+    "Finished": true
   },
   {
     "Title": "TODO:VRee: BodyModel",
@@ -904,9 +934,18 @@
     "Title": "TODO:TWNKLS: Yumble - Snap the Family",
     "Description": "An interactive AR experience using Kinect camera.",
     "FullDescription": "Developed as part of a graduation project, Yumble - Snap the Family focused on creating an interactive experience where a virtual character could interact with a real player via a Kinect 3D camera. The project involved significant applied research, including aligning different camera feeds, rapid OpenGL camera feed processing, refining asset bundle workflows, and developing a pathfinding algorithm using Unity's Mecanim package in C#.",
-    "ImageUrl": "Projects/images/yumble-snap-family.jpg",
-    "VideoUrl": "",
-    "SourceUrl": "",
+    "MediaItems": [
+      {
+        "Url": "Projects/images/yumble-snap-family.jpg",
+        "Name": "",
+        "Type": 0
+      },
+      {
+        "Url": "https://www.youtube.com/embed/xoGgtPd2QN0",
+        "Name": "",
+        "Type": 1
+      }
+    ],
     "Tags": [
       "Unity",
       "C#",
@@ -915,7 +954,8 @@
       "OpenGL",
       "Pathfinding"
     ],
-    "Category": "School Projects"
+    "Category": "School Projects",
+    "Finished": true
   },
   {
     "Title": "TODO:GLS: ProDnD Name Generator",
@@ -1123,18 +1163,28 @@
     "Category": "Learning / Teaching / Hobby"
   },
   {
-    "Title": "TODO:Virtual Oscilloscope",
+    "Title": "Virtual Oscilloscope",
     "Description": "A real-time audio visualization tool, made to play Jerobeam Fenderson's oscilloscope music",
     "FullDescription": "The Virtual Oscilloscope is a tool i built in order to try to render animations like the oscilloscope music shown in the video.",
-    "ImageUrl": "Projects/images/Oscilloscope-thumbnail.png",
-    "VideoUrl": "https://www.youtube.com/embed/FEzLCYlvV8w",
-    "SourceUrl": "",
+    "MediaItems": [
+      {
+        "Url": "Projects/images/Oscilloscope-thumbnail.png",
+        "Name": "",
+        "Type": 0
+      },
+      {
+        "Url": "https://www.youtube.com/embed/FEzLCYlvV8w",
+        "Name": "",
+        "Type": 1
+      }
+    ],
     "Tags": [
       "Audio Processing",
       "Visualization",
       "Real-time Systems"
     ],
-    "Category": "Learning / Teaching / Hobby"
+    "Category": "Learning / Teaching / Hobby",
+    "Finished": true
   },
   {
     "Title": "TODO:Audio Processing Projects",
@@ -1236,19 +1286,29 @@
     "Category": "Game Development"
   },
   {
-    "Title": "TODO:YANA (You Are Not Alone)",
+    "Title": "YANA (You Are Not Alone)",
     "Description": "My first game jam submission",
     "FullDescription": "YANA (You Are Not Alone) is my entry to the first game jam i competed in, it was a 2d platformer built in plain java using a double buffered canvas technique i learned watching Notch work on his entry for another game jam. The game featured wireworld-based mechanics for opening doors, unfortunately the game was not very fun or playable, and had many issues when others tried to play it.",
-    "ImageUrl": "Projects/images/yana.jpg",
-    "VideoUrl": "https://www.youtube.com/watch?v=BSzW4X7YbLk",
-    "SourceUrl": "",
+    "MediaItems": [
+      {
+        "Url": "Projects/images/yana.jpg",
+        "Name": "",
+        "Type": 0
+      },
+      {
+        "Url": "https://www.youtube.com/embed/BSzW4X7YbLk",
+        "Name": "",
+        "Type": 1
+      }
+    ],
     "Tags": [
       "Java",
       "Canvas",
       "Wireworld",
       "GameJam"
     ],
-    "Category": "Game Development"
+    "Category": "Learning / Teaching / Hobby",
+    "Finished": true
   },
   {
     "Title": "TODO:Unreal",
@@ -1281,8 +1341,8 @@
   },
   {
     "Title": "TODO:TI-84",
-    "Description": "A game about brute-forcing puzzles using javascript/typescript",
-    "FullDescription": "HackMud is a game about hacking and learning to program in javascript/typescript,\nwhile learning to play the game after a community i was part of discovered it\ni learned to reverse-engineer QR codes, as the early part of tier 2 content\nrequired scanning a partially corrupted QR code, which my phone wouldn't do\ni also just wanted to automate the process",
+    "Description": "first learned to write some visual basic on my TI-84 graphing calculator",
+    "FullDescription": "",
     "ImageUrl": "Projects/images/Hackmud_logo.png",
     "VideoUrl": "https://youtu.be/uFRodoJXqyo",
     "SourceUrl": "",
