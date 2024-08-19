@@ -743,10 +743,10 @@
   {
     "Title": "VRee: Map Editor",
     "Description": "A custom map editor for VR environments.",
-    "FullDescription": "The VRee Map Editor is a tool developed for creating and editing virtual reality environments. It provides an intuitive interface for designing immersive VR spaces, supporting the development of VR applications and games, this was mostly just an idea that never really got off the ground",
+    "FullDescription": "The VRee Map Editor is prototype developed for creating and editing virtual reality environments. It provides an intuitive interface for designing immersive VR spaces, supporting the development of VR applications and games, this idea never really got off the ground",
     "MediaItems": [
       {
-        "Url": "Projects/images/VRee_editor.png",
+        "Url": "Projects/images/work/VRee_editor.png",
         "Name": "",
         "Type": 0
       },
@@ -825,7 +825,7 @@
     "Title": "TODO:VRee: FIRST Robotic competition",
     "Description": "An implementation of a finite state machine to simulate robots",
     "FullDescription": "The VRee Map Editor is a tool developed for creating and editing virtual reality environments. It provides an intuitive interface for designing immersive VR spaces, supporting the development of VR applications and games, this was mostly just an idea that never really got off the ground",
-    "ImageUrl": "Projects/images/VRee_editor.png",
+    "ImageUrl": "Projects/images/Work/VRee_editor.png",
     "VideoUrl": "https://www.youtube.com/embed/Rs4RFfgVtGs",
     "SourceUrl": "",
     "Tags": [
@@ -837,17 +837,17 @@
     "Category": "Professional"
   },
   {
-    "Title": "TODO:VRee: Micro Transform",
+    "Title": "VRee: Micro Transform",
     "Description": "A 64-bit transform system for high-level compression",
     "FullDescription": "Micro Transform is a way to represent a full transform in a single 64-bit number, designed for positioning of body data in virtual reality environments. It allows for accurate representation of position and rotation within 2 meters of a parent object, allowing for highly compressed transfer of motion capture data and rigged models in general, Made as a working prototype, but never actually implemented",
     "MediaItems": [
       {
-        "Url": "Projects/images/micro-transform.jpg",
+        "Url": "Projects/images/Logos/Vree.png",
         "Name": "",
         "Type": 0
       },
       {
-        "Url": "../../../Images/Technical/ShortTransform.mp4",
+        "Url": "Projects/videos/ShortTransform.mp4",
         "Name": "",
         "Type": 1
       }
@@ -882,7 +882,7 @@
     "FullDescription": "VRisB is an innovative virtual reality sports simulation game. It focuses on replicating the dynamics of frisbee in a virtual environment, providing players with an immersive and physically engaging experience. The project showcases advanced physics simulations and VR interaction techniques.",
     "MediaItems": [
       {
-        "Url": "Projects/images/vrisb.jpg",
+        "Url": "Projects/images/Work/VRisb.jpg",
         "Name": "",
         "Type": 0
       },
