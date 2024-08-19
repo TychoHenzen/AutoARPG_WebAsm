@@ -931,12 +931,12 @@
     "Category": "Professional"
   },
   {
-    "Title": "TODO:TWNKLS: Yumble - Snap the Family",
+    "Title": "TWNKLS: Yumble - Snap the Family",
     "Description": "An interactive AR experience using Kinect camera.",
     "FullDescription": "Developed as part of a graduation project, Yumble - Snap the Family focused on creating an interactive experience where a virtual character could interact with a real player via a Kinect 3D camera. The project involved significant applied research, including aligning different camera feeds, rapid OpenGL camera feed processing, refining asset bundle workflows, and developing a pathfinding algorithm using Unity's Mecanim package in C#.",
     "MediaItems": [
       {
-        "Url": "Projects/images/yumble-snap-family.jpg",
+        "Url": "Projects/images/Work/Screenshot 2015-02-23 18.04.21.png",
         "Name": "",
         "Type": 0
       },
