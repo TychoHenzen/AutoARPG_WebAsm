@@ -270,7 +270,7 @@
     "FullDescription": "Developed and maintained C++ and C# code for a sophisticated multiplayer VR platform. Key achievements include designing and implementing a high-speed network architecture using UDP protocols, creating an algorithm to package whole-body motion tracking into a single UDP fragment, and building a secure licensing system with online verification via REST API and RSA/AES encryption. The project also involved implementing tamper-hardening using blockchain hashing techniques.",
     "MediaItems": [
       {
-        "Url": "Projects/images/Logos/VRee.png",
+        "Url": "Projects/images/VRee-thumbnail.jpg",
         "Name": "",
         "Type": 0
       },
