@@ -65,7 +65,7 @@
   {
     "Title": "Multiplayer VR Platform",
     "Description": "A comprehensive multiplayer virtual reality platform.",
-    "FullDescription": "Developed and maintained C++ and C# code for a sophisticated multiplayer VR platform. Key achievements include designing and implementing a high-speed network architecture using UDP protocols, creating an algorithm to package whole-body motion tracking into a single UDP fragment, and building a secure licensing system with online verification via REST API and RSA/AES encryption. The project also involved implementing tamper-proofing using blockchain hashing techniques.",
+    "FullDescription": "Developed and maintained C++ and C# code for a sophisticated multiplayer VR platform. Key achievements include designing and implementing a high-speed network architecture using UDP protocols, creating an algorithm to package whole-body motion tracking into a single UDP fragment, and building a secure licensing system with online verification via REST API and RSA/AES encryption. The project also involved implementing tamper-hardening using blockchain hashing techniques.",
     "MediaItems": [
       {
         "Url": "Projects/images/Logos/VRee.png",
@@ -90,7 +90,7 @@
     "Finished": true
   },
   {
-    "Title": "Tamper proofing",
+    "Title": "Tamper hardening",
     "Description": "An attempt to make the self-made security systems within the SDK more resistant to tampering ",
     "FullDescription": "We designed a system that would leave a token in the binary, which we could modify into a custom value after compilation, this allowed us to 'mine' the hash of the binary of our library, such that it ends with a specified number of zero bits, causing a crash if the hash does not contain enough leading zero bits, likely still trivial to circumvent but it was made in part to learn about the basic technology powering bitcoin.",
     "MediaItems": [
@@ -682,6 +682,50 @@
     ],
     "Category": "Learning / Teaching / Hobby",
     "Finished": true
+  },
+  {
+    "Title": "Ironhaven",
+    "Description": "My third game jam, entry for PirateJam 25",
+    "FullDescription": "first game jam i've done with a team, featuring more advanced movement systems and an early prototype for an alchemical magic system\nClick the source button to play the game",
+    "MediaItems": [
+      {
+        "Url": "Projects/images/Games/Ironhaven.png",
+        "Name": "The banner for the game",
+        "Type": 0
+      }
+    ],
+    "SourceUrl": "https://sirius-black9999.itch.io/ironhaven",
+    "Tags": [
+      "GDScript",
+      "Godot",
+      "GameJam"
+    ],
+    "Category": "Game Development"
+  },
+  {
+    "Title": "Starloop: Crisis",
+    "Description": "My second game jam, entry to PirateJam 24",
+    "FullDescription": "this is a game prototype featuring wireworld in 3d with color theory using a custom-built voxel engine\nClick the source button to play the game",
+    "MediaItems": [
+      {
+        "Url": "Projects/images/Games/Starloop.png",
+        "Name": "The banner for the game",
+        "Type": 0
+      },
+      
+      {
+        "Url": "Projects/images/Games/Starloop2.gif",
+        "Name": "a short clip of the game",
+        "Type": 0
+      }
+    ],
+    "SourceUrl": "https://sirius-black9999.itch.io/starloop-crisis",
+    "Tags": [
+      "C#",
+      "godot",
+      "GameJam"
+    ],
+    "Category": "Game Development"
   },
   {
     "Title": "TODO:Ellips: TrueSort",
