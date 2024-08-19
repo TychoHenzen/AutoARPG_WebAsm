@@ -169,7 +169,7 @@
                                     else
                                     {
                                         <div class="ratio ratio-16x9">
-                                            <video controls>
+                                            <video controls @key="currentItem.Url">
                                                 <source src="@currentItem.Url" type="video/mp4">
                                                 Your browser does not support the video tag.
                                             </video>
@@ -334,6 +334,7 @@
         if (currentMediaIndex > 0)
         {
             currentMediaIndex--;
+            StateHasChanged();
         }
     }
 
@@ -342,6 +343,7 @@
         if (currentMediaIndex < selectedProject.MediaItems.Count - 1)
         {
             currentMediaIndex++;
+            StateHasChanged();
         }
     }
     private bool IsYouTubeUrl(string url)
