@@ -700,7 +700,8 @@
       "Godot",
       "GameJam"
     ],
-    "Category": "Game Development"
+    "Category": "Game Development",
+    "Finished": true
   },
   {
     "Title": "Starloop: Crisis",
@@ -719,7 +720,8 @@
       "godot",
       "GameJam"
     ],
-    "Category": "Game Development"
+    "Category": "Game Development",
+    "Finished": true
   },
   {
     "Title": "TODO:Ellips: TrueSort",
