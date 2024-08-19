@@ -746,7 +746,7 @@
     "FullDescription": "The VRee Map Editor is prototype developed for creating and editing virtual reality environments. It provides an intuitive interface for designing immersive VR spaces, supporting the development of VR applications and games, this idea never really got off the ground",
     "MediaItems": [
       {
-        "Url": "Projects/images/work/VRee_editor.png",
+        "Url": "Projects/images/Work/VRee_editor.png",
         "Name": "",
         "Type": 0
       },
@@ -842,7 +842,7 @@
     "FullDescription": "Micro Transform is a way to represent a full transform in a single 64-bit number, designed for positioning of body data in virtual reality environments. It allows for accurate representation of position and rotation within 2 meters of a parent object, allowing for highly compressed transfer of motion capture data and rigged models in general, Made as a working prototype, but never actually implemented",
     "MediaItems": [
       {
-        "Url": "Projects/images/Logos/Vree.png",
+        "Url": "Projects/images/Logos/VRee.png",
         "Name": "",
         "Type": 0
       },
@@ -882,7 +882,7 @@
     "FullDescription": "VRisB is an innovative virtual reality sports simulation game. It focuses on replicating the dynamics of frisbee in a virtual environment, providing players with an immersive and physically engaging experience. The project showcases advanced physics simulations and VR interaction techniques.",
     "MediaItems": [
       {
-        "Url": "Projects/images/Work/VRisb.jpg",
+        "Url": "Projects/images/Work/VRisb.png",
         "Name": "",
         "Type": 0
       },
