@@ -20,25 +20,227 @@
     "Finished": true
   },
   {
-    "Title": "Code Viewer",
-    "Description": "A tool for viewing and analyzing code structures.",
-    "FullDescription": "The Code Viewer is a tool designed to help developers visualize and analyze complex code structures. It attempts to show dependencies between code of various categories and structure analysis, making it easier to understand and work with large codebases. so far, although i have managed to analyze C# projects and create a theoretical project graph, i have not yet managed to effectively draw this graph, though v2 was already a significant improvement",
+    "Title": "Manim Animations",
+    "Description": "Educational animations created using the Manim library in Python.",
+    "FullDescription": "A series of educational animations developed using the Manim library in Python. These animations are designed to explain complex concepts visually, making them ideal for educational content or presentations.",
     "MediaItems": [
       {
-        "Url": "Projects/images/Technical/CodeGraphConcept.png",
-        "Name": "the conceptual goal of this project",
+        "Url": "Projects/images/Logos/Manim.png",
+        "Name": "Manim logo",
         "Type": 0
       },
       {
-        "Url": "Projects/images/Technical/Codegraph.png",
-        "Name": "Code graph v1 render",
+        "Url": "Projects/videos/Manim/CalendarAnim.mp4",
+        "Name": "D&D Calendar",
+        "Type": 1
+      },
+      {
+        "Url": "Projects/images/Manim/CalendarWeather.png",
+        "Name": "D&D Calendar - weather types",
+        "Type": 0
+      },
+      {
+        "Url": "Projects/images/Manim/CalendarMoon1.png",
+        "Name": "D&D Calendar - moon tracking",
+        "Type": 0
+      },
+      {
+        "Url": "Projects/images/Manim/CalendarMoon2.png",
+        "Name": "D&D Calendar - moon rendering",
+        "Type": 0
+      },
+      {
+        "Url": "Projects/images/Manim/Moon2.png",
+        "Name": "D&D Calendar - Edge case: full/new moon",
+        "Type": 0
+      },
+
+      {
+        "Url": "Projects/videos/Manim/Lesson1.mp4",
+        "Name": "Introduction to programming",
+        "Type": 1
+      },
+      {
+        "Url": "Projects/videos/Manim/MessageBounceBug.mp4",
+        "Name": "Bouncing message bug",
+        "Type": 1
+      },
+      {
+        "Url": "Projects/videos/Manim/MonadNetworking.mp4",
+        "Name": "Networking & Monads",
+        "Type": 1
+      },
+      {
+        "Url": "Projects/videos/Manim/NeuralNetwork.mp4",
+        "Name": "What a neural network does, visually",
+        "Type": 1
+      },
+      {
+        "Url": "Projects/videos/Manim/PointInTriangle.mp4",
+        "Name": "Graphics programming - is a point in a triangle?",
+        "Type": 1
+      },
+      {
+        "Url": "Projects/videos/Manim/RefactoringConcepts1.mp4",
+        "Name": "Refactoring: why is it useful",
+        "Type": 1
+      },
+      {
+        "Url": "Projects/videos/Manim/RefactoringConcepts2.mp4",
+        "Name": "Extreme refactoring: Biological code",
+        "Type": 1
+      },
+      {
+        "Url": "Projects/videos/Manim/WeakInterfaceFactory.mp4",
+        "Name": "Code concepts: Holders and freezing",
+        "Type": 1
+      }
+    ],
+    "SourceUrl": "",
+    "Tags": [
+      "Python",
+      "Manim",
+      "Educational Content",
+      "Animation",
+      "Top"
+    ],
+    "Category": "Learning / Teaching / Hobby",
+    "Finished": true
+  },
+  {
+    "Title": "Ironhaven",
+    "Description": "My third game jam, entry for PirateJam 25",
+    "FullDescription": "first game jam i've done with a team, featuring more advanced movement systems and an early prototype for an alchemical magic system\nClick the source button to play the game",
+    "MediaItems": [
+      {
+        "Url": "Projects/images/Games/Ironhaven.png",
+        "Name": "The banner for the game",
+        "Type": 0
+      }
+    ],
+    "SourceUrl": "https://sirius-black9999.itch.io/ironhaven",
+    "Tags": [
+      "GDScript",
+      "Godot",
+      "GameJam"
+    ],
+    "Category": "Learning / Teaching / Hobby",
+    "Finished": true
+  },
+  {
+    "Title": "Starloop: Crisis",
+    "Description": "My second game jam, entry to PirateJam 24",
+    "FullDescription": "this is a game prototype featuring wireworld in 3d with color theory using a custom-built voxel engine\nClick the source button to play the game",
+    "MediaItems": [
+      {
+        "Url": "Projects/images/Games/Starloop.png",
+        "Name": "The banner for the game",
+        "Type": 0
+      }
+    ],
+    "SourceUrl": "https://sirius-black9999.itch.io/starloop-crisis",
+    "Tags": [
+      "C#",
+      "godot",
+      "GameJam"
+    ],
+    "Category": "Learning / Teaching / Hobby",
+    "Finished": true
+  },
+  {
+    "Title": "Various Shader Projects",
+    "Description": "Diverse shader Projects using GLSL, HLSL, and CG.",
+    "FullDescription": "A series of shader Projects developed using GLSL, HLSL, and CG, working with both OpenGL and DirectX.\nThese Projects often explore unconventional applications of shaders, including compute shaders and ray marching techniques.",
+    "MediaItems": [
+      {
+        "Url": "Projects/images/Shaders/Well2.png",
+        "Name": "A well renderer designed with refraction and reflection math\nto emulate a realistic looking water surface",
+        "Type": 0
+      },
+      {
+        "Url": "Projects/images/Shaders/Well1.png",
+        "Name": "earlier form that does not show the water effects",
+        "Type": 0
+      },
+      {
+        "Url": "Projects/images/Shaders/Mandelbrot1.png",
+        "Name": "My first time rendering a mandelbrot set - internal coloring",
+        "Type": 0
+      },
+      {
+        "Url": "Projects/images/Shaders/Mandelbrot2.png",
+        "Name": "My first time rendering a mandelbrot set - external coloring",
+        "Type": 0
+      },
+      {
+        "Url": "Projects/images/Shaders/Mandelbrot3.png",
+        "Name": "My first time rendering a mandelbrot set - an area with more complexity",
+        "Type": 0
+      },
+      {
+        "Url": "Projects/images/Shaders/ColoredPerlin.png",
+        "Name": "Terrain generation using perlin noise",
+        "Type": 0
+      },
+      {
+        "Url": "Projects/images/Shaders/MoireTest.png",
+        "Name": "A moire pattern ",
+        "Type": 0
+      },
+      {
+        "Url": "Projects/images/Shaders/ManhattanVoronoi.png",
+        "Name": "Voronoi patterning using manhattan distance",
+        "Type": 0
+      },
+      {
+        "Url": "Projects/images/Shaders/Uno.png",
+        "Name": "Uno was a language that let you write shader code in C#\nIt has since shifted focus towards mobile UI design",
+        "Type": 0
+      },
+      {
+        "Url": "Projects/images/Shaders/Octree.png",
+        "Name": "Octree/metaball rendering (not technically a shader)",
+        "Type": 0
+      },
+      {
+        "Url": "Projects/images/Shaders/Screenshot 2014-10-10 18.44.09.png",
+        "Name": "Building some shaders using unity's shader graph",
+        "Type": 0
+      },
+      {
+        "Url": "Projects/images/Shaders/ShaderGraph.png",
+        "Name": "Had some fun with a concept for 'living documentation' we were exploring",
+        "Type": 0
+      },
+      {
+        "Url": "Projects/images/Shaders/ShaderNeuralNet.png",
+        "Name": "This neural network project was also rendered fully via shaders",
+        "Type": 0
+      },
+      {
+        "Url": "Projects/images/Shaders/Demoscene.png",
+        "Name": "Not technically a shader project, but similar concepts, just running on CPU",
+        "Type": 0
+      },
+      {
+        "Url": "Projects/images/Technical/Demoscene1.png",
+        "Name": "Another scene from the same demo, made in java",
+        "Type": 0
+      },
+      {
+        "Url": "Projects/images/Technical/Demoscene2.png",
+        "Name": "an attempt at map generation",
         "Type": 0
       }
     ],
     "Tags": [
-      "C#",
-      "Code Analysis",
-      "Developer Tools"
+      "GLSL",
+      "HLSL",
+      "CG",
+      "OpenGL",
+      "DirectX",
+      "Compute Shaders",
+      "Ray Marching"
     ],
     "Category": "Learning / Teaching / Hobby",
     "Finished": true
@@ -65,10 +267,10 @@
   {
     "Title": "Multiplayer VR Platform",
     "Description": "A comprehensive multiplayer virtual reality platform.",
-    "FullDescription": "Developed and maintained C++ and C# code for a sophisticated multiplayer VR platform. Key achievements include designing and implementing a high-speed network architecture using UDP protocols, creating an algorithm to package whole-body motion tracking into a single UDP fragment, and building a secure licensing system with online verification via REST API and RSA/AES encryption. The project also involved implementing tamper-proofing using blockchain hashing techniques.",
+    "FullDescription": "Developed and maintained C++ and C# code for a sophisticated multiplayer VR platform. Key achievements include designing and implementing a high-speed network architecture using UDP protocols, creating an algorithm to package whole-body motion tracking into a single UDP fragment, and building a secure licensing system with online verification via REST API and RSA/AES encryption. The project also involved implementing tamper-hardening using blockchain hashing techniques.",
     "MediaItems": [
       {
-        "Url": "Projects/images/Logos/VRee.png",
+        "Url": "Projects/images/VRee-thumbnail.jpg",
         "Name": "",
         "Type": 0
       },
@@ -90,7 +292,7 @@
     "Finished": true
   },
   {
-    "Title": "Tamper proofing",
+    "Title": "Tamper hardening",
     "Description": "An attempt to make the self-made security systems within the SDK more resistant to tampering ",
     "FullDescription": "We designed a system that would leave a token in the binary, which we could modify into a custom value after compilation, this allowed us to 'mine' the hash of the binary of our library, such that it ends with a specified number of zero bits, causing a crash if the hash does not contain enough leading zero bits, likely still trivial to circumvent but it was made in part to learn about the basic technology powering bitcoin.",
     "MediaItems": [
@@ -261,94 +463,6 @@
     ],
     "Category": "Biology/Artificial Intelligence",
     "ImageFit": 1,
-    "Finished": true
-  },
-  {
-    "Title": "Manim Animations",
-    "Description": "Educational animations created using the Manim library in Python.",
-    "FullDescription": "A series of educational animations developed using the Manim library in Python. These animations are designed to explain complex concepts visually, making them ideal for educational content or presentations.",
-    "MediaItems": [
-      {
-        "Url": "Projects/images/Logos/Manim.png",
-        "Name": "Manim logo",
-        "Type": 0
-      },
-      {
-        "Url": "Projects/videos/Manim/CalendarAnim.mp4",
-        "Name": "D&D Calendar",
-        "Type": 1
-      },
-      {
-        "Url": "Projects/images/Manim/CalendarWeather.png",
-        "Name": "D&D Calendar - weather types",
-        "Type": 0
-      },
-      {
-        "Url": "Projects/images/Manim/CalendarMoon1.png",
-        "Name": "D&D Calendar - moon tracking",
-        "Type": 0
-      },
-      {
-        "Url": "Projects/images/Manim/CalendarMoon2.png",
-        "Name": "D&D Calendar - moon rendering",
-        "Type": 0
-      },
-      {
-        "Url": "Projects/images/Manim/Moon2.png",
-        "Name": "D&D Calendar - Edge case: full/new moon",
-        "Type": 0
-      },
-
-      {
-        "Url": "Projects/videos/Manim/Lesson1.mp4",
-        "Name": "Introduction to programming",
-        "Type": 1
-      },
-      {
-        "Url": "Projects/videos/Manim/MessageBounceBug.mp4",
-        "Name": "Bouncing message bug",
-        "Type": 1
-      },
-      {
-        "Url": "Projects/videos/Manim/MonadNetworking.mp4",
-        "Name": "Networking & Monads",
-        "Type": 1
-      },
-      {
-        "Url": "Projects/videos/Manim/NeuralNetwork.mp4",
-        "Name": "What a neural network does, visually",
-        "Type": 1
-      },
-      {
-        "Url": "Projects/videos/Manim/PointInTriangle.mp4",
-        "Name": "Graphics programming - is a point in a triangle?",
-        "Type": 1
-      },
-      {
-        "Url": "Projects/videos/Manim/RefactoringConcepts1.mp4",
-        "Name": "Refactoring: why is it useful",
-        "Type": 1
-      },
-      {
-        "Url": "Projects/videos/Manim/RefactoringConcepts2.mp4",
-        "Name": "Extreme refactoring: Biological code",
-        "Type": 1
-      },
-      {
-        "Url": "Projects/videos/Manim/WeakInterfaceFactory.mp4",
-        "Name": "Code concepts: Holders and freezing",
-        "Type": 1
-      }
-    ],
-    "SourceUrl": "",
-    "Tags": [
-      "Python",
-      "Manim",
-      "Educational Content",
-      "Animation",
-      "Top"
-    ],
-    "Category": "Learning / Teaching / Hobby",
     "Finished": true
   },
   {
@@ -586,99 +700,201 @@
     "Finished": true
   },
   {
-    "Title": "Advanced Shader Projects",
-    "Description": "Diverse shader Projects using GLSL, HLSL, and CG.",
-    "FullDescription": "A series of shader Projects developed using GLSL, HLSL, and CG, working with both OpenGL and DirectX.\nThese Projects often explore unconventional applications of shaders, including compute shaders and ray marching techniques.",
+    "Title": "VRee: Map Editor",
+    "Description": "A custom map editor for VR environments.",
+    "FullDescription": "The VRee Map Editor is prototype developed for creating and editing virtual reality environments. It provides an intuitive interface for designing immersive VR spaces, supporting the development of VR applications and games, this idea never really got off the ground",
     "MediaItems": [
       {
-        "Url": "Projects/images/Shaders/Mandelbrot1.png",
-        "Name": "My first time rendering a mandelbrot set - internal coloring",
+        "Url": "Projects/images/Work/VRee_editor.png",
+        "Name": "",
         "Type": 0
       },
       {
-        "Url": "Projects/images/Shaders/Mandelbrot2.png",
-        "Name": "My first time rendering a mandelbrot set - external coloring",
+        "Url": "https://www.youtube.com/embed/Rs4RFfgVtGs",
+        "Name": "",
+        "Type": 1
+      }
+    ],
+    "Tags": [
+      "VR",
+      "Unity",
+      "Level Design",
+      "Concept"
+    ],
+    "Category": "Professional",
+    "Finished": true
+  },
+  {
+    "Title": "VRee: Micro Transform",
+    "Description": "A 64-bit transform system for high-level compression",
+    "FullDescription": "Micro Transform is a way to represent a full transform in a single 64-bit number, designed for positioning of body data in virtual reality environments. It allows for accurate representation of position and rotation within 2 meters of a parent object, allowing for highly compressed transfer of motion capture data and rigged models in general, Made as a working prototype, but never actually implemented",
+    "MediaItems": [
+      {
+        "Url": "Projects/images/Logos/VRee.png",
+        "Name": "",
         "Type": 0
       },
       {
-        "Url": "Projects/images/Shaders/Mandelbrot3.png",
-        "Name": "My first time rendering a mandelbrot set - an area with more complexity",
+        "Url": "Projects/videos/ShortTransform.mp4",
+        "Name": "",
+        "Type": 1
+      }
+    ],
+    "Tags": [
+      "VR",
+      "3D Mathematics",
+      "Optimization",
+      "Concept"
+    ],
+    "Category": "Professional",
+    "Finished": true
+  },
+  {
+    "Title": "VRee: VRisB",
+    "Description": "Competitive disc golf in VR.",
+    "FullDescription": "VRisB is an innovative virtual reality sports simulation game. It focuses on replicating the dynamics of frisbee in a virtual environment, providing players with an immersive and physically engaging experience. The project showcases advanced physics simulations and VR interaction techniques.",
+    "MediaItems": [
+      {
+        "Url": "Projects/images/Work/VRisb.png",
+        "Name": "",
         "Type": 0
       },
       {
-        "Url": "Projects/images/Shaders/Well1.png",
-        "Name": "A shader for a well i designed and built for VRee",
+        "Url": "https://www.youtube.com/embed/xoGgtPd2QN0",
+        "Name": "",
+        "Type": 1
+      }
+    ],
+    "Tags": [
+      "VR",
+      "Sports Simulation",
+      "Unity",
+      "Physics"
+    ],
+    "Category": "Professional",
+    "Finished": true
+  },
+  {
+    "Title": "Personal Website and Webshop Hosting",
+    "Description": "Self-hosted website and partner's webshop using various web technologies.",
+    "FullDescription": "Maintained a long-term personal website, working with HTML/CSS, Bootstrap, PHP, and JEE.\nCurrently hosting a personal website (this one) on microsoft azure\nPreviously hosted on a local laptop alongside a webshop (using PrestaShop) for my wife on a self-managed Apache HTTP server running on a laptop.\nThat setup included FTP, Git, jenkins and MySQL database\nThe project also involved configuring DNS records, SSL certificates, and implementing email security protocols (DMARC, SPF, DKIM) for a custom email address, i even tried to setup my own mailserver before realizing consumers are not allowed to do so\n\n Current configuration cannibalized the repo of another project in order to reuse the github actions i had set up for it in order to deploy the C#/Blazor application to microsoft Azure as a static website",
+    "MediaItems": [
+      {
+        "Url": "Projects/images/Logos/AerialMage.png",
+        "Name": "",
+        "Type": 0
+      }
+    ],
+    "SourceUrl": "https://github.com/sirius-black9999/AutoARPG_WebAsm",
+    "Tags": [
+      "Web Hosting",
+      "Apache",
+      "MySQL",
+      "DNS",
+      "SSL",
+      "Email Security",
+      "Blazor"
+    ],
+    "Category": "Learning / Teaching / Hobby",
+    "ImageFit": 1,
+    "Finished": true
+  },
+  {
+    "Title": "Code Viewer",
+    "Description": "A tool for viewing and analyzing code structures.",
+    "FullDescription": "The Code Viewer is a tool designed to help developers visualize and analyze complex code structures. It attempts to show dependencies between code of various categories and structure analysis, making it easier to understand and work with large codebases. so far, although i have managed to analyze C# projects and create a theoretical project graph, i have not yet managed to effectively draw this graph, though v2 was already a significant improvement",
+    "MediaItems": [
+      {
+        "Url": "Projects/images/Technical/CodeGraphConcept.png",
+        "Name": "the conceptual goal of this project",
         "Type": 0
       },
       {
-        "Url": "Projects/images/Shaders/Well2.png",
-        "Name": "It involves refraction and reflection math\nto emulate a realistic looking water surface",
-        "Type": 0
-      },
-      {
-        "Url": "Projects/images/Shaders/ColoredPerlin.png",
-        "Name": "Terrain generation using perlin noise",
-        "Type": 0
-      },
-      {
-        "Url": "Projects/images/Shaders/MoireTest.png",
-        "Name": "A moire pattern ",
-        "Type": 0
-      },
-      {
-        "Url": "Projects/images/Shaders/ManhattanVoronoi.png",
-        "Name": "Voronoi patterning using manhattan distance",
-        "Type": 0
-      },
-      {
-        "Url": "Projects/images/Shaders/Uno.png",
-        "Name": "Uno was a language that let you write shader code in C#\nIt has since shifted focus towards mobile UI design",
-        "Type": 0
-      },
-      {
-        "Url": "Projects/images/Shaders/Octree.png",
-        "Name": "Octree/metaball rendering (not technically a shader)",
-        "Type": 0
-      },
-      {
-        "Url": "Projects/images/Shaders/Screenshot 2014-10-10 18.44.09.png",
-        "Name": "Building some shaders using unity's shader graph",
-        "Type": 0
-      },
-      {
-        "Url": "Projects/images/Shaders/ShaderGraph.png",
-        "Name": "Had some fun with a concept for 'living documentation' we were exploring",
-        "Type": 0
-      },
-      {
-        "Url": "Projects/images/Shaders/ShaderNeuralNet.png",
-        "Name": "This neural network project was also rendered fully via shaders",
-        "Type": 0
-      },
-      {
-        "Url": "Projects/images/Shaders/Demoscene.png",
-        "Name": "Not technically a shader project, but similar concepts, just running on CPU",
-        "Type": 0
-      },
-      {
-        "Url": "Projects/images/Technical/Demoscene1.png",
-        "Name": "Another scene from the same demo, made in java",
-        "Type": 0
-      },
-      {
-        "Url": "Projects/images/Technical/Demoscene2.png",
-        "Name": "an attempt at map generation",
+        "Url": "Projects/images/Technical/CodeGraph.png",
+        "Name": "Code graph v1 render",
         "Type": 0
       }
     ],
     "Tags": [
-      "GLSL",
-      "HLSL",
-      "CG",
+      "C#",
+      "Code Analysis",
+      "Developer Tools"
+    ],
+    "Category": "Learning / Teaching / Hobby",
+    "Finished": true
+  },
+  {
+    "Title": "TWNKLS: Yumble - Snap the Family",
+    "Description": "An interactive AR experience using Kinect camera.",
+    "FullDescription": "Developed as part of a graduation project, Yumble - Snap the Family focused on creating an interactive experience where a virtual character could interact with a real player via a Kinect 3D camera. The project involved significant applied research, including aligning different camera feeds, rapid OpenGL camera feed processing, refining asset bundle workflows, and developing a pathfinding algorithm using Unity's Mecanim package in C#.",
+    "MediaItems": [
+      {
+        "Url": "Projects/images/Work/Screenshot 2015-02-23 18.04.21.png",
+        "Name": "",
+        "Type": 0
+      },
+      {
+        "Url": "https://www.youtube.com/embed/xoGgtPd2QN0",
+        "Name": "",
+        "Type": 1
+      }
+    ],
+    "Tags": [
+      "Unity",
+      "C#",
+      "Kinect",
+      "AR",
       "OpenGL",
-      "DirectX",
-      "Compute Shaders",
-      "Ray Marching"
+      "Pathfinding"
+    ],
+    "Category": "School Projects",
+    "Finished": true
+  },
+  {
+    "Title": "Virtual Oscilloscope",
+    "Description": "A real-time audio visualization tool, made to play Jerobeam Fenderson's oscilloscope music",
+    "FullDescription": "The Virtual Oscilloscope is a tool i built in order to try to render animations like the oscilloscope music shown in the video.",
+    "MediaItems": [
+      {
+        "Url": "Projects/images/Oscilloscope-thumbnail.png",
+        "Name": "",
+        "Type": 0
+      },
+      {
+        "Url": "https://www.youtube.com/embed/FEzLCYlvV8w",
+        "Name": "",
+        "Type": 1
+      }
+    ],
+    "Tags": [
+      "Audio Processing",
+      "Visualization",
+      "Real-time Systems"
+    ],
+    "Category": "Learning / Teaching / Hobby",
+    "Finished": true
+  },
+  {
+    "Title": "YANA (You Are Not Alone)",
+    "Description": "My first game jam submission",
+    "FullDescription": "YANA (You Are Not Alone) is my entry to the first game jam i competed in, it was a 2d platformer built in plain java using a double buffered canvas technique i learned watching Notch work on his entry for another game jam. The game featured wireworld-based mechanics for opening doors, unfortunately the game was not very fun or playable, and had many issues when others tried to play it.",
+    "MediaItems": [
+      {
+        "Url": "Projects/images/Logos/LudumDare.jpg",
+        "Name": "",
+        "Type": 0
+      },
+      {
+        "Url": "https://www.youtube.com/embed/BSzW4X7YbLk",
+        "Name": "",
+        "Type": 1
+      }
+    ],
+    "Tags": [
+      "Java",
+      "Canvas",
+      "Wireworld",
+      "GameJam"
     ],
     "Category": "Learning / Teaching / Hobby",
     "Finished": true
@@ -697,21 +913,6 @@
       "C++",
       "Web Development",
       "Industrial Automation"
-    ],
-    "Category": "Professional"
-  },
-  {
-    "Title": "TODO:VRee: Map Editor",
-    "Description": "A custom map editor for VR environments.",
-    "FullDescription": "The VRee Map Editor is a tool developed for creating and editing virtual reality environments. It provides an intuitive interface for designing immersive VR spaces, supporting the development of VR applications and games, this was mostly just an idea that never really got off the ground",
-    "ImageUrl": "Projects/images/VRee_editor.png",
-    "VideoUrl": "https://www.youtube.com/embed/Rs4RFfgVtGs",
-    "SourceUrl": "",
-    "Tags": [
-      "VR",
-      "Unity",
-      "Level Design",
-      "Concept"
     ],
     "Category": "Professional"
   },
@@ -775,28 +976,13 @@
     "Title": "TODO:VRee: FIRST Robotic competition",
     "Description": "An implementation of a finite state machine to simulate robots",
     "FullDescription": "The VRee Map Editor is a tool developed for creating and editing virtual reality environments. It provides an intuitive interface for designing immersive VR spaces, supporting the development of VR applications and games, this was mostly just an idea that never really got off the ground",
-    "ImageUrl": "Projects/images/VRee_editor.png",
+    "ImageUrl": "Projects/images/Work/VRee_editor.png",
     "VideoUrl": "https://www.youtube.com/embed/Rs4RFfgVtGs",
     "SourceUrl": "",
     "Tags": [
       "VR",
       "Unity",
       "Level Design",
-      "Concept"
-    ],
-    "Category": "Professional"
-  },
-  {
-    "Title": "TODO:VRee: Micro Transform",
-    "Description": "A 64-bit transform system for high-level compression",
-    "FullDescription": "Micro Transform is a way to represent a full transform in a single 64-bit number, designed for positioning of body data in virtual reality environments. It allows for accurate representation of position and rotation within 2 meters of a parent object, allowing for highly compressed transfer of motion capture data and rigged models in general, Made as a working prototype, but never actually implemented",
-    "ImageUrl": "Projects/images/micro-transform.jpg",
-    "VideoUrl": "../../../Images/Technical/ShortTransform.mp4",
-    "SourceUrl": "",
-    "Tags": [
-      "VR",
-      "3D Mathematics",
-      "Optimization",
       "Concept"
     ],
     "Category": "Professional"
@@ -813,21 +999,6 @@
       "SDK",
       "C++",
       "Unity"
-    ],
-    "Category": "Professional"
-  },
-  {
-    "Title": "TODO:VRee: VRisB",
-    "Description": "Competitive disc golf in VR.",
-    "FullDescription": "VRisB is an innovative virtual reality sports simulation game. It focuses on replicating the dynamics of frisbee in a virtual environment, providing players with an immersive and physically engaging experience. The project showcases advanced physics simulations and VR interaction techniques.",
-    "ImageUrl": "Projects/images/vrisb.jpg",
-    "VideoUrl": "",
-    "SourceUrl": "",
-    "Tags": [
-      "VR",
-      "Sports Simulation",
-      "Unity",
-      "Physics"
     ],
     "Category": "Professional"
   },
@@ -859,23 +1030,6 @@
       "C#"
     ],
     "Category": "Professional"
-  },
-  {
-    "Title": "TODO:TWNKLS: Yumble - Snap the Family",
-    "Description": "An interactive AR experience using Kinect camera.",
-    "FullDescription": "Developed as part of a graduation project, Yumble - Snap the Family focused on creating an interactive experience where a virtual character could interact with a real player via a Kinect 3D camera. The project involved significant applied research, including aligning different camera feeds, rapid OpenGL camera feed processing, refining asset bundle workflows, and developing a pathfinding algorithm using Unity's Mecanim package in C#.",
-    "ImageUrl": "Projects/images/yumble-snap-family.jpg",
-    "VideoUrl": "",
-    "SourceUrl": "",
-    "Tags": [
-      "Unity",
-      "C#",
-      "Kinect",
-      "AR",
-      "OpenGL",
-      "Pathfinding"
-    ],
-    "Category": "School Projects"
   },
   {
     "Title": "TODO:GLS: ProDnD Name Generator",
@@ -1083,20 +1237,6 @@
     "Category": "Learning / Teaching / Hobby"
   },
   {
-    "Title": "TODO:Virtual Oscilloscope",
-    "Description": "A real-time audio visualization tool, made to play Jerobeam Fenderson's oscilloscope music",
-    "FullDescription": "The Virtual Oscilloscope is a tool i built in order to try to render animations like the oscilloscope music shown in the video.",
-    "ImageUrl": "Projects/images/Oscilloscope-thumbnail.png",
-    "VideoUrl": "https://www.youtube.com/embed/FEzLCYlvV8w",
-    "SourceUrl": "",
-    "Tags": [
-      "Audio Processing",
-      "Visualization",
-      "Real-time Systems"
-    ],
-    "Category": "Learning / Teaching / Hobby"
-  },
-  {
     "Title": "TODO:Audio Processing Projects",
     "Description": "Various audio-related Projects including an oscilloscope, dynamic music system and MIDI tracker.",
     "FullDescription": "A collection of audio processing Projects primarily developed in C#. Notable Projects include a custom oscilloscope for audio visualization, a MIDI tracker for music composition, and systems for dynamic audio generation and manipulation.",
@@ -1196,21 +1336,6 @@
     "Category": "Game Development"
   },
   {
-    "Title": "TODO:YANA (You Are Not Alone)",
-    "Description": "My first game jam submission",
-    "FullDescription": "YANA (You Are Not Alone) is my entry to the first game jam i competed in, it was a 2d platformer built in plain java using a double buffered canvas technique i learned watching Notch work on his entry for another game jam. The game featured wireworld-based mechanics for opening doors, unfortunately the game was not very fun or playable, and had many issues when others tried to play it.",
-    "ImageUrl": "Projects/images/yana.jpg",
-    "VideoUrl": "https://www.youtube.com/watch?v=BSzW4X7YbLk",
-    "SourceUrl": "",
-    "Tags": [
-      "Java",
-      "Canvas",
-      "Wireworld",
-      "GameJam"
-    ],
-    "Category": "Game Development"
-  },
-  {
     "Title": "TODO:Unreal",
     "Description": "My first introduction to game development",
     "FullDescription": "HackMud is a game about hacking and learning to program in javascript/typescript,\nwhile learning to play the game after a community i was part of discovered it\ni learned to reverse-engineer QR codes, as the early part of tier 2 content\nrequired scanning a partially corrupted QR code, which my phone wouldn't do\ni also just wanted to automate the process",
@@ -1241,8 +1366,8 @@
   },
   {
     "Title": "TODO:TI-84",
-    "Description": "A game about brute-forcing puzzles using javascript/typescript",
-    "FullDescription": "HackMud is a game about hacking and learning to program in javascript/typescript,\nwhile learning to play the game after a community i was part of discovered it\ni learned to reverse-engineer QR codes, as the early part of tier 2 content\nrequired scanning a partially corrupted QR code, which my phone wouldn't do\ni also just wanted to automate the process",
+    "Description": "first learned to write some visual basic on my TI-84 graphing calculator",
+    "FullDescription": "",
     "ImageUrl": "Projects/images/Hackmud_logo.png",
     "VideoUrl": "https://youtu.be/uFRodoJXqyo",
     "SourceUrl": "",

@@ -160,9 +160,21 @@
                                 }
                                 else if (currentItem.Type == MediaType.Video)
                                 {
-                                    <div class="ratio ratio-16x9">
-                                        <iframe src="@currentItem.Url" allowfullscreen></iframe>
-                                    </div>
+                                    @if (IsYouTubeUrl(currentItem.Url))
+                                    {
+                                        <div class="ratio ratio-16x9">
+                                            <iframe src="@GetYouTubeEmbedUrl(currentItem.Url)" allowfullscreen></iframe>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="ratio ratio-16x9">
+                                            <video controls @key="currentItem.Url">
+                                                <source src="@currentItem.Url" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video>
+                                        </div>
+                                    }
                                 }
                                 else if (currentItem.Type == MediaType.Pdf)
                                 {
@@ -322,6 +334,7 @@
         if (currentMediaIndex > 0)
         {
             currentMediaIndex--;
+            StateHasChanged();
         }
     }
 
@@ -330,8 +343,28 @@
         if (currentMediaIndex < selectedProject.MediaItems.Count - 1)
         {
             currentMediaIndex++;
+            StateHasChanged();
         }
     }
+    private bool IsYouTubeUrl(string url)
+    {
+        return url.Contains("youtube.com") || url.Contains("youtu.be");
+    }
 
+    private string GetYouTubeEmbedUrl(string url)
+    {
+        if (url.Contains("youtube.com/watch"))
+        {
+            var videoId = System.Web.HttpUtility.ParseQueryString(new Uri(url).Query)["v"];
+            return $"https://www.youtube.com/embed/{videoId}";
+        }
+        else if (url.Contains("youtu.be"))
+        {
+            var videoId = new Uri(url).Segments.Last();
+            return $"https://www.youtube.com/embed/{videoId}";
+        }
+        return url;
+    }
 }
+
 }
