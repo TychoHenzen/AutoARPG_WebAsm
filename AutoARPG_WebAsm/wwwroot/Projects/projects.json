@@ -122,7 +122,7 @@
         "Type": 0
       }
     ],
-    "SourceUrl": "https://github.com/sirius-black9999/AutoARPG_WebAsm",
+    "SourceUrl": "https://github.com/TychoHenzen/AutoARPG_WebAsm",
     "Tags": [
       "Web Hosting",
       "Apache",
@@ -1014,7 +1014,7 @@
     "FullDescription": "Developed a Blazor-based editor for managing JSON files in an Auto-ARPG (Automatically generated Action Role-Playing Game) project. This tool streamlines the process of creating and editing game content. The project was built using C# 10/.NET 6 and utilized NuGet packages such as GdkSharp and ImageSharp.",
     "ImageUrl": "",
     "VideoUrl": "",
-    "SourceUrl": "https://github.com/sirius-black9999/AutoARPG_Unity",
+    "SourceUrl": "https://github.com/TychoHenzen/AutoARPG_Unity",
     "Tags": [
       "C#",
       "Blazor",
@@ -1187,7 +1187,7 @@
     "FullDescription": "This Minecraft mod adds new features and mechanics to the game, including custom blocks, items, and gameplay elements. It demonstrates proficiency in Java programming and game modding techniques. The mod featured a way to convert rotten flesh into redstone, a wireworld-based signalling system somewhat similar to redstone, which interacted with a magnet-like block that responded to a coil of this redstone-like cable, in order to provide functionality similar to ProjectE, but with values based on the blocks' frequency within the surrounding worldgen",
     "ImageUrl": "Projects/images/minecraft-mod.jpg",
     "VideoUrl": "https://www.youtube.com/watch?v=s8ZXQ9tntBY",
-    "SourceUrl": "https://github.com/sirius-black9999/AMP-mc-magnet-chem",
+    "SourceUrl": "https://github.com/TychoHenzen/AMP-mc-magnet-chem",
     "Tags": [
       "Java",
       "Minecraft",
